@@ -58,5 +58,10 @@ namespace ERP_HEISLER
         {
 
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
