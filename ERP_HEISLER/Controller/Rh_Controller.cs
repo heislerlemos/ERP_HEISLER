@@ -10,13 +10,25 @@ namespace ERP_HEISLER.Controller
 
     internal class Rh_Controller 
     {
-        public static Main f1 = Application.OpenForms.OfType<Main>().FirstOrDefault();
+        public static Main? f1 = Application.OpenForms.OfType<Main>().FirstOrDefault();
+
+
+
+       
 
         public static void debug(string nome)
         {
-            System.Diagnostics.Debug.WriteLine(nome + "debuging from rh");
-            string value = f1.textBox1.Text;
-            System.Diagnostics.Debug.WriteLine(value);
+
+            try {
+                System.Diagnostics.Debug.WriteLine(nome + "debuging from rh");
+                string value = f1.textBox1.Text;
+                System.Diagnostics.Debug.WriteLine(value);
+            }
+            catch (Exception e) 
+            {
+                MessageBox.Show(e.Message);
+            }
+            
 
 
 
