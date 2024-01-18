@@ -48,6 +48,8 @@
             label2 = new Label();
             armazem = new Panel();
             label3 = new Label();
+            button1 = new Button();
+            button2 = new Button();
             menuStrip1.SuspendLayout();
             contabilidade.SuspendLayout();
             recursoshumanos.SuspendLayout();
@@ -108,6 +110,8 @@
             // recursoshumanos
             // 
             recursoshumanos.BackColor = SystemColors.ControlLight;
+            recursoshumanos.Controls.Add(button2);
+            recursoshumanos.Controls.Add(button1);
             recursoshumanos.Controls.Add(dateTimePicker2);
             recursoshumanos.Controls.Add(dateTimePicker1);
             recursoshumanos.Controls.Add(label8);
@@ -239,6 +243,26 @@
             label3.Text = "Armazem";
             label3.Click += label3_Click;
             // 
+            // button1
+            // 
+            button1.Location = new Point(43, 272);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 11;
+            button1.Text = "Submeter";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(422, 272);
+            button2.Name = "button2";
+            button2.Size = new Size(94, 29);
+            button2.TabIndex = 12;
+            button2.Text = "Submeter";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // Main
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -285,5 +309,7 @@
         private DateTimePicker dateTimePicker1;
         private Label label8;
         private Label label7;
+        private Button button2;
+        private Button button1;
     }
 }

@@ -11,7 +11,9 @@ namespace ERP_HEISLER.Controller
 
         public Armazem_Controller()
         {
-            Console.WriteLine("Botão do armazem");
+            Button button = new Button();
+
+            var Teste = ("Botão do armazem");
         }
     }
 }

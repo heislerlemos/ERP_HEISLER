@@ -1,3 +1,5 @@
+using ERP_HEISLER.Controller;
+
 namespace ERP_HEISLER
 {
     public partial class Main : Form
@@ -62,6 +64,16 @@ namespace ERP_HEISLER
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Armazem_Controller Armazem_Controller = new Armazem_Controller();
         }
     }
 }
