@@ -2,8 +2,10 @@ using ERP_HEISLER.Controller;
 
 namespace ERP_HEISLER
 {
+
     public partial class Main : Form
     {
+
 
 
         List<Panel> listPanel = new List<Panel>();
@@ -11,12 +13,24 @@ namespace ERP_HEISLER
         public Main()
         {
             InitializeComponent();
+
         }
+
+
+        public string TextBox1Text
+        {
+            get { return textBox1.Text; }
+            set { textBox1.Text = value; }
+        }
+
 
         private void armazemToolStripMenuItem_Click(object sender, EventArgs e)
         {
             listPanel.Add(armazem);
             armazem.BringToFront();
+            
+            
+           
         }
 
         private void contabilidade_Paint(object sender, PaintEventArgs e)
@@ -73,7 +87,29 @@ namespace ERP_HEISLER
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Armazem_Controller Armazem_Controller = new Armazem_Controller();
+            Armazem_Controller.debug("Heisler");
+            Rh_Controller.debug("Bryan");
+
+
+        }
+
+        private void recursoshumanos_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

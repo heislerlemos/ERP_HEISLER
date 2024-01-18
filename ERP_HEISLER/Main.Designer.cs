@@ -1,6 +1,6 @@
 ﻿namespace ERP_HEISLER
 {
-    partial class Main
+    partial class Main 
     {
         /// <summary>
         ///  Required designer variable.
@@ -33,8 +33,11 @@
             recursosHumanosToolStripMenuItem = new ToolStripMenuItem();
             armazemToolStripMenuItem = new ToolStripMenuItem();
             contabilidade = new Panel();
+            button3 = new Button();
             label1 = new Label();
             recursoshumanos = new Panel();
+            button2 = new Button();
+            button1 = new Button();
             dateTimePicker2 = new DateTimePicker();
             dateTimePicker1 = new DateTimePicker();
             label8 = new Label();
@@ -48,8 +51,6 @@
             label2 = new Label();
             armazem = new Panel();
             label3 = new Label();
-            button1 = new Button();
-            button2 = new Button();
             menuStrip1.SuspendLayout();
             contabilidade.SuspendLayout();
             recursoshumanos.SuspendLayout();
@@ -90,12 +91,23 @@
             // contabilidade
             // 
             contabilidade.BackColor = SystemColors.ActiveCaption;
+            contabilidade.Controls.Add(button3);
             contabilidade.Controls.Add(label1);
             contabilidade.Location = new Point(26, 46);
             contabilidade.Name = "contabilidade";
             contabilidade.Size = new Size(746, 348);
             contabilidade.TabIndex = 1;
             contabilidade.Paint += contabilidade_Paint;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(406, 89);
+            button3.Name = "button3";
+            button3.Size = new Size(94, 29);
+            button3.TabIndex = 1;
+            button3.Text = "button3";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // label1
             // 
@@ -127,6 +139,27 @@
             recursoshumanos.Name = "recursoshumanos";
             recursoshumanos.Size = new Size(749, 348);
             recursoshumanos.TabIndex = 2;
+            recursoshumanos.Paint += recursoshumanos_Paint;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(422, 272);
+            button2.Name = "button2";
+            button2.Size = new Size(94, 29);
+            button2.TabIndex = 12;
+            button2.Text = "Submeter";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(43, 272);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 11;
+            button1.Text = "Submeter";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // dateTimePicker2
             // 
@@ -174,6 +207,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(295, 27);
             textBox1.TabIndex = 5;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // label6
             // 
@@ -243,26 +277,6 @@
             label3.Text = "Armazem";
             label3.Click += label3_Click;
             // 
-            // button1
-            // 
-            button1.Location = new Point(43, 272);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 11;
-            button1.Text = "Submeter";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(422, 272);
-            button2.Name = "button2";
-            button2.Size = new Size(94, 29);
-            button2.TabIndex = 12;
-            button2.Text = "Submeter";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
-            // 
             // Main
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -302,7 +316,6 @@
         private Label label4;
         private Label Nome;
         private TextBox textBox2;
-        private TextBox textBox1;
         private Label label6;
         private Label label5;
         private DateTimePicker dateTimePicker2;
@@ -311,5 +324,7 @@
         private Label label7;
         private Button button2;
         private Button button1;
+        private Button button3;
+        public TextBox textBox1;
     }
 }
