@@ -28,9 +28,9 @@ namespace ERP_HEISLER
         {
             listPanel.Add(armazem);
             armazem.BringToFront();
-            
-            
-           
+
+
+
         }
 
         private void contabilidade_Paint(object sender, PaintEventArgs e)
@@ -108,6 +108,11 @@ namespace ERP_HEISLER
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
         {
 
         }
