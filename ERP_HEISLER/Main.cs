@@ -82,15 +82,12 @@ namespace ERP_HEISLER
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Rh_Controller.remover();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Armazem_Controller.debug("Heisler");
-            Rh_Controller.debug("Bryan");
-
-
+            Rh_Controller.adicionar();
         }
 
         private void recursoshumanos_Paint(object sender, PaintEventArgs e)
@@ -113,6 +110,16 @@ namespace ERP_HEISLER
         }
 
         private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
         {
 
         }

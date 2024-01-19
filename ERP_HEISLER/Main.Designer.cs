@@ -33,6 +33,15 @@
             recursosHumanosToolStripMenuItem = new ToolStripMenuItem();
             armazemToolStripMenuItem = new ToolStripMenuItem();
             contabilidade = new Panel();
+            visualizar_movimentos_contabilidade = new Button();
+            richTextBox3 = new RichTextBox();
+            label10 = new Label();
+            dateTimePicker3 = new DateTimePicker();
+            data_contabilidade = new Label();
+            richTextBox2 = new RichTextBox();
+            produto_contabilidade = new Label();
+            richTextBox1 = new RichTextBox();
+            label9 = new Label();
             Submeter_contabilidade = new Button();
             label1 = new Label();
             recursoshumanos = new Panel();
@@ -50,27 +59,18 @@
             Nome = new Label();
             label2 = new Label();
             armazem = new Panel();
-            label3 = new Label();
-            label9 = new Label();
-            richTextBox1 = new RichTextBox();
-            produto_contabilidade = new Label();
-            richTextBox2 = new RichTextBox();
-            data_contabilidade = new Label();
-            dateTimePicker3 = new DateTimePicker();
-            label10 = new Label();
-            richTextBox3 = new RichTextBox();
-            visualizar_movimentos_contabilidade = new Button();
-            label11 = new Label();
-            richTextBox4 = new RichTextBox();
-            marca_do_produto = new Label();
-            richTextBox5 = new RichTextBox();
-            label12 = new Label();
-            richTextBox6 = new RichTextBox();
-            label13 = new Label();
-            richTextBox7 = new RichTextBox();
-            data = new Label();
-            dateTimePicker4 = new DateTimePicker();
             submeter_dados = new Button();
+            dateTimePicker4 = new DateTimePicker();
+            data = new Label();
+            richTextBox7 = new RichTextBox();
+            label13 = new Label();
+            richTextBox6 = new RichTextBox();
+            label12 = new Label();
+            richTextBox5 = new RichTextBox();
+            marca_do_produto = new Label();
+            richTextBox4 = new RichTextBox();
+            label11 = new Label();
+            label3 = new Label();
             menuStrip1.SuspendLayout();
             contabilidade.SuspendLayout();
             recursoshumanos.SuspendLayout();
@@ -127,6 +127,82 @@
             contabilidade.Size = new Size(746, 348);
             contabilidade.TabIndex = 1;
             contabilidade.Paint += contabilidade_Paint;
+            // 
+            // visualizar_movimentos_contabilidade
+            // 
+            visualizar_movimentos_contabilidade.Location = new Point(559, 16);
+            visualizar_movimentos_contabilidade.Name = "visualizar_movimentos_contabilidade";
+            visualizar_movimentos_contabilidade.Size = new Size(94, 29);
+            visualizar_movimentos_contabilidade.TabIndex = 10;
+            visualizar_movimentos_contabilidade.Text = "Visualizar";
+            visualizar_movimentos_contabilidade.UseVisualStyleBackColor = true;
+            // 
+            // richTextBox3
+            // 
+            richTextBox3.Location = new Point(349, 60);
+            richTextBox3.Name = "richTextBox3";
+            richTextBox3.Size = new Size(351, 255);
+            richTextBox3.TabIndex = 9;
+            richTextBox3.Text = "";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(349, 18);
+            label10.Name = "label10";
+            label10.Size = new Size(192, 20);
+            label10.TabIndex = 8;
+            label10.Text = "Movimentos Contabilisticos";
+            // 
+            // dateTimePicker3
+            // 
+            dateTimePicker3.Location = new Point(26, 250);
+            dateTimePicker3.Name = "dateTimePicker3";
+            dateTimePicker3.Size = new Size(250, 27);
+            dateTimePicker3.TabIndex = 7;
+            // 
+            // data_contabilidade
+            // 
+            data_contabilidade.AutoSize = true;
+            data_contabilidade.Location = new Point(27, 222);
+            data_contabilidade.Name = "data_contabilidade";
+            data_contabilidade.Size = new Size(41, 20);
+            data_contabilidade.TabIndex = 6;
+            data_contabilidade.Text = "Data";
+            // 
+            // richTextBox2
+            // 
+            richTextBox2.Location = new Point(26, 162);
+            richTextBox2.Name = "richTextBox2";
+            richTextBox2.Size = new Size(148, 28);
+            richTextBox2.TabIndex = 5;
+            richTextBox2.Text = "";
+            // 
+            // produto_contabilidade
+            // 
+            produto_contabilidade.AutoSize = true;
+            produto_contabilidade.Location = new Point(26, 120);
+            produto_contabilidade.Name = "produto_contabilidade";
+            produto_contabilidade.Size = new Size(62, 20);
+            produto_contabilidade.TabIndex = 4;
+            produto_contabilidade.Text = "Produto";
+            // 
+            // richTextBox1
+            // 
+            richTextBox1.Location = new Point(26, 67);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.Size = new Size(82, 30);
+            richTextBox1.TabIndex = 3;
+            richTextBox1.Text = "";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(26, 43);
+            label9.Name = "label9";
+            label9.Size = new Size(43, 20);
+            label9.TabIndex = 2;
+            label9.Text = "Valor";
             // 
             // Submeter_contabilidade
             // 
@@ -196,6 +272,7 @@
             dateTimePicker2.Name = "dateTimePicker2";
             dateTimePicker2.Size = new Size(264, 27);
             dateTimePicker2.TabIndex = 10;
+            dateTimePicker2.ValueChanged += dateTimePicker2_ValueChanged;
             // 
             // dateTimePicker1
             // 
@@ -203,6 +280,7 @@
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(264, 27);
             dateTimePicker1.TabIndex = 9;
+            dateTimePicker1.ValueChanged += dateTimePicker1_ValueChanged;
             // 
             // label8
             // 
@@ -307,108 +385,72 @@
             armazem.TabIndex = 3;
             armazem.Paint += panel1_Paint;
             // 
-            // label3
+            // submeter_dados
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(27, 18);
-            label3.Name = "label3";
-            label3.Size = new Size(73, 20);
-            label3.TabIndex = 0;
-            label3.Text = "Armazem";
-            label3.Click += label3_Click;
+            submeter_dados.Location = new Point(438, 270);
+            submeter_dados.Name = "submeter_dados";
+            submeter_dados.Size = new Size(94, 29);
+            submeter_dados.TabIndex = 11;
+            submeter_dados.Text = "submeter";
+            submeter_dados.UseVisualStyleBackColor = true;
             // 
-            // label9
+            // dateTimePicker4
             // 
-            label9.AutoSize = true;
-            label9.Location = new Point(26, 43);
-            label9.Name = "label9";
-            label9.Size = new Size(43, 20);
-            label9.TabIndex = 2;
-            label9.Text = "Valor";
+            dateTimePicker4.Location = new Point(436, 207);
+            dateTimePicker4.Name = "dateTimePicker4";
+            dateTimePicker4.Size = new Size(250, 27);
+            dateTimePicker4.TabIndex = 10;
             // 
-            // richTextBox1
+            // data
             // 
-            richTextBox1.Location = new Point(26, 67);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(82, 30);
-            richTextBox1.TabIndex = 3;
-            richTextBox1.Text = "";
+            data.AutoSize = true;
+            data.Location = new Point(436, 167);
+            data.Name = "data";
+            data.Size = new Size(41, 20);
+            data.TabIndex = 9;
+            data.Text = "Data";
             // 
-            // produto_contabilidade
+            // richTextBox7
             // 
-            produto_contabilidade.AutoSize = true;
-            produto_contabilidade.Location = new Point(26, 120);
-            produto_contabilidade.Name = "produto_contabilidade";
-            produto_contabilidade.Size = new Size(62, 20);
-            produto_contabilidade.TabIndex = 4;
-            produto_contabilidade.Text = "Produto";
+            richTextBox7.Location = new Point(436, 117);
+            richTextBox7.Name = "richTextBox7";
+            richTextBox7.Size = new Size(45, 34);
+            richTextBox7.TabIndex = 8;
+            richTextBox7.Text = "";
             // 
-            // richTextBox2
+            // label13
             // 
-            richTextBox2.Location = new Point(26, 162);
-            richTextBox2.Name = "richTextBox2";
-            richTextBox2.Size = new Size(148, 28);
-            richTextBox2.TabIndex = 5;
-            richTextBox2.Text = "";
+            label13.AutoSize = true;
+            label13.Location = new Point(422, 74);
+            label13.Name = "label13";
+            label13.Size = new Size(87, 20);
+            label13.TabIndex = 7;
+            label13.Text = "Quantidade";
             // 
-            // data_contabilidade
+            // richTextBox6
             // 
-            data_contabilidade.AutoSize = true;
-            data_contabilidade.Location = new Point(27, 222);
-            data_contabilidade.Name = "data_contabilidade";
-            data_contabilidade.Size = new Size(41, 20);
-            data_contabilidade.TabIndex = 6;
-            data_contabilidade.Text = "Data";
+            richTextBox6.Location = new Point(18, 292);
+            richTextBox6.Name = "richTextBox6";
+            richTextBox6.Size = new Size(247, 31);
+            richTextBox6.TabIndex = 6;
+            richTextBox6.Text = "";
             // 
-            // dateTimePicker3
+            // label12
             // 
-            dateTimePicker3.Location = new Point(26, 250);
-            dateTimePicker3.Name = "dateTimePicker3";
-            dateTimePicker3.Size = new Size(250, 27);
-            dateTimePicker3.TabIndex = 7;
+            label12.AutoSize = true;
+            label12.Location = new Point(20, 254);
+            label12.Name = "label12";
+            label12.Size = new Size(121, 20);
+            label12.TabIndex = 5;
+            label12.Text = "Numero de Serie";
             // 
-            // label10
+            // richTextBox5
             // 
-            label10.AutoSize = true;
-            label10.Location = new Point(349, 18);
-            label10.Name = "label10";
-            label10.Size = new Size(192, 20);
-            label10.TabIndex = 8;
-            label10.Text = "Movimentos Contabilisticos";
-            // 
-            // richTextBox3
-            // 
-            richTextBox3.Location = new Point(349, 60);
-            richTextBox3.Name = "richTextBox3";
-            richTextBox3.Size = new Size(351, 255);
-            richTextBox3.TabIndex = 9;
-            richTextBox3.Text = "";
-            // 
-            // visualizar_movimentos_contabilidade
-            // 
-            visualizar_movimentos_contabilidade.Location = new Point(559, 16);
-            visualizar_movimentos_contabilidade.Name = "visualizar_movimentos_contabilidade";
-            visualizar_movimentos_contabilidade.Size = new Size(94, 29);
-            visualizar_movimentos_contabilidade.TabIndex = 10;
-            visualizar_movimentos_contabilidade.Text = "Visualizar";
-            visualizar_movimentos_contabilidade.UseVisualStyleBackColor = true;
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Location = new Point(20, 77);
-            label11.Name = "label11";
-            label11.Size = new Size(129, 20);
-            label11.TabIndex = 1;
-            label11.Text = "Nome do Produto";
-            // 
-            // richTextBox4
-            // 
-            richTextBox4.Location = new Point(20, 118);
-            richTextBox4.Name = "richTextBox4";
-            richTextBox4.Size = new Size(245, 34);
-            richTextBox4.TabIndex = 2;
-            richTextBox4.Text = "";
+            richTextBox5.Location = new Point(20, 207);
+            richTextBox5.Name = "richTextBox5";
+            richTextBox5.Size = new Size(248, 30);
+            richTextBox5.TabIndex = 4;
+            richTextBox5.Text = "";
             // 
             // marca_do_produto
             // 
@@ -420,72 +462,32 @@
             marca_do_produto.Text = "Marca";
             marca_do_produto.Click += label12_Click;
             // 
-            // richTextBox5
+            // richTextBox4
             // 
-            richTextBox5.Location = new Point(20, 207);
-            richTextBox5.Name = "richTextBox5";
-            richTextBox5.Size = new Size(248, 30);
-            richTextBox5.TabIndex = 4;
-            richTextBox5.Text = "";
+            richTextBox4.Location = new Point(20, 118);
+            richTextBox4.Name = "richTextBox4";
+            richTextBox4.Size = new Size(245, 34);
+            richTextBox4.TabIndex = 2;
+            richTextBox4.Text = "";
             // 
-            // label12
+            // label11
             // 
-            label12.AutoSize = true;
-            label12.Location = new Point(20, 254);
-            label12.Name = "label12";
-            label12.Size = new Size(121, 20);
-            label12.TabIndex = 5;
-            label12.Text = "Numero de Serie";
+            label11.AutoSize = true;
+            label11.Location = new Point(20, 77);
+            label11.Name = "label11";
+            label11.Size = new Size(129, 20);
+            label11.TabIndex = 1;
+            label11.Text = "Nome do Produto";
             // 
-            // richTextBox6
+            // label3
             // 
-            richTextBox6.Location = new Point(18, 292);
-            richTextBox6.Name = "richTextBox6";
-            richTextBox6.Size = new Size(247, 31);
-            richTextBox6.TabIndex = 6;
-            richTextBox6.Text = "";
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Location = new Point(422, 74);
-            label13.Name = "label13";
-            label13.Size = new Size(87, 20);
-            label13.TabIndex = 7;
-            label13.Text = "Quantidade";
-            // 
-            // richTextBox7
-            // 
-            richTextBox7.Location = new Point(436, 117);
-            richTextBox7.Name = "richTextBox7";
-            richTextBox7.Size = new Size(45, 34);
-            richTextBox7.TabIndex = 8;
-            richTextBox7.Text = "";
-            // 
-            // data
-            // 
-            data.AutoSize = true;
-            data.Location = new Point(436, 167);
-            data.Name = "data";
-            data.Size = new Size(41, 20);
-            data.TabIndex = 9;
-            data.Text = "Data";
-            // 
-            // dateTimePicker4
-            // 
-            dateTimePicker4.Location = new Point(436, 207);
-            dateTimePicker4.Name = "dateTimePicker4";
-            dateTimePicker4.Size = new Size(250, 27);
-            dateTimePicker4.TabIndex = 10;
-            // 
-            // submeter_dados
-            // 
-            submeter_dados.Location = new Point(438, 270);
-            submeter_dados.Name = "submeter_dados";
-            submeter_dados.Size = new Size(94, 29);
-            submeter_dados.TabIndex = 11;
-            submeter_dados.Text = "submeter";
-            submeter_dados.UseVisualStyleBackColor = true;
+            label3.AutoSize = true;
+            label3.Location = new Point(27, 18);
+            label3.Name = "label3";
+            label3.Size = new Size(73, 20);
+            label3.TabIndex = 0;
+            label3.Text = "Armazem";
+            label3.Click += label3_Click;
             // 
             // Main
             // 
@@ -525,11 +527,8 @@
         private Label label3;
         private Label label4;
         private Label Nome;
-        private TextBox textBox2;
         private Label label6;
         private Label label5;
-        private DateTimePicker dateTimePicker2;
-        private DateTimePicker dateTimePicker1;
         private Label label8;
         private Label label7;
         private Button button2;
@@ -556,5 +555,8 @@
         private RichTextBox richTextBox6;
         private Label label12;
         private Button submeter_dados;
+        public DateTimePicker dateTimePicker1;
+        public TextBox textBox2;
+        public DateTimePicker dateTimePicker2;
     }
 }
