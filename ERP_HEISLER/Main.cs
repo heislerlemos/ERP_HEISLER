@@ -97,6 +97,8 @@ namespace ERP_HEISLER
 
         private void button3_Click(object sender, EventArgs e)
         {
+           
+            Contabilidade_Controller.adicionarcontas();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -151,7 +153,9 @@ namespace ERP_HEISLER
 
         private void submeter_dados_Click(object sender, EventArgs e)
         {
-            Armazem_Controller.adicionarproduto();
+            Armazem_Controller.adicionarproductodb();
+
+
         }
     }
 }

@@ -390,7 +390,7 @@
             // 
             // submeter_dados
             // 
-            submeter_dados.Location = new Point(438, 270);
+            submeter_dados.Location = new Point(436, 286);
             submeter_dados.Name = "submeter_dados";
             submeter_dados.Size = new Size(94, 29);
             submeter_dados.TabIndex = 11;
@@ -400,7 +400,7 @@
             // 
             // data_de_criaçao
             // 
-            data_de_criaçao.Location = new Point(436, 207);
+            data_de_criaçao.Location = new Point(436, 205);
             data_de_criaçao.Name = "data_de_criaçao";
             data_de_criaçao.Size = new Size(250, 27);
             data_de_criaçao.TabIndex = 10;
