@@ -123,5 +123,35 @@ namespace ERP_HEISLER
         {
 
         }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker3_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void richTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void richTextBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void richTextBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void submeter_dados_Click(object sender, EventArgs e)
+        {
+            Armazem_Controller.adicionarproduto();
+        }
     }
 }

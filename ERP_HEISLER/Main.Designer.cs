@@ -60,7 +60,7 @@
             label2 = new Label();
             armazem = new Panel();
             submeter_dados = new Button();
-            dateTimePicker4 = new DateTimePicker();
+            data_de_criaçao = new DateTimePicker();
             data = new Label();
             richTextBox7 = new RichTextBox();
             label13 = new Label();
@@ -83,7 +83,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { contabilidadeToolStripMenuItem, recursosHumanosToolStripMenuItem, armazemToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 28);
+            menuStrip1.Size = new Size(1397, 28);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -110,7 +110,7 @@
             // 
             // contabilidade
             // 
-            contabilidade.BackColor = SystemColors.ControlLight;
+            contabilidade.BackColor = SystemColors.Control;
             contabilidade.Controls.Add(visualizar_movimentos_contabilidade);
             contabilidade.Controls.Add(richTextBox3);
             contabilidade.Controls.Add(label10);
@@ -122,9 +122,9 @@
             contabilidade.Controls.Add(label9);
             contabilidade.Controls.Add(Submeter_contabilidade);
             contabilidade.Controls.Add(label1);
-            contabilidade.Location = new Point(23, 43);
+            contabilidade.Location = new Point(22, 57);
             contabilidade.Name = "contabilidade";
-            contabilidade.Size = new Size(746, 348);
+            contabilidade.Size = new Size(1343, 629);
             contabilidade.TabIndex = 1;
             contabilidade.Paint += contabilidade_Paint;
             // 
@@ -160,6 +160,7 @@
             dateTimePicker3.Name = "dateTimePicker3";
             dateTimePicker3.Size = new Size(250, 27);
             dateTimePicker3.TabIndex = 7;
+            dateTimePicker3.ValueChanged += dateTimePicker3_ValueChanged;
             // 
             // data_contabilidade
             // 
@@ -177,6 +178,7 @@
             richTextBox2.Size = new Size(148, 28);
             richTextBox2.TabIndex = 5;
             richTextBox2.Text = "";
+            richTextBox2.TextChanged += richTextBox2_TextChanged;
             // 
             // produto_contabilidade
             // 
@@ -194,6 +196,7 @@
             richTextBox1.Size = new Size(82, 30);
             richTextBox1.TabIndex = 3;
             richTextBox1.Text = "";
+            richTextBox1.TextChanged += richTextBox1_TextChanged;
             // 
             // label9
             // 
@@ -226,7 +229,7 @@
             // 
             // recursoshumanos
             // 
-            recursoshumanos.BackColor = SystemColors.ControlLight;
+            recursoshumanos.BackColor = SystemColors.Control;
             recursoshumanos.Controls.Add(button2);
             recursoshumanos.Controls.Add(button1);
             recursoshumanos.Controls.Add(dateTimePicker2);
@@ -240,9 +243,9 @@
             recursoshumanos.Controls.Add(label4);
             recursoshumanos.Controls.Add(Nome);
             recursoshumanos.Controls.Add(label2);
-            recursoshumanos.Location = new Point(23, 46);
+            recursoshumanos.Location = new Point(22, 57);
             recursoshumanos.Name = "recursoshumanos";
-            recursoshumanos.Size = new Size(749, 348);
+            recursoshumanos.Size = new Size(1346, 632);
             recursoshumanos.TabIndex = 2;
             recursoshumanos.Paint += recursoshumanos_Paint;
             // 
@@ -365,9 +368,9 @@
             // 
             // armazem
             // 
-            armazem.BackColor = SystemColors.HighlightText;
+            armazem.BackColor = SystemColors.Control;
             armazem.Controls.Add(submeter_dados);
-            armazem.Controls.Add(dateTimePicker4);
+            armazem.Controls.Add(data_de_criaçao);
             armazem.Controls.Add(data);
             armazem.Controls.Add(richTextBox7);
             armazem.Controls.Add(label13);
@@ -379,9 +382,9 @@
             armazem.Controls.Add(label11);
             armazem.Controls.Add(label3);
             armazem.ForeColor = SystemColors.ActiveCaptionText;
-            armazem.Location = new Point(23, 46);
+            armazem.Location = new Point(22, 57);
             armazem.Name = "armazem";
-            armazem.Size = new Size(749, 348);
+            armazem.Size = new Size(1363, 632);
             armazem.TabIndex = 3;
             armazem.Paint += panel1_Paint;
             // 
@@ -393,13 +396,14 @@
             submeter_dados.TabIndex = 11;
             submeter_dados.Text = "submeter";
             submeter_dados.UseVisualStyleBackColor = true;
+            submeter_dados.Click += submeter_dados_Click;
             // 
-            // dateTimePicker4
+            // data_de_criaçao
             // 
-            dateTimePicker4.Location = new Point(436, 207);
-            dateTimePicker4.Name = "dateTimePicker4";
-            dateTimePicker4.Size = new Size(250, 27);
-            dateTimePicker4.TabIndex = 10;
+            data_de_criaçao.Location = new Point(436, 207);
+            data_de_criaçao.Name = "data_de_criaçao";
+            data_de_criaçao.Size = new Size(250, 27);
+            data_de_criaçao.TabIndex = 10;
             // 
             // data
             // 
@@ -417,6 +421,7 @@
             richTextBox7.Size = new Size(45, 34);
             richTextBox7.TabIndex = 8;
             richTextBox7.Text = "";
+            richTextBox7.TextChanged += richTextBox7_TextChanged;
             // 
             // label13
             // 
@@ -434,6 +439,7 @@
             richTextBox6.Size = new Size(247, 31);
             richTextBox6.TabIndex = 6;
             richTextBox6.Text = "";
+            richTextBox6.TextChanged += richTextBox6_TextChanged;
             // 
             // label12
             // 
@@ -493,11 +499,11 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1397, 747);
             Controls.Add(menuStrip1);
+            Controls.Add(armazem);
             Controls.Add(recursoshumanos);
             Controls.Add(contabilidade);
-            Controls.Add(armazem);
             MainMenuStrip = menuStrip1;
             Name = "Main";
             Text = "HEISLER ERP";
@@ -536,27 +542,28 @@
         private Button Submeter_contabilidade;
         public TextBox textBox1;
         private Label label9;
-        private RichTextBox richTextBox2;
         private Label produto_contabilidade;
-        private RichTextBox richTextBox1;
         private Label data_contabilidade;
         private Button visualizar_movimentos_contabilidade;
         private RichTextBox richTextBox3;
         private Label label10;
-        private DateTimePicker dateTimePicker3;
         private Label marca_do_produto;
-        private RichTextBox richTextBox4;
         private Label label11;
-        private RichTextBox richTextBox5;
         private DateTimePicker dateTimePicker4;
         private Label data;
-        private RichTextBox richTextBox7;
         private Label label13;
-        private RichTextBox richTextBox6;
         private Label label12;
         private Button submeter_dados;
         public DateTimePicker dateTimePicker1;
-        public TextBox textBox2;
         public DateTimePicker dateTimePicker2;
+        public RichTextBox richTextBox2;
+        public RichTextBox richTextBox1;
+        public DateTimePicker dateTimePicker3;
+        public RichTextBox richTextBox4;
+        public RichTextBox richTextBox5;
+        public RichTextBox richTextBox6;
+        public RichTextBox richTextBox7;
+        public DateTimePicker data_de_criaçao;
+        public TextBox textBox2;
     }
 }
