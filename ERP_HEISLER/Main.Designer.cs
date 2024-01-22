@@ -59,6 +59,9 @@
             Nome = new Label();
             label2 = new Label();
             armazem = new Panel();
+            button3 = new Button();
+            Stock = new Label();
+            richTextBox8 = new RichTextBox();
             submeter_dados = new Button();
             data_de_criaçao = new DateTimePicker();
             data = new Label();
@@ -122,15 +125,15 @@
             contabilidade.Controls.Add(label9);
             contabilidade.Controls.Add(Submeter_contabilidade);
             contabilidade.Controls.Add(label1);
-            contabilidade.Location = new Point(22, 57);
+            contabilidade.Location = new Point(0, 26);
             contabilidade.Name = "contabilidade";
-            contabilidade.Size = new Size(1343, 629);
+            contabilidade.Size = new Size(1407, 660);
             contabilidade.TabIndex = 1;
             contabilidade.Paint += contabilidade_Paint;
             // 
             // visualizar_movimentos_contabilidade
             // 
-            visualizar_movimentos_contabilidade.Location = new Point(559, 16);
+            visualizar_movimentos_contabilidade.Location = new Point(553, 14);
             visualizar_movimentos_contabilidade.Name = "visualizar_movimentos_contabilidade";
             visualizar_movimentos_contabilidade.Size = new Size(94, 29);
             visualizar_movimentos_contabilidade.TabIndex = 10;
@@ -139,16 +142,16 @@
             // 
             // richTextBox3
             // 
-            richTextBox3.Location = new Point(349, 60);
+            richTextBox3.Location = new Point(359, 49);
             richTextBox3.Name = "richTextBox3";
-            richTextBox3.Size = new Size(351, 255);
+            richTextBox3.Size = new Size(958, 478);
             richTextBox3.TabIndex = 9;
             richTextBox3.Text = "";
             // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(349, 18);
+            label10.Location = new Point(324, 18);
             label10.Name = "label10";
             label10.Size = new Size(192, 20);
             label10.TabIndex = 8;
@@ -243,9 +246,9 @@
             recursoshumanos.Controls.Add(label4);
             recursoshumanos.Controls.Add(Nome);
             recursoshumanos.Controls.Add(label2);
-            recursoshumanos.Location = new Point(22, 57);
+            recursoshumanos.Location = new Point(0, 26);
             recursoshumanos.Name = "recursoshumanos";
-            recursoshumanos.Size = new Size(1346, 632);
+            recursoshumanos.Size = new Size(1368, 663);
             recursoshumanos.TabIndex = 2;
             recursoshumanos.Paint += recursoshumanos_Paint;
             // 
@@ -369,6 +372,9 @@
             // armazem
             // 
             armazem.BackColor = SystemColors.Control;
+            armazem.Controls.Add(button3);
+            armazem.Controls.Add(Stock);
+            armazem.Controls.Add(richTextBox8);
             armazem.Controls.Add(submeter_dados);
             armazem.Controls.Add(data_de_criaçao);
             armazem.Controls.Add(data);
@@ -382,11 +388,37 @@
             armazem.Controls.Add(label11);
             armazem.Controls.Add(label3);
             armazem.ForeColor = SystemColors.ActiveCaptionText;
-            armazem.Location = new Point(22, 57);
+            armazem.Location = new Point(0, 29);
             armazem.Name = "armazem";
-            armazem.Size = new Size(1363, 632);
+            armazem.Size = new Size(1410, 660);
             armazem.TabIndex = 3;
             armazem.Paint += panel1_Paint;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(872, 6);
+            button3.Name = "button3";
+            button3.Size = new Size(94, 29);
+            button3.TabIndex = 14;
+            button3.Text = "Visualizar stock ";
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // Stock
+            // 
+            Stock.AutoSize = true;
+            Stock.Location = new Point(719, 10);
+            Stock.Name = "Stock";
+            Stock.Size = new Size(110, 20);
+            Stock.TabIndex = 13;
+            Stock.Text = "visualizar_stock";
+            // 
+            // richTextBox8
+            // 
+            richTextBox8.Location = new Point(692, 40);
+            richTextBox8.Name = "richTextBox8";
+            richTextBox8.Size = new Size(635, 545);
+            richTextBox8.TabIndex = 12;
+            richTextBox8.Text = "";
             // 
             // submeter_dados
             // 
@@ -499,11 +531,12 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.RosyBrown;
             ClientSize = new Size(1397, 747);
             Controls.Add(menuStrip1);
+            Controls.Add(contabilidade);
             Controls.Add(armazem);
             Controls.Add(recursoshumanos);
-            Controls.Add(contabilidade);
             MainMenuStrip = menuStrip1;
             Name = "Main";
             Text = "HEISLER ERP";
@@ -565,5 +598,8 @@
         public RichTextBox richTextBox7;
         public DateTimePicker data_de_criaçao;
         public TextBox textBox2;
+        private Label Stock;
+        private RichTextBox richTextBox8;
+        private Button button3;
     }
 }

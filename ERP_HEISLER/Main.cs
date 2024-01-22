@@ -97,8 +97,8 @@ namespace ERP_HEISLER
 
         private void button3_Click(object sender, EventArgs e)
         {
-           
-            Contabilidade_Controller.adicionarcontas();
+
+            Contabilidade_Controller.adicionarcontasdb();
         }
 
         private void button4_Click(object sender, EventArgs e)
