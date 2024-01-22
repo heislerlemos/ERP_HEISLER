@@ -82,7 +82,7 @@ namespace ERP_HEISLER
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Rh_Controller.remover();
+            Rh_Controller.removerdb();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -159,6 +159,11 @@ namespace ERP_HEISLER
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
         {
 
         }

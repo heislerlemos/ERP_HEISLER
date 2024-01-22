@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Security.Cryptography.X509Certificates;
@@ -101,7 +102,21 @@ namespace ERP_HEISLER.Controller
 
            if (f1 == null) {
                 throw new ArgumentNullException("não pode ser nulo");
-            }
+           }
+
+            string nome_do_funcionario = f1.textBox2.Text;
+            string data_de_criacao = f1.dateTimePicker2.Value.ToString("yyyy-MM-dd");
+            string nif = f1.textBox4.Text;
+            string ConnectionString = "Data Source=0191-L1\\SQLEXPRESS;Initial Catalog=ERP;Persist Security Info=True;User ID=dev;Password=Reh6quo0;";
+            SqlConnection con = new SqlConnection(ConnectionString);
+            con.Open();
+
+            string Query = "INSERT INTO rh_remover (id, nome, nif, apagado)" +
+                " VALUES (1 , '" + nome_do_funcionario + "', '" + nif + "', '" + data_de_criacao + "')";
+
+            SqlCommand cmd = new SqlCommand(Query, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
         }
     }
 }

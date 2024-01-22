@@ -45,6 +45,8 @@
             Submeter_contabilidade = new Button();
             label1 = new Label();
             recursoshumanos = new Panel();
+            textBox3 = new TextBox();
+            label14 = new Label();
             button2 = new Button();
             button1 = new Button();
             dateTimePicker2 = new DateTimePicker();
@@ -74,8 +76,8 @@
             richTextBox4 = new RichTextBox();
             label11 = new Label();
             label3 = new Label();
-            label14 = new Label();
-            textBox3 = new TextBox();
+            textBox4 = new TextBox();
+            label15 = new Label();
             menuStrip1.SuspendLayout();
             contabilidade.SuspendLayout();
             recursoshumanos.SuspendLayout();
@@ -235,6 +237,8 @@
             // recursoshumanos
             // 
             recursoshumanos.BackColor = SystemColors.Control;
+            recursoshumanos.Controls.Add(textBox4);
+            recursoshumanos.Controls.Add(label15);
             recursoshumanos.Controls.Add(textBox3);
             recursoshumanos.Controls.Add(label14);
             recursoshumanos.Controls.Add(button2);
@@ -256,9 +260,26 @@
             recursoshumanos.TabIndex = 2;
             recursoshumanos.Paint += recursoshumanos_Paint;
             // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(30, 246);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(265, 27);
+            textBox3.TabIndex = 14;
+            textBox3.TextChanged += textBox3_TextChanged;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(26, 202);
+            label14.Name = "label14";
+            label14.Size = new Size(31, 20);
+            label14.TabIndex = 13;
+            label14.Text = "NIF";
+            // 
             // button2
             // 
-            button2.Location = new Point(422, 272);
+            button2.Location = new Point(422, 409);
             button2.Name = "button2";
             button2.Size = new Size(94, 29);
             button2.TabIndex = 12;
@@ -278,7 +299,7 @@
             // 
             // dateTimePicker2
             // 
-            dateTimePicker2.Location = new Point(422, 214);
+            dateTimePicker2.Location = new Point(422, 351);
             dateTimePicker2.Name = "dateTimePicker2";
             dateTimePicker2.Size = new Size(264, 27);
             dateTimePicker2.TabIndex = 10;
@@ -295,7 +316,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(422, 183);
+            label8.Location = new Point(422, 320);
             label8.Name = "label8";
             label8.Size = new Size(41, 20);
             label8.TabIndex = 8;
@@ -531,22 +552,22 @@
             label3.Text = "Armazem";
             label3.Click += label3_Click;
             // 
-            // label14
+            // textBox4
             // 
-            label14.AutoSize = true;
-            label14.Location = new Point(26, 202);
-            label14.Name = "label14";
-            label14.Size = new Size(31, 20);
-            label14.TabIndex = 13;
-            label14.Text = "NIF";
+            textBox4.Location = new Point(421, 246);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(265, 27);
+            textBox4.TabIndex = 16;
+            textBox4.TextChanged += textBox4_TextChanged;
             // 
-            // textBox3
+            // label15
             // 
-            textBox3.Location = new Point(30, 246);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(265, 27);
-            textBox3.TabIndex = 14;
-            textBox3.TextChanged += textBox3_TextChanged;
+            label15.AutoSize = true;
+            label15.Location = new Point(422, 202);
+            label15.Name = "label15";
+            label15.Size = new Size(31, 20);
+            label15.TabIndex = 15;
+            label15.Text = "NIF";
             // 
             // Main
             // 
@@ -624,5 +645,7 @@
         private Button button3;
         private Label label14;
         public TextBox textBox3;
+        public TextBox textBox4;
+        private Label label15;
     }
 }
