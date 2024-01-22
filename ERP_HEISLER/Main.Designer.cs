@@ -74,6 +74,8 @@
             richTextBox4 = new RichTextBox();
             label11 = new Label();
             label3 = new Label();
+            label14 = new Label();
+            textBox3 = new TextBox();
             menuStrip1.SuspendLayout();
             contabilidade.SuspendLayout();
             recursoshumanos.SuspendLayout();
@@ -233,6 +235,8 @@
             // recursoshumanos
             // 
             recursoshumanos.BackColor = SystemColors.Control;
+            recursoshumanos.Controls.Add(textBox3);
+            recursoshumanos.Controls.Add(label14);
             recursoshumanos.Controls.Add(button2);
             recursoshumanos.Controls.Add(button1);
             recursoshumanos.Controls.Add(dateTimePicker2);
@@ -264,7 +268,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(43, 272);
+            button1.Location = new Point(36, 378);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 11;
@@ -282,7 +286,7 @@
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(38, 214);
+            dateTimePicker1.Location = new Point(31, 320);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(264, 27);
             dateTimePicker1.TabIndex = 9;
@@ -300,7 +304,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(31, 183);
+            label7.Location = new Point(24, 289);
             label7.Name = "label7";
             label7.Size = new Size(41, 20);
             label7.TabIndex = 7;
@@ -527,6 +531,23 @@
             label3.Text = "Armazem";
             label3.Click += label3_Click;
             // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(26, 202);
+            label14.Name = "label14";
+            label14.Size = new Size(31, 20);
+            label14.TabIndex = 13;
+            label14.Text = "NIF";
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(30, 246);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(265, 27);
+            textBox3.TabIndex = 14;
+            textBox3.TextChanged += textBox3_TextChanged;
+            // 
             // Main
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -534,9 +555,9 @@
             BackColor = Color.RosyBrown;
             ClientSize = new Size(1397, 747);
             Controls.Add(menuStrip1);
+            Controls.Add(recursoshumanos);
             Controls.Add(contabilidade);
             Controls.Add(armazem);
-            Controls.Add(recursoshumanos);
             MainMenuStrip = menuStrip1;
             Name = "Main";
             Text = "HEISLER ERP";
@@ -601,5 +622,7 @@
         private Label Stock;
         private RichTextBox richTextBox8;
         private Button button3;
+        private Label label14;
+        public TextBox textBox3;
     }
 }

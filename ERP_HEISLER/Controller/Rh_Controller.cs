@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Security.Cryptography.X509Certificates;
@@ -40,6 +41,33 @@ namespace ERP_HEISLER.Controller
         }   
         
 
+
+        public static void adicionardb()
+        {
+            if (f1 == null)
+            {
+                throw new ArgumentNullException("não pode ser null");
+            }
+
+
+            string nome_do_funcionario = f1.textBox1.Text;
+            string numero_de_serie = f1.textBox3.Text;
+            string data_de_criacao = f1.dateTimePicker1.Value.ToString("yyyy-MM-dd");
+
+            string ConnectionString = "Data Source=0191-L1\\SQLEXPRESS;Initial Catalog=ERP;Persist Security Info=True;User ID=dev;Password=Reh6quo0;";
+            SqlConnection con = new SqlConnection(ConnectionString);
+            con.Open();
+
+            string Query = "INSERT INTO rh_adicionar (id, nome, nif, criado)" +
+                " VALUES (2 , '" + nome_do_funcionario + "', '" + numero_de_serie + "', '" + data_de_criacao+ "')";
+
+            SqlCommand cmd = new SqlCommand(Query, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+
+
+        }
+
         public static void remover()
         {
 
@@ -65,6 +93,15 @@ namespace ERP_HEISLER.Controller
                 MessageBox.Show(e.Message);
             }            
 
+        }
+
+
+        public static void removerdb()
+        {
+
+           if (f1 == null) {
+                throw new ArgumentNullException("não pode ser nulo");
+            }
         }
     }
 }
