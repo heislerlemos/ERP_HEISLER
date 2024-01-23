@@ -1,7 +1,6 @@
 Aplicativo  de Entreprise Recource Planning 
-###############################################
+
 Integra-se  Planeamento ,  Compras , Inventario , Vendas e Recursos Humanos 
-###############################################
 
 Tecnologias :
 
