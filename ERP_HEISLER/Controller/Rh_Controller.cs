@@ -59,11 +59,13 @@ namespace ERP_HEISLER.Controller
             SqlConnection con = new SqlConnection(ConnectionString);
             con.Open();
 
-            string Query = "INSERT INTO rh_adicionar (id, nome, nif, criado)" +
-                " VALUES (2 , '" + nome_do_funcionario + "', '" + numero_de_serie + "', '" + data_de_criacao+ "')";
+            string Query = "INSERT INTO rh_adicionar (  nome, nif, criado)" +
+                " VALUES ( '" + nome_do_funcionario + "', '" + numero_de_serie + "', '" + data_de_criacao+ "')";
 
             SqlCommand cmd = new SqlCommand(Query, con);
             cmd.ExecuteNonQuery();
+
+           
             con.Close();
 
 
@@ -95,8 +97,6 @@ namespace ERP_HEISLER.Controller
             }            
 
         }
-
-
         public static void removerdb()
         {
 
@@ -104,19 +104,34 @@ namespace ERP_HEISLER.Controller
                 throw new ArgumentNullException("não pode ser nulo");
            }
 
+
+
             string nome_do_funcionario = f1.textBox2.Text;
             string data_de_criacao = f1.dateTimePicker2.Value.ToString("yyyy-MM-dd");
             string nif = f1.textBox4.Text;
             string ConnectionString = "Data Source=0191-L1\\SQLEXPRESS;Initial Catalog=ERP;Persist Security Info=True;User ID=dev;Password=Reh6quo0;";
-            SqlConnection con = new SqlConnection(ConnectionString);
+
+
+
+
+        SqlConnection con = new SqlConnection(ConnectionString);
             con.Open();
 
-            string Query = "INSERT INTO rh_remover (id, nome, nif, apagado)" +
-                " VALUES (1 , '" + nome_do_funcionario + "', '" + nif + "', '" + data_de_criacao + "')";
+            string Query = "INSERT INTO rh_remover ( id ,nome, nif, apagado)" +
+                " VALUES ( '"+ generateId() +"' ,  '" + nome_do_funcionario + "', '" + nif + "', '" + data_de_criacao + "')";
 
             SqlCommand cmd = new SqlCommand(Query, con);
             cmd.ExecuteNonQuery();
             con.Close();
         }
+
+
+
+        private static int id = 1;
+        static int generateId()
+        {
+            return id++;
+        }
+
     }
 }

@@ -82,8 +82,8 @@ namespace ERP_HEISLER.Controller
             SqlConnection con = new SqlConnection(ConnectionString);
             con.Open();
 
-            string Query = "INSERT INTO armazem_adicionar (id, nome_do_produto, marca, sn, quantidade, criado)" +
-                " VALUES (2 , '" + nome_do_producto + "', '"+marca_do_producto+"', '"+numero_de_serie+"'," +
+            string Query = "INSERT INTO armazem_adicionar ( nome_do_produto, marca, sn, quantidade, criado)" +
+                " VALUES ('" + nome_do_producto + "', '"+marca_do_producto+"', '"+numero_de_serie+"'," +
                 " '"+quantidade_do_produto+"','"+data_de_criacao+"')";
 
             SqlCommand cmd = new SqlCommand(Query, con);

@@ -65,8 +65,8 @@ namespace ERP_HEISLER.Controller
             SqlConnection con = new SqlConnection(ConnectionString);
             con.Open();
 
-            string Query = "INSERT INTO contabilidade_gastos (id, valor, gasto_aonde, data)" +
-                " VALUES (1 , '" + valor + "', '" + produto + "', '" + data_de_criaçao + "')";
+            string Query = "INSERT INTO contabilidade_gastos ( valor, gasto_aonde, data)" +
+                " VALUES ('" + valor + "', '" + produto + "', '" + data_de_criaçao + "')";
 
             SqlCommand cmd = new SqlCommand(Query, con);
             cmd.ExecuteNonQuery();
