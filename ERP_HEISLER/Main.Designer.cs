@@ -45,6 +45,9 @@
             Submeter_contabilidade = new Button();
             label1 = new Label();
             recursoshumanos = new Panel();
+            label16 = new Label();
+            textBox4 = new TextBox();
+            label15 = new Label();
             textBox3 = new TextBox();
             label14 = new Label();
             button2 = new Button();
@@ -76,8 +79,6 @@
             richTextBox4 = new RichTextBox();
             label11 = new Label();
             label3 = new Label();
-            textBox4 = new TextBox();
-            label15 = new Label();
             menuStrip1.SuspendLayout();
             contabilidade.SuspendLayout();
             recursoshumanos.SuspendLayout();
@@ -237,6 +238,7 @@
             // recursoshumanos
             // 
             recursoshumanos.BackColor = SystemColors.Control;
+            recursoshumanos.Controls.Add(label16);
             recursoshumanos.Controls.Add(textBox4);
             recursoshumanos.Controls.Add(label15);
             recursoshumanos.Controls.Add(textBox3);
@@ -259,6 +261,34 @@
             recursoshumanos.Size = new Size(1368, 663);
             recursoshumanos.TabIndex = 2;
             recursoshumanos.Paint += recursoshumanos_Paint;
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Location = new Point(422, 490);
+            label16.Name = "label16";
+            label16.Size = new Size(58, 20);
+            label16.TabIndex = 17;
+            label16.Text = "label16";
+            label16.Visible = false;
+            label16.Click += label16_Click;
+            // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(421, 246);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(265, 27);
+            textBox4.TabIndex = 16;
+            textBox4.TextChanged += textBox4_TextChanged;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new Point(422, 202);
+            label15.Name = "label15";
+            label15.Size = new Size(31, 20);
+            label15.TabIndex = 15;
+            label15.Text = "NIF";
             // 
             // textBox3
             // 
@@ -552,23 +582,6 @@
             label3.Text = "Armazem";
             label3.Click += label3_Click;
             // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(421, 246);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(265, 27);
-            textBox4.TabIndex = 16;
-            textBox4.TextChanged += textBox4_TextChanged;
-            // 
-            // label15
-            // 
-            label15.AutoSize = true;
-            label15.Location = new Point(422, 202);
-            label15.Name = "label15";
-            label15.Size = new Size(31, 20);
-            label15.TabIndex = 15;
-            label15.Text = "NIF";
-            // 
             // Main
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -647,5 +660,6 @@
         public TextBox textBox3;
         public TextBox textBox4;
         private Label label15;
+        public Label label16;
     }
 }
