@@ -71,10 +71,6 @@ namespace ERP_HEISLER.Controller
             SqlCommand cmd = new SqlCommand(Query, con);
             cmd.ExecuteNonQuery();
             con.Close();
-
-
-
-
         }
 
 

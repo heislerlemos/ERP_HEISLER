@@ -6,8 +6,7 @@ namespace ERP_HEISLER
     public partial class Main : Form
     {
 
-
-
+      
         List<Panel> listPanel = new List<Panel>();
 
         public Main()
@@ -169,6 +168,16 @@ namespace ERP_HEISLER
         }
 
         private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkedListBox1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
 
         }

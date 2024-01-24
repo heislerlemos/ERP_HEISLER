@@ -45,6 +45,18 @@
             Submeter_contabilidade = new Button();
             label1 = new Label();
             recursoshumanos = new Panel();
+            checkedListBox2 = new CheckedListBox();
+            label22 = new Label();
+            textBox7 = new TextBox();
+            label21 = new Label();
+            textBox6 = new TextBox();
+            label20 = new Label();
+            textBox5 = new TextBox();
+            label19 = new Label();
+            comboBox1 = new ComboBox();
+            label18 = new Label();
+            checkedListBox1 = new CheckedListBox();
+            label17 = new Label();
             label16 = new Label();
             textBox4 = new TextBox();
             label15 = new Label();
@@ -238,6 +250,18 @@
             // recursoshumanos
             // 
             recursoshumanos.BackColor = SystemColors.Control;
+            recursoshumanos.Controls.Add(checkedListBox2);
+            recursoshumanos.Controls.Add(label22);
+            recursoshumanos.Controls.Add(textBox7);
+            recursoshumanos.Controls.Add(label21);
+            recursoshumanos.Controls.Add(textBox6);
+            recursoshumanos.Controls.Add(label20);
+            recursoshumanos.Controls.Add(textBox5);
+            recursoshumanos.Controls.Add(label19);
+            recursoshumanos.Controls.Add(comboBox1);
+            recursoshumanos.Controls.Add(label18);
+            recursoshumanos.Controls.Add(checkedListBox1);
+            recursoshumanos.Controls.Add(label17);
             recursoshumanos.Controls.Add(label16);
             recursoshumanos.Controls.Add(textBox4);
             recursoshumanos.Controls.Add(label15);
@@ -262,20 +286,129 @@
             recursoshumanos.TabIndex = 2;
             recursoshumanos.Paint += recursoshumanos_Paint;
             // 
+            // checkedListBox2
+            // 
+            checkedListBox2.BackColor = SystemColors.Menu;
+            checkedListBox2.BorderStyle = BorderStyle.None;
+            checkedListBox2.FormattingEnabled = true;
+            checkedListBox2.Items.AddRange(new object[] { "Casado", "Solteiro", "Divorciado" });
+            checkedListBox2.Location = new Point(512, 263);
+            checkedListBox2.Name = "checkedListBox2";
+            checkedListBox2.Size = new Size(150, 66);
+            checkedListBox2.TabIndex = 29;
+            // 
+            // label22
+            // 
+            label22.AutoSize = true;
+            label22.Location = new Point(397, 289);
+            label22.Name = "label22";
+            label22.Size = new Size(86, 20);
+            label22.TabIndex = 28;
+            label22.Text = "Estado Civil";
+            // 
+            // textBox7
+            // 
+            textBox7.Location = new Point(395, 194);
+            textBox7.Name = "textBox7";
+            textBox7.Size = new Size(234, 27);
+            textBox7.TabIndex = 27;
+            // 
+            // label21
+            // 
+            label21.AutoSize = true;
+            label21.Location = new Point(395, 165);
+            label21.Name = "label21";
+            label21.Size = new Size(66, 20);
+            label21.TabIndex = 26;
+            label21.Text = "Telefone";
+            // 
+            // textBox6
+            // 
+            textBox6.Location = new Point(395, 117);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(236, 27);
+            textBox6.TabIndex = 25;
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Location = new Point(395, 89);
+            label20.Name = "label20";
+            label20.Size = new Size(106, 20);
+            label20.TabIndex = 24;
+            label20.Text = "Nacionalidade";
+            // 
+            // textBox5
+            // 
+            textBox5.Location = new Point(20, 351);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(254, 27);
+            textBox5.TabIndex = 23;
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Location = new Point(24, 329);
+            label19.Name = "label19";
+            label19.Size = new Size(46, 20);
+            label19.TabIndex = 22;
+            label19.Text = "Email";
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Luanda", "Huambo", "Lobito", "Cabinda", "Benguela", "Namibe", "Bie" });
+            comboBox1.Location = new Point(27, 263);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(151, 28);
+            comboBox1.TabIndex = 21;
+            comboBox1.Text = "Provincias";
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Location = new Point(22, 237);
+            label18.Name = "label18";
+            label18.Size = new Size(82, 20);
+            label18.TabIndex = 20;
+            label18.Text = "Localidade";
+            // 
+            // checkedListBox1
+            // 
+            checkedListBox1.AllowDrop = true;
+            checkedListBox1.BackColor = SystemColors.Menu;
+            checkedListBox1.BorderStyle = BorderStyle.None;
+            checkedListBox1.FormattingEnabled = true;
+            checkedListBox1.Items.AddRange(new object[] { "Masculino", "Feminino" });
+            checkedListBox1.Location = new Point(108, 170);
+            checkedListBox1.Name = "checkedListBox1";
+            checkedListBox1.Size = new Size(113, 44);
+            checkedListBox1.TabIndex = 19;
+            checkedListBox1.SelectedIndexChanged += checkedListBox1_SelectedIndexChanged_1;
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Location = new Point(26, 187);
+            label17.Name = "label17";
+            label17.Size = new Size(57, 20);
+            label17.TabIndex = 18;
+            label17.Text = "Genero";
+            // 
             // label16
             // 
             label16.AutoSize = true;
-            label16.Location = new Point(422, 490);
+            label16.Location = new Point(993, 477);
             label16.Name = "label16";
-            label16.Size = new Size(58, 20);
+            label16.Size = new Size(178, 20);
             label16.TabIndex = 17;
-            label16.Text = "label16";
+            label16.Text = "ERRO NOME DUPLICADO";
             label16.Visible = false;
             label16.Click += label16_Click;
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(421, 246);
+            textBox4.Location = new Point(955, 246);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(265, 27);
             textBox4.TabIndex = 16;
@@ -284,7 +417,7 @@
             // label15
             // 
             label15.AutoSize = true;
-            label15.Location = new Point(422, 202);
+            label15.Location = new Point(956, 202);
             label15.Name = "label15";
             label15.Size = new Size(31, 20);
             label15.TabIndex = 15;
@@ -292,7 +425,7 @@
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(30, 246);
+            textBox3.Location = new Point(27, 449);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(265, 27);
             textBox3.TabIndex = 14;
@@ -301,7 +434,7 @@
             // label14
             // 
             label14.AutoSize = true;
-            label14.Location = new Point(26, 202);
+            label14.Location = new Point(22, 426);
             label14.Name = "label14";
             label14.Size = new Size(31, 20);
             label14.TabIndex = 13;
@@ -309,7 +442,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(422, 409);
+            button2.Location = new Point(956, 409);
             button2.Name = "button2";
             button2.Size = new Size(94, 29);
             button2.TabIndex = 12;
@@ -319,7 +452,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(36, 378);
+            button1.Location = new Point(27, 583);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 11;
@@ -329,7 +462,7 @@
             // 
             // dateTimePicker2
             // 
-            dateTimePicker2.Location = new Point(422, 351);
+            dateTimePicker2.Location = new Point(956, 351);
             dateTimePicker2.Name = "dateTimePicker2";
             dateTimePicker2.Size = new Size(264, 27);
             dateTimePicker2.TabIndex = 10;
@@ -337,7 +470,7 @@
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(31, 320);
+            dateTimePicker1.Location = new Point(27, 531);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(264, 27);
             dateTimePicker1.TabIndex = 9;
@@ -346,7 +479,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(422, 320);
+            label8.Location = new Point(956, 320);
             label8.Name = "label8";
             label8.Size = new Size(41, 20);
             label8.TabIndex = 8;
@@ -355,15 +488,15 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(24, 289);
+            label7.Location = new Point(20, 500);
             label7.Name = "label7";
-            label7.Size = new Size(41, 20);
+            label7.Size = new Size(149, 20);
             label7.TabIndex = 7;
-            label7.Text = "Data";
+            label7.Text = "Data de  Nascimento";
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(422, 125);
+            textBox2.Location = new Point(956, 125);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(295, 27);
             textBox2.TabIndex = 6;
@@ -371,7 +504,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(32, 125);
+            textBox1.Location = new Point(26, 117);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(295, 27);
             textBox1.TabIndex = 5;
@@ -380,7 +513,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(422, 97);
+            label6.Location = new Point(956, 97);
             label6.Name = "label6";
             label6.Size = new Size(50, 20);
             label6.TabIndex = 4;
@@ -389,18 +522,20 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(422, 60);
+            label5.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label5.Location = new Point(956, 60);
             label5.Name = "label5";
-            label5.Size = new Size(164, 20);
+            label5.Size = new Size(251, 31);
             label5.TabIndex = 3;
             label5.Text = "Funcionario Removidos";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(31, 60);
+            label4.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.Location = new Point(224, 49);
             label4.Name = "label4";
-            label4.Size = new Size(164, 20);
+            label4.Size = new Size(253, 31);
             label4.TabIndex = 2;
             label4.Text = "Adicionar Funcionarios ";
             label4.Click += label4_Click;
@@ -408,11 +543,11 @@
             // Nome
             // 
             Nome.AutoSize = true;
-            Nome.Location = new Point(30, 97);
+            Nome.Location = new Point(20, 77);
             Nome.Name = "Nome";
-            Nome.Size = new Size(50, 20);
+            Nome.Size = new Size(120, 20);
             Nome.TabIndex = 1;
-            Nome.Text = "Nome";
+            Nome.Text = "Nome Completo";
             // 
             // label2
             // 
@@ -592,7 +727,9 @@
             Controls.Add(recursoshumanos);
             Controls.Add(contabilidade);
             Controls.Add(armazem);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
             MainMenuStrip = menuStrip1;
+            MaximizeBox = false;
             Name = "Main";
             Text = "HEISLER ERP";
             menuStrip1.ResumeLayout(false);
@@ -637,7 +774,6 @@
         private Label label10;
         private Label marca_do_produto;
         private Label label11;
-        private DateTimePicker dateTimePicker4;
         private Label data;
         private Label label13;
         private Label label12;
@@ -661,5 +797,17 @@
         public TextBox textBox4;
         private Label label15;
         public Label label16;
+        private Label label17;
+        public CheckedListBox checkedListBox1;
+        private Label label18;
+        public ComboBox comboBox1;
+        private TextBox textBox5;
+        private Label label19;
+        private TextBox textBox6;
+        private Label label20;
+        private TextBox textBox7;
+        private Label label21;
+        private Label label22;
+        private CheckedListBox checkedListBox2;
     }
 }

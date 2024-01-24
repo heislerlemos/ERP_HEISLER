@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
@@ -17,8 +18,6 @@ namespace ERP_HEISLER.Controller
     internal class Rh_Controller
     {
         public static Main? f1 = Application.OpenForms.OfType<Main>().FirstOrDefault();
-
-
         public static void adicionardb()
         {
             if (f1 == null)
@@ -26,7 +25,10 @@ namespace ERP_HEISLER.Controller
                 throw new ArgumentNullException("não pode ser null");
             }
 
-
+            string genero = f1.checkedListBox1.Text;
+            System.Diagnostics.Debug.WriteLine(genero);
+            string combobox = f1.comboBox1.Text;
+            System.Diagnostics.Debug.WriteLine(combobox);
             string nome_do_funcionario = f1.textBox1.Text;
             string numero_de_serie = f1.textBox3.Text;
             string data_de_criacao = f1.dateTimePicker1.Value.ToString("yyyy-MM-dd");
@@ -37,11 +39,8 @@ namespace ERP_HEISLER.Controller
 
             string Query = "INSERT INTO rh_adicionar (  nome, nif, criado)" +
                 " VALUES ( '" + nome_do_funcionario + "', '" + numero_de_serie + "', '" + data_de_criacao + "')";
-
             SqlCommand cmd = new SqlCommand(Query, con);
             cmd.ExecuteNonQuery();
-
-
             con.Close();
 
 
@@ -54,9 +53,6 @@ namespace ERP_HEISLER.Controller
             {
                 throw new ArgumentNullException("não pode ser nulo");
             }
-
-
-
             string nome_do_funcionario = f1.textBox2.Text;
             string data_de_criacao = f1.dateTimePicker2.Value.ToString("yyyy-MM-dd");
             string nif = f1.textBox4.Text;
@@ -72,21 +68,16 @@ namespace ERP_HEISLER.Controller
             int UserExist = (int)check_User_Name.ExecuteScalar();
 
             if (UserExist > 0)
-            {
-                
-
+            {                
                 System.Diagnostics.Debug.WriteLine("nome ja existe");
                 f1.label16.Visible = true;
 
-                f1.label16.Text = "O nome ja existe por favor adiciona outro nome ";
-            
-            
+                f1.label16.Text = "O nome ja existe por favor adiciona outro nome ";            
             }
             else
             
             
             {
-
                 string Query = "INSERT INTO rh_remover ( nome, nif, apagado)" +
                     " VALUES ( '" + nome_do_funcionario + "', '" + nif + "', '" + data_de_criacao + "')";
 
