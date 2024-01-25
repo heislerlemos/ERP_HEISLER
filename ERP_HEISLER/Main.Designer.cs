@@ -91,6 +91,7 @@
             richTextBox4 = new RichTextBox();
             label11 = new Label();
             label3 = new Label();
+            label23 = new Label();
             menuStrip1.SuspendLayout();
             contabilidade.SuspendLayout();
             recursoshumanos.SuspendLayout();
@@ -250,6 +251,7 @@
             // recursoshumanos
             // 
             recursoshumanos.BackColor = SystemColors.Control;
+            recursoshumanos.Controls.Add(label23);
             recursoshumanos.Controls.Add(checkedListBox2);
             recursoshumanos.Controls.Add(label22);
             recursoshumanos.Controls.Add(textBox7);
@@ -328,6 +330,7 @@
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(236, 27);
             textBox6.TabIndex = 25;
+            textBox6.TextChanged += textBox6_TextChanged;
             // 
             // label20
             // 
@@ -717,6 +720,16 @@
             label3.Text = "Armazem";
             label3.Click += label3_Click;
             // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Location = new Point(388, 408);
+            label23.Name = "label23";
+            label23.Size = new Size(58, 20);
+            label23.TabIndex = 30;
+            label23.Text = "label23";
+            label23.Click += label23_Click;
+            // 
             // Main
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -763,7 +776,6 @@
         private Label label8;
         private Label label7;
         private Button button2;
-        private Button button1;
         private Button Submeter_contabilidade;
         public TextBox textBox1;
         private Label label9;
@@ -801,13 +813,15 @@
         public CheckedListBox checkedListBox1;
         private Label label18;
         public ComboBox comboBox1;
-        private TextBox textBox5;
         private Label label19;
-        private TextBox textBox6;
         private Label label20;
-        private TextBox textBox7;
         private Label label21;
         private Label label22;
-        private CheckedListBox checkedListBox2;
+        public TextBox textBox6;
+        public TextBox textBox5;
+        public TextBox textBox7;
+        public CheckedListBox checkedListBox2;
+        public Label label23;
+        private Button button1;
     }
 }

@@ -6,7 +6,7 @@ namespace ERP_HEISLER
     public partial class Main : Form
     {
 
-      
+
         List<Panel> listPanel = new List<Panel>();
 
         public Main()
@@ -87,6 +87,7 @@ namespace ERP_HEISLER
         private void button1_Click(object sender, EventArgs e)
         {
             Rh_Controller.adicionardb();
+           
         }
 
         private void recursoshumanos_Paint(object sender, PaintEventArgs e)
@@ -178,6 +179,16 @@ namespace ERP_HEISLER
         }
 
         private void checkedListBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label23_Click(object sender, EventArgs e)
         {
 
         }
