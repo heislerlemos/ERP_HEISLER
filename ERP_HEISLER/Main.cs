@@ -229,5 +229,15 @@ namespace ERP_HEISLER
             crmpanel.BringToFront();
 
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
