@@ -45,6 +45,7 @@
             Submeter_contabilidade = new Button();
             label1 = new Label();
             recursoshumanos = new Panel();
+            label23 = new Label();
             checkedListBox2 = new CheckedListBox();
             label22 = new Label();
             textBox7 = new TextBox();
@@ -91,7 +92,6 @@
             richTextBox4 = new RichTextBox();
             label11 = new Label();
             label3 = new Label();
-            label23 = new Label();
             menuStrip1.SuspendLayout();
             contabilidade.SuspendLayout();
             recursoshumanos.SuspendLayout();
@@ -143,15 +143,16 @@
             contabilidade.Controls.Add(label9);
             contabilidade.Controls.Add(Submeter_contabilidade);
             contabilidade.Controls.Add(label1);
-            contabilidade.Location = new Point(0, 26);
+            contabilidade.Dock = DockStyle.Fill;
+            contabilidade.Location = new Point(0, 0);
             contabilidade.Name = "contabilidade";
-            contabilidade.Size = new Size(1407, 660);
+            contabilidade.Size = new Size(1397, 747);
             contabilidade.TabIndex = 1;
             contabilidade.Paint += contabilidade_Paint;
             // 
             // visualizar_movimentos_contabilidade
             // 
-            visualizar_movimentos_contabilidade.Location = new Point(553, 14);
+            visualizar_movimentos_contabilidade.Location = new Point(568, 62);
             visualizar_movimentos_contabilidade.Name = "visualizar_movimentos_contabilidade";
             visualizar_movimentos_contabilidade.Size = new Size(94, 29);
             visualizar_movimentos_contabilidade.TabIndex = 10;
@@ -160,7 +161,7 @@
             // 
             // richTextBox3
             // 
-            richTextBox3.Location = new Point(359, 49);
+            richTextBox3.Location = new Point(356, 125);
             richTextBox3.Name = "richTextBox3";
             richTextBox3.Size = new Size(958, 478);
             richTextBox3.TabIndex = 9;
@@ -169,7 +170,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(324, 18);
+            label10.Location = new Point(338, 68);
             label10.Name = "label10";
             label10.Size = new Size(192, 20);
             label10.TabIndex = 8;
@@ -177,7 +178,7 @@
             // 
             // dateTimePicker3
             // 
-            dateTimePicker3.Location = new Point(26, 250);
+            dateTimePicker3.Location = new Point(39, 429);
             dateTimePicker3.Name = "dateTimePicker3";
             dateTimePicker3.Size = new Size(250, 27);
             dateTimePicker3.TabIndex = 7;
@@ -186,7 +187,7 @@
             // data_contabilidade
             // 
             data_contabilidade.AutoSize = true;
-            data_contabilidade.Location = new Point(27, 222);
+            data_contabilidade.Location = new Point(40, 401);
             data_contabilidade.Name = "data_contabilidade";
             data_contabilidade.Size = new Size(41, 20);
             data_contabilidade.TabIndex = 6;
@@ -194,7 +195,7 @@
             // 
             // richTextBox2
             // 
-            richTextBox2.Location = new Point(26, 162);
+            richTextBox2.Location = new Point(39, 341);
             richTextBox2.Name = "richTextBox2";
             richTextBox2.Size = new Size(148, 28);
             richTextBox2.TabIndex = 5;
@@ -204,7 +205,7 @@
             // produto_contabilidade
             // 
             produto_contabilidade.AutoSize = true;
-            produto_contabilidade.Location = new Point(26, 120);
+            produto_contabilidade.Location = new Point(39, 299);
             produto_contabilidade.Name = "produto_contabilidade";
             produto_contabilidade.Size = new Size(62, 20);
             produto_contabilidade.TabIndex = 4;
@@ -212,7 +213,7 @@
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(26, 67);
+            richTextBox1.Location = new Point(39, 246);
             richTextBox1.Name = "richTextBox1";
             richTextBox1.Size = new Size(82, 30);
             richTextBox1.TabIndex = 3;
@@ -222,7 +223,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(26, 43);
+            label9.Location = new Point(39, 222);
             label9.Name = "label9";
             label9.Size = new Size(43, 20);
             label9.TabIndex = 2;
@@ -230,7 +231,7 @@
             // 
             // Submeter_contabilidade
             // 
-            Submeter_contabilidade.Location = new Point(26, 297);
+            Submeter_contabilidade.Location = new Point(39, 476);
             Submeter_contabilidade.Name = "Submeter_contabilidade";
             Submeter_contabilidade.Size = new Size(94, 29);
             Submeter_contabilidade.TabIndex = 1;
@@ -241,7 +242,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(27, 18);
+            label1.Location = new Point(27, 89);
             label1.Name = "label1";
             label1.Size = new Size(103, 20);
             label1.TabIndex = 0;
@@ -282,11 +283,22 @@
             recursoshumanos.Controls.Add(label4);
             recursoshumanos.Controls.Add(Nome);
             recursoshumanos.Controls.Add(label2);
-            recursoshumanos.Location = new Point(0, 26);
+            recursoshumanos.Dock = DockStyle.Fill;
+            recursoshumanos.Location = new Point(0, 0);
             recursoshumanos.Name = "recursoshumanos";
-            recursoshumanos.Size = new Size(1368, 663);
+            recursoshumanos.Size = new Size(1397, 747);
             recursoshumanos.TabIndex = 2;
             recursoshumanos.Paint += recursoshumanos_Paint;
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Location = new Point(388, 408);
+            label23.Name = "label23";
+            label23.Size = new Size(58, 20);
+            label23.TabIndex = 30;
+            label23.Text = "label23";
+            label23.Click += label23_Click;
             // 
             // checkedListBox2
             // 
@@ -555,7 +567,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(27, 18);
+            label2.Location = new Point(26, 28);
             label2.Name = "label2";
             label2.Size = new Size(134, 20);
             label2.TabIndex = 0;
@@ -580,16 +592,17 @@
             armazem.Controls.Add(richTextBox4);
             armazem.Controls.Add(label11);
             armazem.Controls.Add(label3);
+            armazem.Dock = DockStyle.Fill;
             armazem.ForeColor = SystemColors.ActiveCaptionText;
-            armazem.Location = new Point(0, 29);
+            armazem.Location = new Point(0, 0);
             armazem.Name = "armazem";
-            armazem.Size = new Size(1410, 660);
+            armazem.Size = new Size(1397, 747);
             armazem.TabIndex = 3;
             armazem.Paint += panel1_Paint;
             // 
             // button3
             // 
-            button3.Location = new Point(872, 6);
+            button3.Location = new Point(883, 54);
             button3.Name = "button3";
             button3.Size = new Size(94, 29);
             button3.TabIndex = 14;
@@ -607,7 +620,7 @@
             // 
             // richTextBox8
             // 
-            richTextBox8.Location = new Point(692, 40);
+            richTextBox8.Location = new Point(692, 93);
             richTextBox8.Name = "richTextBox8";
             richTextBox8.Size = new Size(635, 545);
             richTextBox8.TabIndex = 12;
@@ -713,22 +726,12 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(27, 18);
+            label3.Location = new Point(26, 40);
             label3.Name = "label3";
             label3.Size = new Size(73, 20);
             label3.TabIndex = 0;
             label3.Text = "Armazem";
             label3.Click += label3_Click;
-            // 
-            // label23
-            // 
-            label23.AutoSize = true;
-            label23.Location = new Point(388, 408);
-            label23.Name = "label23";
-            label23.Size = new Size(58, 20);
-            label23.TabIndex = 30;
-            label23.Text = "label23";
-            label23.Click += label23_Click;
             // 
             // Main
             // 
@@ -737,9 +740,9 @@
             BackColor = Color.RosyBrown;
             ClientSize = new Size(1397, 747);
             Controls.Add(menuStrip1);
-            Controls.Add(recursoshumanos);
             Controls.Add(contabilidade);
             Controls.Add(armazem);
+            Controls.Add(recursoshumanos);
             FormBorderStyle = FormBorderStyle.Fixed3D;
             MainMenuStrip = menuStrip1;
             MaximizeBox = false;

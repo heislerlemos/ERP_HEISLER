@@ -87,7 +87,7 @@ namespace ERP_HEISLER
         private void button1_Click(object sender, EventArgs e)
         {
             Rh_Controller.adicionardb();
-           
+
         }
 
         private void recursoshumanos_Paint(object sender, PaintEventArgs e)
@@ -189,6 +189,11 @@ namespace ERP_HEISLER
         }
 
         private void label23_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
         {
 
         }
