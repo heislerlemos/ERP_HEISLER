@@ -35,7 +35,6 @@
             contabilidade = new Panel();
             visualizar_movimentos_contabilidade = new Button();
             richTextBox3 = new RichTextBox();
-            label10 = new Label();
             dateTimePicker3 = new DateTimePicker();
             data_contabilidade = new Label();
             richTextBox2 = new RichTextBox();
@@ -44,7 +43,6 @@
             label9 = new Label();
             Submeter_contabilidade = new Button();
             label1 = new Label();
-            crm = new Panel();
             recursoshumanos = new Panel();
             label23 = new Label();
             checkedListBox2 = new CheckedListBox();
@@ -93,9 +91,9 @@
             richTextBox4 = new RichTextBox();
             label11 = new Label();
             label3 = new Label();
+            label10 = new Label();
             menuStrip1.SuspendLayout();
             contabilidade.SuspendLayout();
-            crm.SuspendLayout();
             recursoshumanos.SuspendLayout();
             armazem.SuspendLayout();
             SuspendLayout();
@@ -140,6 +138,7 @@
             // contabilidade
             // 
             contabilidade.BackColor = SystemColors.Control;
+            contabilidade.Controls.Add(label10);
             contabilidade.Controls.Add(visualizar_movimentos_contabilidade);
             contabilidade.Controls.Add(richTextBox3);
             contabilidade.Controls.Add(dateTimePicker3);
@@ -150,7 +149,6 @@
             contabilidade.Controls.Add(label9);
             contabilidade.Controls.Add(Submeter_contabilidade);
             contabilidade.Controls.Add(label1);
-            contabilidade.Controls.Add(crm);
             contabilidade.Dock = DockStyle.Fill;
             contabilidade.Location = new Point(0, 0);
             contabilidade.Name = "contabilidade";
@@ -160,7 +158,7 @@
             // 
             // visualizar_movimentos_contabilidade
             // 
-            visualizar_movimentos_contabilidade.Location = new Point(568, 62);
+            visualizar_movimentos_contabilidade.Location = new Point(549, 74);
             visualizar_movimentos_contabilidade.Name = "visualizar_movimentos_contabilidade";
             visualizar_movimentos_contabilidade.Size = new Size(94, 29);
             visualizar_movimentos_contabilidade.TabIndex = 10;
@@ -174,15 +172,6 @@
             richTextBox3.Size = new Size(958, 478);
             richTextBox3.TabIndex = 9;
             richTextBox3.Text = "";
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Location = new Point(338, 68);
-            label10.Name = "label10";
-            label10.Size = new Size(192, 20);
-            label10.TabIndex = 8;
-            label10.Text = "Movimentos Contabilisticos";
             // 
             // dateTimePicker3
             // 
@@ -256,16 +245,6 @@
             label1.TabIndex = 0;
             label1.Text = "Contabilidade";
             label1.Click += label1_Click;
-            // 
-            // crm
-            // 
-            crm.Controls.Add(label10);
-            crm.Dock = DockStyle.Fill;
-            crm.Location = new Point(0, 0);
-            crm.Name = "crm";
-            crm.Size = new Size(1397, 747);
-            crm.TabIndex = 11;
-            crm.Paint += crm_Paint;
             // 
             // recursoshumanos
             // 
@@ -751,6 +730,15 @@
             label3.Text = "Armazem";
             label3.Click += label3_Click;
             // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(347, 77);
+            label10.Name = "label10";
+            label10.Size = new Size(137, 20);
+            label10.TabIndex = 11;
+            label10.Text = "Contabilidade Lista";
+            // 
             // Main
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -770,8 +758,6 @@
             menuStrip1.PerformLayout();
             contabilidade.ResumeLayout(false);
             contabilidade.PerformLayout();
-            crm.ResumeLayout(false);
-            crm.PerformLayout();
             recursoshumanos.ResumeLayout(false);
             recursoshumanos.PerformLayout();
             armazem.ResumeLayout(false);
@@ -806,7 +792,6 @@
         private Label data_contabilidade;
         private Button visualizar_movimentos_contabilidade;
         private RichTextBox richTextBox3;
-        private Label label10;
         private Label marca_do_produto;
         private Label label11;
         private Label data;
@@ -846,6 +831,6 @@
         public CheckedListBox checkedListBox2;
         public Label label23;
         private Button button1;
-        private Panel crm;
+        private Label label10;
     }
 }
