@@ -197,5 +197,10 @@ namespace ERP_HEISLER
         {
 
         }
+
+        private void crm_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

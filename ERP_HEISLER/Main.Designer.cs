@@ -44,6 +44,7 @@
             label9 = new Label();
             Submeter_contabilidade = new Button();
             label1 = new Label();
+            crm = new Panel();
             recursoshumanos = new Panel();
             label23 = new Label();
             checkedListBox2 = new CheckedListBox();
@@ -94,12 +95,14 @@
             label3 = new Label();
             menuStrip1.SuspendLayout();
             contabilidade.SuspendLayout();
+            crm.SuspendLayout();
             recursoshumanos.SuspendLayout();
             armazem.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
+            menuStrip1.BackColor = Color.DimGray;
             menuStrip1.ImageScalingSize = new Size(20, 20);
             menuStrip1.Items.AddRange(new ToolStripItem[] { contabilidadeToolStripMenuItem, recursosHumanosToolStripMenuItem, armazemToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
@@ -110,6 +113,7 @@
             // 
             // contabilidadeToolStripMenuItem
             // 
+            contabilidadeToolStripMenuItem.ForeColor = SystemColors.ButtonFace;
             contabilidadeToolStripMenuItem.Name = "contabilidadeToolStripMenuItem";
             contabilidadeToolStripMenuItem.Size = new Size(117, 24);
             contabilidadeToolStripMenuItem.Text = "Contabilidade";
@@ -117,6 +121,8 @@
             // 
             // recursosHumanosToolStripMenuItem
             // 
+            recursosHumanosToolStripMenuItem.BackColor = Color.DimGray;
+            recursosHumanosToolStripMenuItem.ForeColor = SystemColors.ButtonFace;
             recursosHumanosToolStripMenuItem.Name = "recursosHumanosToolStripMenuItem";
             recursosHumanosToolStripMenuItem.Size = new Size(148, 24);
             recursosHumanosToolStripMenuItem.Text = "Recursos Humanos";
@@ -124,6 +130,8 @@
             // 
             // armazemToolStripMenuItem
             // 
+            armazemToolStripMenuItem.BackColor = Color.DimGray;
+            armazemToolStripMenuItem.ForeColor = SystemColors.ButtonFace;
             armazemToolStripMenuItem.Name = "armazemToolStripMenuItem";
             armazemToolStripMenuItem.Size = new Size(87, 24);
             armazemToolStripMenuItem.Text = "Armazem";
@@ -134,7 +142,6 @@
             contabilidade.BackColor = SystemColors.Control;
             contabilidade.Controls.Add(visualizar_movimentos_contabilidade);
             contabilidade.Controls.Add(richTextBox3);
-            contabilidade.Controls.Add(label10);
             contabilidade.Controls.Add(dateTimePicker3);
             contabilidade.Controls.Add(data_contabilidade);
             contabilidade.Controls.Add(richTextBox2);
@@ -143,6 +150,7 @@
             contabilidade.Controls.Add(label9);
             contabilidade.Controls.Add(Submeter_contabilidade);
             contabilidade.Controls.Add(label1);
+            contabilidade.Controls.Add(crm);
             contabilidade.Dock = DockStyle.Fill;
             contabilidade.Location = new Point(0, 0);
             contabilidade.Name = "contabilidade";
@@ -248,6 +256,16 @@
             label1.TabIndex = 0;
             label1.Text = "Contabilidade";
             label1.Click += label1_Click;
+            // 
+            // crm
+            // 
+            crm.Controls.Add(label10);
+            crm.Dock = DockStyle.Fill;
+            crm.Location = new Point(0, 0);
+            crm.Name = "crm";
+            crm.Size = new Size(1397, 747);
+            crm.TabIndex = 11;
+            crm.Paint += crm_Paint;
             // 
             // recursoshumanos
             // 
@@ -752,6 +770,8 @@
             menuStrip1.PerformLayout();
             contabilidade.ResumeLayout(false);
             contabilidade.PerformLayout();
+            crm.ResumeLayout(false);
+            crm.PerformLayout();
             recursoshumanos.ResumeLayout(false);
             recursoshumanos.PerformLayout();
             armazem.ResumeLayout(false);
@@ -826,5 +846,6 @@
         public CheckedListBox checkedListBox2;
         public Label label23;
         private Button button1;
+        private Panel crm;
     }
 }
