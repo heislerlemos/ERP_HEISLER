@@ -28,11 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            menuStrip1 = new MenuStrip();
-            contabilidadeToolStripMenuItem = new ToolStripMenuItem();
-            recursosHumanosToolStripMenuItem = new ToolStripMenuItem();
-            armazemToolStripMenuItem = new ToolStripMenuItem();
             contabilidade = new Panel();
+            label10 = new Label();
             visualizar_movimentos_contabilidade = new Button();
             richTextBox3 = new RichTextBox();
             dateTimePicker3 = new DateTimePicker();
@@ -91,49 +88,16 @@
             richTextBox4 = new RichTextBox();
             label11 = new Label();
             label3 = new Label();
-            label10 = new Label();
-            menuStrip1.SuspendLayout();
+            contabilidadeToolStripMenuItem = new ToolStripMenuItem();
+            recursosHumanosToolStripMenuItem = new ToolStripMenuItem();
+            armazemToolStripMenuItem = new ToolStripMenuItem();
+            crmToolStripMenuItem = new ToolStripMenuItem();
+            menuStrip1 = new MenuStrip();
             contabilidade.SuspendLayout();
             recursoshumanos.SuspendLayout();
             armazem.SuspendLayout();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            menuStrip1.BackColor = Color.DimGray;
-            menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { contabilidadeToolStripMenuItem, recursosHumanosToolStripMenuItem, armazemToolStripMenuItem });
-            menuStrip1.Location = new Point(0, 0);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(1397, 28);
-            menuStrip1.TabIndex = 0;
-            menuStrip1.Text = "menuStrip1";
-            // 
-            // contabilidadeToolStripMenuItem
-            // 
-            contabilidadeToolStripMenuItem.ForeColor = SystemColors.ButtonFace;
-            contabilidadeToolStripMenuItem.Name = "contabilidadeToolStripMenuItem";
-            contabilidadeToolStripMenuItem.Size = new Size(117, 24);
-            contabilidadeToolStripMenuItem.Text = "Contabilidade";
-            contabilidadeToolStripMenuItem.Click += contabilidadeToolStripMenuItem_Click;
-            // 
-            // recursosHumanosToolStripMenuItem
-            // 
-            recursosHumanosToolStripMenuItem.BackColor = Color.DimGray;
-            recursosHumanosToolStripMenuItem.ForeColor = SystemColors.ButtonFace;
-            recursosHumanosToolStripMenuItem.Name = "recursosHumanosToolStripMenuItem";
-            recursosHumanosToolStripMenuItem.Size = new Size(148, 24);
-            recursosHumanosToolStripMenuItem.Text = "Recursos Humanos";
-            recursosHumanosToolStripMenuItem.Click += recursosHumanosToolStripMenuItem_Click;
-            // 
-            // armazemToolStripMenuItem
-            // 
-            armazemToolStripMenuItem.BackColor = Color.DimGray;
-            armazemToolStripMenuItem.ForeColor = SystemColors.ButtonFace;
-            armazemToolStripMenuItem.Name = "armazemToolStripMenuItem";
-            armazemToolStripMenuItem.Size = new Size(87, 24);
-            armazemToolStripMenuItem.Text = "Armazem";
-            armazemToolStripMenuItem.Click += armazemToolStripMenuItem_Click;
             // 
             // contabilidade
             // 
@@ -155,6 +119,15 @@
             contabilidade.Size = new Size(1397, 747);
             contabilidade.TabIndex = 1;
             contabilidade.Paint += contabilidade_Paint;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(347, 77);
+            label10.Name = "label10";
+            label10.Size = new Size(137, 20);
+            label10.TabIndex = 11;
+            label10.Text = "Contabilidade Lista";
             // 
             // visualizar_movimentos_contabilidade
             // 
@@ -730,14 +703,51 @@
             label3.Text = "Armazem";
             label3.Click += label3_Click;
             // 
-            // label10
+            // contabilidadeToolStripMenuItem
             // 
-            label10.AutoSize = true;
-            label10.Location = new Point(347, 77);
-            label10.Name = "label10";
-            label10.Size = new Size(137, 20);
-            label10.TabIndex = 11;
-            label10.Text = "Contabilidade Lista";
+            contabilidadeToolStripMenuItem.ForeColor = SystemColors.ButtonFace;
+            contabilidadeToolStripMenuItem.Name = "contabilidadeToolStripMenuItem";
+            contabilidadeToolStripMenuItem.Size = new Size(117, 24);
+            contabilidadeToolStripMenuItem.Text = "Contabilidade";
+            contabilidadeToolStripMenuItem.Click += contabilidadeToolStripMenuItem_Click;
+            // 
+            // recursosHumanosToolStripMenuItem
+            // 
+            recursosHumanosToolStripMenuItem.BackColor = Color.DimGray;
+            recursosHumanosToolStripMenuItem.ForeColor = SystemColors.ButtonFace;
+            recursosHumanosToolStripMenuItem.Name = "recursosHumanosToolStripMenuItem";
+            recursosHumanosToolStripMenuItem.Size = new Size(148, 24);
+            recursosHumanosToolStripMenuItem.Text = "Recursos Humanos";
+            recursosHumanosToolStripMenuItem.Click += recursosHumanosToolStripMenuItem_Click;
+            // 
+            // armazemToolStripMenuItem
+            // 
+            armazemToolStripMenuItem.BackColor = Color.DimGray;
+            armazemToolStripMenuItem.ForeColor = SystemColors.ButtonFace;
+            armazemToolStripMenuItem.Name = "armazemToolStripMenuItem";
+            armazemToolStripMenuItem.Size = new Size(87, 24);
+            armazemToolStripMenuItem.Text = "Armazem";
+            armazemToolStripMenuItem.Click += armazemToolStripMenuItem_Click;
+            // 
+            // crmToolStripMenuItem
+            // 
+            crmToolStripMenuItem.BackColor = Color.DimGray;
+            crmToolStripMenuItem.ForeColor = SystemColors.ButtonFace;
+            crmToolStripMenuItem.Name = "crmToolStripMenuItem";
+            crmToolStripMenuItem.Size = new Size(50, 24);
+            crmToolStripMenuItem.Text = "Crm";
+            // 
+            // menuStrip1
+            // 
+            menuStrip1.BackColor = Color.DimGray;
+            menuStrip1.ImageScalingSize = new Size(20, 20);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { contabilidadeToolStripMenuItem, recursosHumanosToolStripMenuItem, armazemToolStripMenuItem, crmToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(1397, 28);
+            menuStrip1.TabIndex = 0;
+            menuStrip1.Text = "menuStrip1";
+            menuStrip1.ItemClicked += menuStrip1_ItemClicked;
             // 
             // Main
             // 
@@ -754,24 +764,20 @@
             MaximizeBox = false;
             Name = "Main";
             Text = "HEISLER ERP";
-            menuStrip1.ResumeLayout(false);
-            menuStrip1.PerformLayout();
+            Load += Main_Load;
             contabilidade.ResumeLayout(false);
             contabilidade.PerformLayout();
             recursoshumanos.ResumeLayout(false);
             recursoshumanos.PerformLayout();
             armazem.ResumeLayout(false);
             armazem.PerformLayout();
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private MenuStrip menuStrip1;
-        private ToolStripMenuItem contabilidadeToolStripMenuItem;
-        private ToolStripMenuItem recursosHumanosToolStripMenuItem;
-        private ToolStripMenuItem armazemToolStripMenuItem;
         private Panel contabilidade;
         private Label label1;
         private Panel recursoshumanos;
@@ -832,5 +838,10 @@
         public Label label23;
         private Button button1;
         private Label label10;
+        private ToolStripMenuItem contabilidadeToolStripMenuItem;
+        private ToolStripMenuItem recursosHumanosToolStripMenuItem;
+        private ToolStripMenuItem armazemToolStripMenuItem;
+        private ToolStripMenuItem crmToolStripMenuItem;
+        private MenuStrip menuStrip1;
     }
 }
