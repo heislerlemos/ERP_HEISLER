@@ -212,5 +212,22 @@ namespace ERP_HEISLER
         {
 
         }
+
+        private void panel1_Paint_2(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint_3(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void crmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            listPanel.Add(crmpanel);
+            crmpanel.BringToFront();
+
+        }
     }
 }

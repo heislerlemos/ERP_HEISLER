@@ -93,10 +93,17 @@
             armazemToolStripMenuItem = new ToolStripMenuItem();
             crmToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1 = new MenuStrip();
+            crmpanel = new Panel();
+            panel2 = new Panel();
+            panel3 = new Panel();
+            panel1 = new Panel();
+            label24 = new Label();
+            label25 = new Label();
             contabilidade.SuspendLayout();
             recursoshumanos.SuspendLayout();
             armazem.SuspendLayout();
             menuStrip1.SuspendLayout();
+            crmpanel.SuspendLayout();
             SuspendLayout();
             // 
             // contabilidade
@@ -736,6 +743,7 @@
             crmToolStripMenuItem.Name = "crmToolStripMenuItem";
             crmToolStripMenuItem.Size = new Size(50, 24);
             crmToolStripMenuItem.Text = "Crm";
+            crmToolStripMenuItem.Click += crmToolStripMenuItem_Click;
             // 
             // menuStrip1
             // 
@@ -749,6 +757,64 @@
             menuStrip1.Text = "menuStrip1";
             menuStrip1.ItemClicked += menuStrip1_ItemClicked;
             // 
+            // crmpanel
+            // 
+            crmpanel.BackColor = SystemColors.Control;
+            crmpanel.Controls.Add(label25);
+            crmpanel.Controls.Add(panel2);
+            crmpanel.Controls.Add(panel3);
+            crmpanel.Controls.Add(panel1);
+            crmpanel.Controls.Add(label24);
+            crmpanel.Dock = DockStyle.Fill;
+            crmpanel.Location = new Point(0, 0);
+            crmpanel.Name = "crmpanel";
+            crmpanel.Size = new Size(1397, 747);
+            crmpanel.TabIndex = 31;
+            crmpanel.Paint += panel1_Paint_2;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.DimGray;
+            panel2.Location = new Point(549, 351);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(383, 125);
+            panel2.TabIndex = 2;
+            // 
+            // panel3
+            // 
+            panel3.BackColor = Color.DimGray;
+            panel3.Location = new Point(1030, 351);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(250, 125);
+            panel3.TabIndex = 2;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.DimGray;
+            panel1.Location = new Point(126, 345);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(357, 125);
+            panel1.TabIndex = 1;
+            panel1.Paint += panel1_Paint_3;
+            // 
+            // label24
+            // 
+            label24.AutoSize = true;
+            label24.Location = new Point(79, 89);
+            label24.Name = "label24";
+            label24.Size = new Size(250, 20);
+            label24.TabIndex = 0;
+            label24.Text = "Customer Relationship Management";
+            // 
+            // label25
+            // 
+            label25.AutoSize = true;
+            label25.Location = new Point(134, 280);
+            label25.Name = "label25";
+            label25.Size = new Size(62, 20);
+            label25.TabIndex = 3;
+            label25.Text = "Pipeline";
+            // 
             // Main
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -756,6 +822,7 @@
             BackColor = Color.RosyBrown;
             ClientSize = new Size(1397, 747);
             Controls.Add(menuStrip1);
+            Controls.Add(crmpanel);
             Controls.Add(contabilidade);
             Controls.Add(armazem);
             Controls.Add(recursoshumanos);
@@ -773,6 +840,8 @@
             armazem.PerformLayout();
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
+            crmpanel.ResumeLayout(false);
+            crmpanel.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -843,5 +912,11 @@
         private ToolStripMenuItem armazemToolStripMenuItem;
         private ToolStripMenuItem crmToolStripMenuItem;
         private MenuStrip menuStrip1;
+        private Panel crmpanel;
+        private Panel panel2;
+        private Panel panel3;
+        private Panel panel1;
+        private Label label24;
+        private Label label25;
     }
 }
