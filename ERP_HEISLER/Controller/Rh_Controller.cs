@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -13,6 +14,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.ComponentModel.Design.ObjectSelectorEditor;
 
+
 namespace ERP_HEISLER.Controller
 {
 
@@ -22,7 +24,7 @@ namespace ERP_HEISLER.Controller
 
         public static int IncrementarId()
         {
-            string ConnectionString = "Data Source=0191-L1\\SQLEXPRESS;Initial Catalog=ERP;Persist Security Info=True;User ID=dev;Password=Reh6quo0;";
+            string ConnectionString = ConfigurationManager.ConnectionStrings["ERP"].ConnectionString;
             SqlConnection con = new SqlConnection(ConnectionString);
             con.Open();
             string Query = "SELECT MAX(id) From rh_adicionar";    
@@ -67,21 +69,22 @@ namespace ERP_HEISLER.Controller
             string estado_civil = f1.checkedListBox2.Text;
 
 
-            string ConnectionString = "Data Source=0191-L1\\SQLEXPRESS;Initial Catalog=ERP;Persist Security Info=True;User ID=dev;Password=Reh6quo0;";
+            string ConnectionString = ConfigurationManager.ConnectionStrings["ERP"].ConnectionString;
             SqlConnection con = new SqlConnection(ConnectionString);
-            con.Open();
+        
+                con.Open();
 
-            string Query = "INSERT INTO rh_adicionar ( id, nome, nif, genero, localidade, email, data_de_nascimento, " +
-                " nacionalidade, telefone, estado_civil)" +
-                " VALUES ( '" + IncrementarId() + "','" + nome_do_funcionario + "', '" + numero_de_serie + "', '" + genero + "'," +
-                " '"+ localidade +"', '"+email+"','"+data_de_nascimento+"', '"+nacionalidade+"', '"+telefone+"', '"+estado_civil+"' )";
+                string Query = "INSERT INTO rh_adicionar ( id, nome, nif, genero, localidade, email, data_de_nascimento, " +
+                    " nacionalidade, telefone, estado_civil)" +
+                    " VALUES ( '" + IncrementarId() + "','" + nome_do_funcionario + "', '" + numero_de_serie + "', '" + genero + "'," +
+                    " '" + localidade + "', '" + email + "','" + data_de_nascimento + "', '" + nacionalidade + "', '" + telefone + "', '" + estado_civil + "' )";
+
+
+                SqlCommand cmd = new SqlCommand(Query, con);
+                cmd.ExecuteNonQuery();
+                con.Close();
+
             
-            
-            SqlCommand cmd = new SqlCommand(Query,  con);
-            cmd.ExecuteNonQuery();
-            con.Close();
-
-
         }
 
         public static void removerdb()
@@ -94,7 +97,7 @@ namespace ERP_HEISLER.Controller
             string nome_do_funcionario = f1.textBox2.Text;
             string data_de_criacao = f1.dateTimePicker2.Value.ToString("yyyy-MM-dd");
             string nif = f1.textBox4.Text;
-            string ConnectionString = "Data Source=0191-L1\\SQLEXPRESS;Initial Catalog=ERP;Persist Security Info=True;User ID=dev;Password=Reh6quo0;";
+            string ConnectionString = ConfigurationManager.ConnectionStrings["ERP"].ConnectionString;
 
             SqlConnection con = new SqlConnection(ConnectionString);
             con.Open();

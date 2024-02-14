@@ -237,6 +237,7 @@ namespace ERP_HEISLER
 
         private void button4_Click_1(object sender, EventArgs e)
         {
+            Crm_controller.adicionar_clientes();
 
         }
     }

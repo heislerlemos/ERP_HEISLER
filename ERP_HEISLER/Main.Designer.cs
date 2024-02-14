@@ -844,7 +844,7 @@
             // 
             label34.AutoSize = true;
             label34.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label34.Location = new Point(993, 74);
+            label34.Location = new Point(1133, 138);
             label34.Name = "label34";
             label34.Size = new Size(95, 20);
             label34.TabIndex = 21;
@@ -861,7 +861,7 @@
             panel3.Controls.Add(comboBox31);
             panel3.Controls.Add(comboBox32);
             panel3.Controls.Add(comboBox33);
-            panel3.Location = new Point(960, 106);
+            panel3.Location = new Point(1100, 170);
             panel3.Name = "panel3";
             panel3.Size = new Size(205, 354);
             panel3.TabIndex = 20;
@@ -934,7 +934,7 @@
             // 
             label33.AutoSize = true;
             label33.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label33.Location = new Point(752, 70);
+            label33.Location = new Point(892, 134);
             label33.Name = "label33";
             label33.Size = new Size(71, 20);
             label33.TabIndex = 19;
@@ -951,7 +951,7 @@
             panel4.Controls.Add(comboBox23);
             panel4.Controls.Add(comboBox24);
             panel4.Controls.Add(comboBox25);
-            panel4.Location = new Point(719, 102);
+            panel4.Location = new Point(859, 166);
             panel4.Name = "panel4";
             panel4.Size = new Size(205, 354);
             panel4.TabIndex = 18;
@@ -1024,7 +1024,7 @@
             // 
             label32.AutoSize = true;
             label32.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label32.Location = new Point(506, 68);
+            label32.Location = new Point(646, 132);
             label32.Name = "label32";
             label32.Size = new Size(136, 20);
             label32.TabIndex = 17;
@@ -1041,7 +1041,7 @@
             panel1.Controls.Add(comboBox14);
             panel1.Controls.Add(comboBox15);
             panel1.Controls.Add(comboBox17);
-            panel1.Location = new Point(483, 104);
+            panel1.Location = new Point(623, 168);
             panel1.Name = "panel1";
             panel1.Size = new Size(205, 354);
             panel1.TabIndex = 16;
@@ -1114,7 +1114,7 @@
             // 
             label31.AutoSize = true;
             label31.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label31.Location = new Point(311, 71);
+            label31.Location = new Point(451, 135);
             label31.Name = "label31";
             label31.Size = new Size(91, 20);
             label31.TabIndex = 15;
@@ -1122,7 +1122,7 @@
             // 
             // button4
             // 
-            button4.Location = new Point(43, 411);
+            button4.Location = new Point(83, 486);
             button4.Name = "button4";
             button4.Size = new Size(94, 29);
             button4.TabIndex = 14;
@@ -1132,7 +1132,7 @@
             // 
             // textBox12
             // 
-            textBox12.Location = new Point(37, 367);
+            textBox12.Location = new Point(77, 442);
             textBox12.Name = "textBox12";
             textBox12.Size = new Size(190, 27);
             textBox12.TabIndex = 13;
@@ -1140,7 +1140,7 @@
             // label30
             // 
             label30.AutoSize = true;
-            label30.Location = new Point(33, 344);
+            label30.Location = new Point(73, 419);
             label30.Name = "label30";
             label30.Size = new Size(122, 20);
             label30.TabIndex = 12;
@@ -1148,7 +1148,7 @@
             // 
             // textBox11
             // 
-            textBox11.Location = new Point(35, 309);
+            textBox11.Location = new Point(75, 384);
             textBox11.Name = "textBox11";
             textBox11.Size = new Size(190, 27);
             textBox11.TabIndex = 11;
@@ -1156,7 +1156,7 @@
             // label29
             // 
             label29.AutoSize = true;
-            label29.Location = new Point(31, 286);
+            label29.Location = new Point(71, 361);
             label29.Name = "label29";
             label29.Size = new Size(126, 20);
             label29.TabIndex = 10;
@@ -1164,7 +1164,7 @@
             // 
             // textBox10
             // 
-            textBox10.Location = new Point(31, 249);
+            textBox10.Location = new Point(71, 324);
             textBox10.Name = "textBox10";
             textBox10.Size = new Size(190, 27);
             textBox10.TabIndex = 9;
@@ -1172,7 +1172,7 @@
             // label28
             // 
             label28.AutoSize = true;
-            label28.Location = new Point(31, 222);
+            label28.Location = new Point(71, 297);
             label28.Name = "label28";
             label28.Size = new Size(148, 20);
             label28.TabIndex = 8;
@@ -1180,7 +1180,7 @@
             // 
             // textBox9
             // 
-            textBox9.Location = new Point(31, 187);
+            textBox9.Location = new Point(71, 262);
             textBox9.Name = "textBox9";
             textBox9.Size = new Size(190, 27);
             textBox9.TabIndex = 7;
@@ -1188,7 +1188,7 @@
             // label27
             // 
             label27.AutoSize = true;
-            label27.Location = new Point(31, 164);
+            label27.Location = new Point(71, 239);
             label27.Name = "label27";
             label27.Size = new Size(34, 20);
             label27.TabIndex = 6;
@@ -1196,7 +1196,7 @@
             // 
             // textBox8
             // 
-            textBox8.Location = new Point(31, 127);
+            textBox8.Location = new Point(71, 202);
             textBox8.Name = "textBox8";
             textBox8.Size = new Size(190, 27);
             textBox8.TabIndex = 5;
@@ -1204,7 +1204,7 @@
             // label26
             // 
             label26.AutoSize = true;
-            label26.Location = new Point(27, 104);
+            label26.Location = new Point(67, 179);
             label26.Name = "label26";
             label26.Size = new Size(132, 20);
             label26.TabIndex = 4;
@@ -1214,7 +1214,7 @@
             // 
             label25.AutoSize = true;
             label25.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label25.Location = new Point(27, 74);
+            label25.Location = new Point(67, 149);
             label25.Name = "label25";
             label25.Size = new Size(122, 20);
             label25.TabIndex = 3;
@@ -1231,7 +1231,7 @@
             panel2.Controls.Add(comboBox4);
             panel2.Controls.Add(comboBox3);
             panel2.Controls.Add(comboBox2);
-            panel2.Location = new Point(256, 104);
+            panel2.Location = new Point(396, 168);
             panel2.Name = "panel2";
             panel2.Size = new Size(205, 354);
             panel2.TabIndex = 2;
@@ -1304,9 +1304,10 @@
             // label24
             // 
             label24.AutoSize = true;
+            label24.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label24.Location = new Point(26, 40);
             label24.Name = "label24";
-            label24.Size = new Size(250, 20);
+            label24.Size = new Size(405, 31);
             label24.TabIndex = 0;
             label24.Text = "Customer Relationship Management";
             // 

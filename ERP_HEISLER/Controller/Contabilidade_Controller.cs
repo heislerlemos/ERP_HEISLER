@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Security.Policy;
@@ -12,41 +13,32 @@ namespace ERP_HEISLER.Controller
     {
 
         public static Main? f1 = Application.OpenForms.OfType<Main>().FirstOrDefault();
-
-        public static void adicionarcontas()  
+        
+        public static int IncrementarId()
         {
-            try
+            string ConnectionString = ConfigurationManager.ConnectionStrings["ERP"].ConnectionString;
+            SqlConnection con = new SqlConnection(ConnectionString);
+            con.Open();
+            string Query = "SELECT MAX(id) From contabilidade_gastos";
+            SqlCommand cmd = new SqlCommand(Query, con);
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            while (reader.Read())
             {
-                if (f1 == null)
-                {
-                    throw new ArgumentNullException("não pode ser null");
-
-
-                }
-
-                string valor = f1.richTextBox1.Text;
-                System.Diagnostics.Debug.WriteLine(valor);
-
-                string produto = f1.richTextBox2.Text;
-                System.Diagnostics.Debug.WriteLine(produto);
-
-                string data_de_criaçao = f1.dateTimePicker3.Value.ToString("yyyy-MM-dd");
-                System.Diagnostics.Debug.WriteLine(data_de_criaçao);
-
-
+                System.Diagnostics.Debug.WriteLine(String.Format("{0}", reader[0]));
+                int myInt = reader.GetInt32(0);
+                System.Diagnostics.Debug.WriteLine(myInt);
+                return Interlocked.Increment(ref myInt);
             }
 
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
+            return 0;
 
-            }
+
 
         }
 
 
-
-       public static void adicionarcontasdb()
+        public static void adicionarcontasdb()
         {
             if (f1 == null)
             {
@@ -60,13 +52,12 @@ namespace ERP_HEISLER.Controller
             string produto = f1.richTextBox2.Text;
 
             string data_de_criaçao = f1.dateTimePicker3.Value.ToString("yyyy-MM-dd");
-
-            string ConnectionString = "Data Source=0191-L1\\SQLEXPRESS;Initial Catalog=ERP;Persist Security Info=True;User ID=dev;Password=Reh6quo0;";
+            string ConnectionString = ConfigurationManager.ConnectionStrings["ERP"].ConnectionString;
             SqlConnection con = new SqlConnection(ConnectionString);
             con.Open();
 
-            string Query = "INSERT INTO contabilidade_gastos ( valor, gasto_aonde, data)" +
-                " VALUES ('" + valor + "', '" + produto + "', '" + data_de_criaçao + "')";
+            string Query = "INSERT INTO contabilidade_gastos ( id , valor, gasto_aonde, data)" +
+                " VALUES ( '" + IncrementarId() + "' ,'" + valor + "', '" + produto + "', '" + data_de_criaçao + "')";
 
             SqlCommand cmd = new SqlCommand(Query, con);
             cmd.ExecuteNonQuery();
