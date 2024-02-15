@@ -94,6 +94,7 @@
             crmToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1 = new MenuStrip();
             crmpanel = new Panel();
+            label35 = new Label();
             label34 = new Label();
             panel3 = new Panel();
             comboBox26 = new ComboBox();
@@ -812,6 +813,7 @@
             // crmpanel
             // 
             crmpanel.BackColor = SystemColors.Control;
+            crmpanel.Controls.Add(label35);
             crmpanel.Controls.Add(label34);
             crmpanel.Controls.Add(panel3);
             crmpanel.Controls.Add(label33);
@@ -839,6 +841,18 @@
             crmpanel.Size = new Size(1397, 747);
             crmpanel.TabIndex = 31;
             crmpanel.Paint += panel1_Paint_2;
+            // 
+            // label35
+            // 
+            label35.AutoSize = true;
+            label35.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
+            label35.ForeColor = Color.ForestGreen;
+            label35.Location = new Point(26, 568);
+            label35.Name = "label35";
+            label35.Size = new Size(328, 35);
+            label35.TabIndex = 22;
+            label35.Text = "Os dados foram guardados";
+            label35.Visible = false;
             // 
             // label34
             // 
@@ -1416,15 +1430,10 @@
         private Panel panel2;
         private Label label24;
         private Label label25;
-        private TextBox textBox8;
         private Label label26;
-        private TextBox textBox12;
         private Label label30;
-        private TextBox textBox11;
         private Label label29;
-        private TextBox textBox10;
         private Label label28;
-        private TextBox textBox9;
         private Label label27;
         private Button button4;
         private Label label31;
@@ -1466,5 +1475,11 @@
         private ComboBox comboBox14;
         private ComboBox comboBox15;
         private ComboBox comboBox17;
+        public TextBox textBox8;
+        public TextBox textBox9;
+        public TextBox textBox11;
+        public TextBox textBox12;
+        public TextBox textBox10;
+        public Label label35;
     }
 }
