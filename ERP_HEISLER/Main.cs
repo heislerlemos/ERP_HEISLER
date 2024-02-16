@@ -1,5 +1,6 @@
 using ERP_HEISLER.Controller;
 using System.Configuration;
+using System.Data;
 using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Security.Policy;
@@ -18,7 +19,7 @@ namespace ERP_HEISLER
             InitializeComponent();
 
         }
-
+    
 
         public string TextBox1Text
         {
@@ -246,23 +247,10 @@ namespace ERP_HEISLER
 
         }
 
+
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // testing combo box   
-
-            string connString = ConfigurationManager.ConnectionStrings["ERP"].ConnectionString;
-            string Sql = "SELECT nome_da_empresa FROM entrada_do_lead;";
-            SqlConnection conn = new SqlConnection(connString);
-
-            conn.Open();
-            SqlCommand cmd = new SqlCommand(Sql, conn);
-            SqlDataReader DR = cmd.ExecuteReader();
-
-            while (DR.Read())
-            {
-
-
-            }
+            
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

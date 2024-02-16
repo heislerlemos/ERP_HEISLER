@@ -1069,7 +1069,7 @@
             // comboBox9
             // 
             comboBox9.FormattingEnabled = true;
-            comboBox9.Location = new Point(23, 301);
+            comboBox9.Location = new Point(23, 306);
             comboBox9.Name = "comboBox9";
             comboBox9.Size = new Size(151, 28);
             comboBox9.TabIndex = 7;
@@ -1318,6 +1318,7 @@
             // comboBox2
             // 
             comboBox2.FormattingEnabled = true;
+            comboBox2.Items.AddRange(new object[] { "1", "2", "3", "4" });
             comboBox2.Location = new Point(23, 18);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(151, 28);
@@ -1480,7 +1481,6 @@
         private ComboBox comboBox5;
         private ComboBox comboBox4;
         private ComboBox comboBox3;
-        private ComboBox comboBox2;
         private Label label34;
         private Panel panel3;
         private ComboBox comboBox26;
@@ -1519,5 +1519,6 @@
         public Label label35;
         private Panel footerpanel;
         private LinkLabel linkLabel1;
+        public ComboBox comboBox2;
     }
 }
