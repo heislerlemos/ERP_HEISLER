@@ -148,6 +148,8 @@
             comboBox3 = new ComboBox();
             comboBox2 = new ComboBox();
             label24 = new Label();
+            footerpanel = new Panel();
+            linkLabel1 = new LinkLabel();
             contabilidade.SuspendLayout();
             recursoshumanos.SuspendLayout();
             armazem.SuspendLayout();
@@ -157,11 +159,12 @@
             panel4.SuspendLayout();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
+            footerpanel.SuspendLayout();
             SuspendLayout();
             // 
             // contabilidade
             // 
-            contabilidade.BackColor = SystemColors.Control;
+            contabilidade.BackColor = Color.Teal;
             contabilidade.Controls.Add(label10);
             contabilidade.Controls.Add(visualizar_movimentos_contabilidade);
             contabilidade.Controls.Add(richTextBox3);
@@ -281,7 +284,7 @@
             // 
             // recursoshumanos
             // 
-            recursoshumanos.BackColor = SystemColors.Control;
+            recursoshumanos.BackColor = Color.Teal;
             recursoshumanos.Controls.Add(label23);
             recursoshumanos.Controls.Add(checkedListBox2);
             recursoshumanos.Controls.Add(label22);
@@ -606,7 +609,7 @@
             // 
             // armazem
             // 
-            armazem.BackColor = SystemColors.Control;
+            armazem.BackColor = Color.Teal;
             armazem.Controls.Add(button3);
             armazem.Controls.Add(Stock);
             armazem.Controls.Add(richTextBox8);
@@ -812,7 +815,7 @@
             // 
             // crmpanel
             // 
-            crmpanel.BackColor = SystemColors.Control;
+            crmpanel.BackColor = Color.Teal;
             crmpanel.Controls.Add(label35);
             crmpanel.Controls.Add(label34);
             crmpanel.Controls.Add(panel3);
@@ -846,7 +849,7 @@
             // 
             label35.AutoSize = true;
             label35.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
-            label35.ForeColor = Color.ForestGreen;
+            label35.ForeColor = SystemColors.Control;
             label35.Location = new Point(26, 568);
             label35.Name = "label35";
             label35.Size = new Size(328, 35);
@@ -858,6 +861,7 @@
             // 
             label34.AutoSize = true;
             label34.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label34.ForeColor = SystemColors.ButtonFace;
             label34.Location = new Point(1133, 138);
             label34.Name = "label34";
             label34.Size = new Size(95, 20);
@@ -948,6 +952,7 @@
             // 
             label33.AutoSize = true;
             label33.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label33.ForeColor = SystemColors.ButtonFace;
             label33.Location = new Point(892, 134);
             label33.Name = "label33";
             label33.Size = new Size(71, 20);
@@ -1038,6 +1043,7 @@
             // 
             label32.AutoSize = true;
             label32.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label32.ForeColor = SystemColors.ButtonFace;
             label32.Location = new Point(646, 132);
             label32.Name = "label32";
             label32.Size = new Size(136, 20);
@@ -1128,6 +1134,7 @@
             // 
             label31.AutoSize = true;
             label31.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label31.ForeColor = SystemColors.ButtonFace;
             label31.Location = new Point(451, 135);
             label31.Name = "label31";
             label31.Size = new Size(91, 20);
@@ -1228,6 +1235,7 @@
             // 
             label25.AutoSize = true;
             label25.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label25.ForeColor = SystemColors.ButtonFace;
             label25.Location = new Point(67, 149);
             label25.Name = "label25";
             label25.Size = new Size(122, 20);
@@ -1314,16 +1322,41 @@
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(151, 28);
             comboBox2.TabIndex = 0;
+            comboBox2.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
             // 
             // label24
             // 
             label24.AutoSize = true;
             label24.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label24.Location = new Point(26, 40);
+            label24.ForeColor = SystemColors.ButtonFace;
+            label24.Location = new Point(71, 65);
             label24.Name = "label24";
             label24.Size = new Size(405, 31);
             label24.TabIndex = 0;
             label24.Text = "Customer Relationship Management";
+            // 
+            // footerpanel
+            // 
+            footerpanel.BackColor = Color.DimGray;
+            footerpanel.Controls.Add(linkLabel1);
+            footerpanel.Dock = DockStyle.Bottom;
+            footerpanel.Location = new Point(0, 684);
+            footerpanel.Name = "footerpanel";
+            footerpanel.Size = new Size(1397, 63);
+            footerpanel.TabIndex = 23;
+            // 
+            // linkLabel1
+            // 
+            linkLabel1.AutoSize = true;
+            linkLabel1.LinkColor = Color.White;
+            linkLabel1.Location = new Point(1209, 25);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(176, 20);
+            linkLabel1.TabIndex = 0;
+            linkLabel1.TabStop = true;
+            linkLabel1.Tag = "";
+            linkLabel1.Text = "Criado por Heisler Stlano";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // Main
             // 
@@ -1331,6 +1364,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.RosyBrown;
             ClientSize = new Size(1397, 747);
+            Controls.Add(footerpanel);
             Controls.Add(menuStrip1);
             Controls.Add(crmpanel);
             Controls.Add(contabilidade);
@@ -1356,6 +1390,8 @@
             panel4.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
+            footerpanel.ResumeLayout(false);
+            footerpanel.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -1481,5 +1517,7 @@
         public TextBox textBox12;
         public TextBox textBox10;
         public Label label35;
+        private Panel footerpanel;
+        private LinkLabel linkLabel1;
     }
 }

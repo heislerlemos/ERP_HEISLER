@@ -1,4 +1,8 @@
 using ERP_HEISLER.Controller;
+using System.Configuration;
+using System.Data.SqlClient;
+using System.Diagnostics;
+using System.Security.Policy;
 
 namespace ERP_HEISLER
 {
@@ -21,6 +25,7 @@ namespace ERP_HEISLER
             get { return textBox1.Text; }
             set { textBox1.Text = value; }
         }
+
 
 
         private void armazemToolStripMenuItem_Click(object sender, EventArgs e)
@@ -238,6 +243,32 @@ namespace ERP_HEISLER
         private void button4_Click_1(object sender, EventArgs e)
         {
             Crm_controller.adicionar_clientes();
+
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // testing combo box   
+
+            string connString = ConfigurationManager.ConnectionStrings["ERP"].ConnectionString;
+            string Sql = "SELECT nome_da_empresa FROM entrada_do_lead;";
+            SqlConnection conn = new SqlConnection(connString);
+
+            conn.Open();
+            SqlCommand cmd = new SqlCommand(Sql, conn);
+            SqlDataReader DR = cmd.ExecuteReader();
+
+            while (DR.Read())
+            {
+
+
+            }
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+            Process.Start(new ProcessStartInfo("https://www.linkedin.com/in/heisler-stlano-969624146/") { UseShellExecute = true });
 
         }
     }
