@@ -150,6 +150,7 @@
             label24 = new Label();
             footerpanel = new Panel();
             linkLabel1 = new LinkLabel();
+            comboBoxTesting = new ComboBox();
             contabilidade.SuspendLayout();
             recursoshumanos.SuspendLayout();
             armazem.SuspendLayout();
@@ -816,6 +817,7 @@
             // crmpanel
             // 
             crmpanel.BackColor = Color.Teal;
+            crmpanel.Controls.Add(comboBoxTesting);
             crmpanel.Controls.Add(label35);
             crmpanel.Controls.Add(label34);
             crmpanel.Controls.Add(panel3);
@@ -1318,7 +1320,6 @@
             // comboBox2
             // 
             comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "1", "2", "3", "4" });
             comboBox2.Location = new Point(23, 18);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(151, 28);
@@ -1358,6 +1359,14 @@
             linkLabel1.Tag = "";
             linkLabel1.Text = "Criado por Heisler Stlano";
             linkLabel1.LinkClicked += linkLabel1_LinkClicked;
+            // 
+            // comboBoxTesting
+            // 
+            comboBoxTesting.FormattingEnabled = true;
+            comboBoxTesting.Location = new Point(591, 77);
+            comboBoxTesting.Name = "comboBoxTesting";
+            comboBoxTesting.Size = new Size(151, 28);
+            comboBoxTesting.TabIndex = 23;
             // 
             // Main
             // 
@@ -1520,5 +1529,6 @@
         private Panel footerpanel;
         private LinkLabel linkLabel1;
         public ComboBox comboBox2;
+        private ComboBox comboBoxTesting;
     }
 }

@@ -1,4 +1,5 @@
 using ERP_HEISLER.Controller;
+using ERP_HEISLER.Views;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
@@ -10,16 +11,15 @@ namespace ERP_HEISLER
 
     public partial class Main : Form
     {
-
-
+  
         List<Panel> listPanel = new List<Panel>();
 
         public Main()
         {
             InitializeComponent();
-
+            Combo_boxes.display();
         }
-    
+
 
         public string TextBox1Text
         {
@@ -250,7 +250,11 @@ namespace ERP_HEISLER
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
+         
+        
+
+          
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -259,5 +263,7 @@ namespace ERP_HEISLER
             Process.Start(new ProcessStartInfo("https://www.linkedin.com/in/heisler-stlano-969624146/") { UseShellExecute = true });
 
         }
+
+
     }
 }
