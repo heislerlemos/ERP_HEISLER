@@ -59,5 +59,15 @@ namespace ERP_HEISLER.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap man_5678220_1280 {
+            get {
+                object obj = ResourceManager.GetObject("man-5678220_1280", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

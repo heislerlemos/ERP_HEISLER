@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             contabilidade = new Panel();
+            pictureBox1 = new PictureBox();
             label10 = new Label();
             visualizar_movimentos_contabilidade = new Button();
             richTextBox3 = new RichTextBox();
@@ -150,8 +151,8 @@
             label24 = new Label();
             footerpanel = new Panel();
             linkLabel1 = new LinkLabel();
-            comboBoxTesting = new ComboBox();
             contabilidade.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             recursoshumanos.SuspendLayout();
             armazem.SuspendLayout();
             menuStrip1.SuspendLayout();
@@ -166,6 +167,7 @@
             // contabilidade
             // 
             contabilidade.BackColor = Color.Teal;
+            contabilidade.Controls.Add(pictureBox1);
             contabilidade.Controls.Add(label10);
             contabilidade.Controls.Add(visualizar_movimentos_contabilidade);
             contabilidade.Controls.Add(richTextBox3);
@@ -184,18 +186,30 @@
             contabilidade.TabIndex = 1;
             contabilidade.Paint += contabilidade_Paint;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.man_5678220_1280;
+            pictureBox1.Location = new Point(296, 138);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(533, 380);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 12;
+            pictureBox1.TabStop = false;
+            // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(347, 77);
+            label10.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label10.ForeColor = SystemColors.ButtonHighlight;
+            label10.Location = new Point(892, 66);
             label10.Name = "label10";
-            label10.Size = new Size(137, 20);
+            label10.Size = new Size(220, 31);
             label10.TabIndex = 11;
             label10.Text = "Contabilidade Lista";
             // 
             // visualizar_movimentos_contabilidade
             // 
-            visualizar_movimentos_contabilidade.Location = new Point(549, 74);
+            visualizar_movimentos_contabilidade.Location = new Point(1147, 70);
             visualizar_movimentos_contabilidade.Name = "visualizar_movimentos_contabilidade";
             visualizar_movimentos_contabilidade.Size = new Size(94, 29);
             visualizar_movimentos_contabilidade.TabIndex = 10;
@@ -204,9 +218,9 @@
             // 
             // richTextBox3
             // 
-            richTextBox3.Location = new Point(356, 125);
+            richTextBox3.Location = new Point(845, 125);
             richTextBox3.Name = "richTextBox3";
-            richTextBox3.Size = new Size(958, 478);
+            richTextBox3.Size = new Size(469, 478);
             richTextBox3.TabIndex = 9;
             richTextBox3.Text = "";
             // 
@@ -276,9 +290,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(27, 89);
+            label1.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
+            label1.ForeColor = SystemColors.ButtonHighlight;
+            label1.Location = new Point(20, 81);
             label1.Name = "label1";
-            label1.Size = new Size(103, 20);
+            label1.Size = new Size(158, 30);
             label1.TabIndex = 0;
             label1.Text = "Contabilidade";
             label1.Click += label1_Click;
@@ -817,7 +833,6 @@
             // crmpanel
             // 
             crmpanel.BackColor = Color.Teal;
-            crmpanel.Controls.Add(comboBoxTesting);
             crmpanel.Controls.Add(label35);
             crmpanel.Controls.Add(label34);
             crmpanel.Controls.Add(panel3);
@@ -1163,6 +1178,7 @@
             // label30
             // 
             label30.AutoSize = true;
+            label30.ForeColor = SystemColors.ButtonFace;
             label30.Location = new Point(73, 419);
             label30.Name = "label30";
             label30.Size = new Size(122, 20);
@@ -1179,6 +1195,7 @@
             // label29
             // 
             label29.AutoSize = true;
+            label29.ForeColor = SystemColors.ButtonFace;
             label29.Location = new Point(71, 361);
             label29.Name = "label29";
             label29.Size = new Size(126, 20);
@@ -1195,6 +1212,7 @@
             // label28
             // 
             label28.AutoSize = true;
+            label28.ForeColor = SystemColors.ButtonFace;
             label28.Location = new Point(71, 297);
             label28.Name = "label28";
             label28.Size = new Size(148, 20);
@@ -1211,6 +1229,7 @@
             // label27
             // 
             label27.AutoSize = true;
+            label27.ForeColor = SystemColors.ButtonFace;
             label27.Location = new Point(71, 239);
             label27.Name = "label27";
             label27.Size = new Size(34, 20);
@@ -1227,6 +1246,7 @@
             // label26
             // 
             label26.AutoSize = true;
+            label26.ForeColor = SystemColors.ButtonFace;
             label26.Location = new Point(67, 179);
             label26.Name = "label26";
             label26.Size = new Size(132, 20);
@@ -1360,14 +1380,6 @@
             linkLabel1.Text = "Criado por Heisler Stlano";
             linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
-            // comboBoxTesting
-            // 
-            comboBoxTesting.FormattingEnabled = true;
-            comboBoxTesting.Location = new Point(591, 77);
-            comboBoxTesting.Name = "comboBoxTesting";
-            comboBoxTesting.Size = new Size(151, 28);
-            comboBoxTesting.TabIndex = 23;
-            // 
             // Main
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -1388,6 +1400,7 @@
             Load += Main_Load;
             contabilidade.ResumeLayout(false);
             contabilidade.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             recursoshumanos.ResumeLayout(false);
             recursoshumanos.PerformLayout();
             armazem.ResumeLayout(false);
@@ -1529,6 +1542,6 @@
         private Panel footerpanel;
         private LinkLabel linkLabel1;
         public ComboBox comboBox2;
-        private ComboBox comboBoxTesting;
+        private PictureBox pictureBox1;
     }
 }
