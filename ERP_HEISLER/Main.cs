@@ -187,20 +187,9 @@ namespace ERP_HEISLER
 
         }
 
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
+ 
 
-        }
-
-        private void label23_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
+      
 
         private void crm_Paint(object sender, PaintEventArgs e)
         {
@@ -209,35 +198,16 @@ namespace ERP_HEISLER
 
         private void Main_Load(object sender, EventArgs e)
         {
+            Combo_boxes.display();
 
         }
 
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint_2(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint_3(object sender, PaintEventArgs e)
-        {
-
-        }
-
+  
         private void crmToolStripMenuItem_Click(object sender, EventArgs e)
         {
             listPanel.Add(crmpanel);
             crmpanel.BringToFront();
-            Combo_boxes.display();
-
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
+            
 
         }
 

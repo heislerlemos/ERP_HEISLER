@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             contabilidade = new Panel();
+            pictureBox1 = new PictureBox();
             label10 = new Label();
             visualizar_movimentos_contabilidade = new Button();
             richTextBox3 = new RichTextBox();
@@ -151,6 +152,7 @@
             footerpanel = new Panel();
             linkLabel1 = new LinkLabel();
             contabilidade.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             recursoshumanos.SuspendLayout();
             armazem.SuspendLayout();
             menuStrip1.SuspendLayout();
@@ -165,6 +167,7 @@
             // contabilidade
             // 
             contabilidade.BackColor = Color.Teal;
+            contabilidade.Controls.Add(pictureBox1);
             contabilidade.Controls.Add(label10);
             contabilidade.Controls.Add(visualizar_movimentos_contabilidade);
             contabilidade.Controls.Add(richTextBox3);
@@ -183,10 +186,20 @@
             contabilidade.TabIndex = 1;
             contabilidade.Paint += contabilidade_Paint;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.man_5678220_1280;
+            pictureBox1.Location = new Point(274, 171);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(536, 460);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 12;
+            pictureBox1.TabStop = false;
+            // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(347, 77);
+            label10.Location = new Point(931, 77);
             label10.Name = "label10";
             label10.Size = new Size(137, 20);
             label10.TabIndex = 11;
@@ -194,7 +207,7 @@
             // 
             // visualizar_movimentos_contabilidade
             // 
-            visualizar_movimentos_contabilidade.Location = new Point(549, 74);
+            visualizar_movimentos_contabilidade.Location = new Point(1133, 74);
             visualizar_movimentos_contabilidade.Name = "visualizar_movimentos_contabilidade";
             visualizar_movimentos_contabilidade.Size = new Size(94, 29);
             visualizar_movimentos_contabilidade.TabIndex = 10;
@@ -203,9 +216,9 @@
             // 
             // richTextBox3
             // 
-            richTextBox3.Location = new Point(356, 125);
+            richTextBox3.Location = new Point(834, 125);
             richTextBox3.Name = "richTextBox3";
-            richTextBox3.Size = new Size(958, 478);
+            richTextBox3.Size = new Size(480, 478);
             richTextBox3.TabIndex = 9;
             richTextBox3.Text = "";
             // 
@@ -331,7 +344,6 @@
             label23.Size = new Size(58, 20);
             label23.TabIndex = 30;
             label23.Text = "label23";
-            label23.Click += label23_Click;
             // 
             // checkedListBox2
             // 
@@ -375,7 +387,6 @@
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(236, 27);
             textBox6.TabIndex = 25;
-            textBox6.TextChanged += textBox6_TextChanged;
             // 
             // label20
             // 
@@ -631,7 +642,6 @@
             armazem.Name = "armazem";
             armazem.Size = new Size(1397, 747);
             armazem.TabIndex = 3;
-            armazem.Paint += panel1_Paint;
             // 
             // button3
             // 
@@ -811,7 +821,6 @@
             menuStrip1.Size = new Size(1397, 28);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
-            menuStrip1.ItemClicked += menuStrip1_ItemClicked;
             // 
             // crmpanel
             // 
@@ -843,7 +852,6 @@
             crmpanel.Name = "crmpanel";
             crmpanel.Size = new Size(1397, 747);
             crmpanel.TabIndex = 31;
-            crmpanel.Paint += panel1_Paint_2;
             // 
             // label35
             // 
@@ -1257,7 +1265,6 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(205, 354);
             panel2.TabIndex = 2;
-            panel2.Paint += panel2_Paint;
             // 
             // comboBox16
             // 
@@ -1366,10 +1373,10 @@
             ClientSize = new Size(1397, 747);
             Controls.Add(footerpanel);
             Controls.Add(menuStrip1);
-            Controls.Add(crmpanel);
             Controls.Add(contabilidade);
             Controls.Add(armazem);
             Controls.Add(recursoshumanos);
+            Controls.Add(crmpanel);
             FormBorderStyle = FormBorderStyle.Fixed3D;
             MainMenuStrip = menuStrip1;
             MaximizeBox = false;
@@ -1378,6 +1385,7 @@
             Load += Main_Load;
             contabilidade.ResumeLayout(false);
             contabilidade.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             recursoshumanos.ResumeLayout(false);
             recursoshumanos.PerformLayout();
             armazem.ResumeLayout(false);
@@ -1519,5 +1527,6 @@
         private Panel footerpanel;
         private LinkLabel linkLabel1;
         public ComboBox comboBox2;
+        private PictureBox pictureBox1;
     }
 }
