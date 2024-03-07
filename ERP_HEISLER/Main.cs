@@ -11,21 +11,18 @@ namespace ERP_HEISLER
 
     public partial class Main : Form
     {
-  
+        
         List<Panel> listPanel = new List<Panel>();
 
         public Main()
         {
             InitializeComponent();
-            Combo_boxes.display();
         }
 
 
-        public string TextBox1Text
-        {
-            get { return textBox1.Text; }
-            set { textBox1.Text = value; }
-        }
+
+
+
 
 
 
@@ -33,6 +30,7 @@ namespace ERP_HEISLER
         {
             listPanel.Add(armazem);
             armazem.BringToFront();
+
 
 
 
@@ -233,6 +231,8 @@ namespace ERP_HEISLER
         {
             listPanel.Add(crmpanel);
             crmpanel.BringToFront();
+            Combo_boxes.display();
+
 
         }
 
@@ -264,6 +264,9 @@ namespace ERP_HEISLER
 
         }
 
-
+        public static implicit operator Main(string v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
