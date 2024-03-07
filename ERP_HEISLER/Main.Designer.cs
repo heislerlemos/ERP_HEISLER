@@ -184,7 +184,7 @@
             contabilidade.Name = "contabilidade";
             contabilidade.Size = new Size(1397, 747);
             contabilidade.TabIndex = 1;
-            contabilidade.Paint += contabilidade_Paint;
+            
             // 
             // pictureBox1
             // 
@@ -228,7 +228,7 @@
             dateTimePicker3.Name = "dateTimePicker3";
             dateTimePicker3.Size = new Size(250, 27);
             dateTimePicker3.TabIndex = 7;
-            dateTimePicker3.ValueChanged += dateTimePicker3_ValueChanged;
+            
             // 
             // data_contabilidade
             // 
@@ -246,7 +246,7 @@
             richTextBox2.Size = new Size(148, 28);
             richTextBox2.TabIndex = 5;
             richTextBox2.Text = "";
-            richTextBox2.TextChanged += richTextBox2_TextChanged;
+           
             // 
             // produto_contabilidade
             // 
@@ -264,7 +264,7 @@
             richTextBox1.Size = new Size(82, 30);
             richTextBox1.TabIndex = 3;
             richTextBox1.Text = "";
-            richTextBox1.TextChanged += richTextBox1_TextChanged;
+            
             // 
             // label9
             // 
@@ -293,7 +293,7 @@
             label1.Size = new Size(103, 20);
             label1.TabIndex = 0;
             label1.Text = "Contabilidade";
-            label1.Click += label1_Click;
+           
             // 
             // recursoshumanos
             // 
@@ -334,7 +334,7 @@
             recursoshumanos.Name = "recursoshumanos";
             recursoshumanos.Size = new Size(1397, 747);
             recursoshumanos.TabIndex = 2;
-            recursoshumanos.Paint += recursoshumanos_Paint;
+            
             // 
             // label23
             // 
@@ -443,7 +443,7 @@
             checkedListBox1.Name = "checkedListBox1";
             checkedListBox1.Size = new Size(113, 44);
             checkedListBox1.TabIndex = 19;
-            checkedListBox1.SelectedIndexChanged += checkedListBox1_SelectedIndexChanged_1;
+           
             // 
             // label17
             // 
@@ -463,7 +463,7 @@
             label16.TabIndex = 17;
             label16.Text = "ERRO NOME DUPLICADO";
             label16.Visible = false;
-            label16.Click += label16_Click;
+          
             // 
             // textBox4
             // 
@@ -471,7 +471,7 @@
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(265, 27);
             textBox4.TabIndex = 16;
-            textBox4.TextChanged += textBox4_TextChanged;
+         
             // 
             // label15
             // 
@@ -488,7 +488,7 @@
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(265, 27);
             textBox3.TabIndex = 14;
-            textBox3.TextChanged += textBox3_TextChanged;
+         
             // 
             // label14
             // 
@@ -525,7 +525,7 @@
             dateTimePicker2.Name = "dateTimePicker2";
             dateTimePicker2.Size = new Size(264, 27);
             dateTimePicker2.TabIndex = 10;
-            dateTimePicker2.ValueChanged += dateTimePicker2_ValueChanged;
+           
             // 
             // dateTimePicker1
             // 
@@ -533,7 +533,6 @@
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(264, 27);
             dateTimePicker1.TabIndex = 9;
-            dateTimePicker1.ValueChanged += dateTimePicker1_ValueChanged;
             // 
             // label8
             // 
@@ -559,7 +558,7 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(295, 27);
             textBox2.TabIndex = 6;
-            textBox2.TextChanged += textBox2_TextChanged;
+           
             // 
             // textBox1
             // 
@@ -567,7 +566,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(295, 27);
             textBox1.TabIndex = 5;
-            textBox1.TextChanged += textBox1_TextChanged;
+            
             // 
             // label6
             // 
@@ -597,7 +596,7 @@
             label4.Size = new Size(253, 31);
             label4.TabIndex = 2;
             label4.Text = "Adicionar Funcionarios ";
-            label4.Click += label4_Click;
+           
             // 
             // Nome
             // 
@@ -616,7 +615,7 @@
             label2.Size = new Size(134, 20);
             label2.TabIndex = 0;
             label2.Text = "Recursos Humanos";
-            label2.Click += label2_Click;
+          
             // 
             // armazem
             // 
@@ -702,7 +701,7 @@
             richTextBox7.Size = new Size(45, 34);
             richTextBox7.TabIndex = 8;
             richTextBox7.Text = "";
-            richTextBox7.TextChanged += richTextBox7_TextChanged;
+           
             // 
             // label13
             // 
@@ -720,7 +719,7 @@
             richTextBox6.Size = new Size(247, 31);
             richTextBox6.TabIndex = 6;
             richTextBox6.Text = "";
-            richTextBox6.TextChanged += richTextBox6_TextChanged;
+            
             // 
             // label12
             // 
@@ -747,7 +746,7 @@
             marca_do_produto.Size = new Size(50, 20);
             marca_do_produto.TabIndex = 3;
             marca_do_produto.Text = "Marca";
-            marca_do_produto.Click += label12_Click;
+            
             // 
             // richTextBox4
             // 
@@ -774,7 +773,7 @@
             label3.Size = new Size(73, 20);
             label3.TabIndex = 0;
             label3.Text = "Armazem";
-            label3.Click += label3_Click;
+            
             // 
             // contabilidadeToolStripMenuItem
             // 
@@ -1157,7 +1156,7 @@
             button4.TabIndex = 14;
             button4.Text = "Submeter";
             button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click_1;
+            
             // 
             // textBox12
             // 
@@ -1263,7 +1262,7 @@
             panel2.Controls.Add(comboBox2);
             panel2.Location = new Point(396, 168);
             panel2.Name = "panel2";
-            panel2.Size = new Size(205, 354);
+            panel2.Size = new Size(205, 354); 
             panel2.TabIndex = 2;
             // 
             // comboBox16
@@ -1329,7 +1328,6 @@
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(151, 28);
             comboBox2.TabIndex = 0;
-            comboBox2.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
             // 
             // label24
             // 
