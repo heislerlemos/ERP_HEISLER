@@ -5,6 +5,8 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace ERP_HEISLER.Views
 {
@@ -18,9 +20,22 @@ namespace ERP_HEISLER.Views
             {
                 throw new ArgumentNullException("não pode ser null");
             }
-            f1.comboBox2.Items.Add("Aparece");
-        
+            //f1.comboBox2.Items.Add("Aparece");
 
+
+
+            string ConnectionString = ConfigurationManager.ConnectionStrings["ERP"].ConnectionString;
+            SqlConnection conn = new SqlConnection(ConnectionString);
+         
+                    string query = "SELECT nome_da_empresa from entrada_do_lead";
+                    SqlDataAdapter da = new SqlDataAdapter(query, conn);
+                    conn.Open();
+                    DataSet ds = new DataSet();
+                    da.Fill(ds, "nome_da_empresa");
+                    f1.comboBox2.DataSource = ds.Tables["entrada_do_lead"];
+                    f1.comboBox2.Items.Add(da);
+           
+            
 
         }
 
