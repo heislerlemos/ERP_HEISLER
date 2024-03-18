@@ -11,7 +11,7 @@ namespace ERP_HEISLER
 
     public partial class Main : Form
     {
-        
+
         List<Panel> listPanel = new List<Panel>();
 
         public Main()
@@ -39,7 +39,7 @@ namespace ERP_HEISLER
             recursoshumanos.BringToFront();
         }
 
-         
+
         private void button2_Click(object sender, EventArgs e)
         {
             Rh_Controller.removerdb();
@@ -50,7 +50,7 @@ namespace ERP_HEISLER
             Rh_Controller.adicionardb();
 
         }
-    
+
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -58,24 +58,24 @@ namespace ERP_HEISLER
             Contabilidade_Controller.adicionarcontasdb();
         }
 
-       
+
         private void submeter_dados_Click(object sender, EventArgs e)
         {
             Armazem_Controller.adicionarproductodb();
 
         }
-     
+
 
         private void Main_Load(object sender, EventArgs e)
         {
             Combo_boxes.display();
         }
 
-  
+
         private void crmToolStripMenuItem_Click(object sender, EventArgs e)
         {
             listPanel.Add(crmpanel);
-            crmpanel.BringToFront();            
+            crmpanel.BringToFront();
         }
 
         private void button4_Click_1(object sender, EventArgs e)
@@ -89,9 +89,14 @@ namespace ERP_HEISLER
             Process.Start(new ProcessStartInfo("https://www.linkedin.com/in/heisler-stlano-969624146/") { UseShellExecute = true });
         }
 
+        private void label31_Click(object sender, EventArgs e)
+        {
+
+        }
+
         public static implicit operator Main(string v)
         {
             throw new NotImplementedException();
         }
-        }
+    }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             contabilidade = new Panel();
+            pictureBox3 = new PictureBox();
             pictureBox1 = new PictureBox();
             visualizar_movimentos_contabilidade = new Button();
             richTextBox3 = new RichTextBox();
@@ -41,6 +42,7 @@
             Submeter_contabilidade = new Button();
             label1 = new Label();
             recursoshumanos = new Panel();
+            pictureBox4 = new PictureBox();
             label23 = new Label();
             checkedListBox2 = new CheckedListBox();
             label22 = new Label();
@@ -149,11 +151,11 @@
             label24 = new Label();
             footerpanel = new Panel();
             linkLabel1 = new LinkLabel();
-            pictureBox3 = new PictureBox();
-            pictureBox4 = new PictureBox();
             contabilidade.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             recursoshumanos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             armazem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             menuStrip1.SuspendLayout();
@@ -163,8 +165,6 @@
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             footerpanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // contabilidade
@@ -187,6 +187,16 @@
             contabilidade.Name = "contabilidade";
             contabilidade.Size = new Size(1397, 747);
             contabilidade.TabIndex = 1;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = Properties.Resources.search;
+            pictureBox3.Location = new Point(920, 55);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(125, 62);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 13;
+            pictureBox3.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -329,6 +339,16 @@
             recursoshumanos.Name = "recursoshumanos";
             recursoshumanos.Size = new Size(1397, 747);
             recursoshumanos.TabIndex = 2;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = Properties.Resources.exam;
+            pictureBox4.Location = new Point(35, 571);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(125, 62);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 31;
+            pictureBox4.TabStop = false;
             // 
             // label23
             // 
@@ -1145,6 +1165,7 @@
             label31.Size = new Size(91, 20);
             label31.TabIndex = 15;
             label31.Text = "Interagindo";
+            label31.Click += label31_Click;
             // 
             // button4
             // 
@@ -1365,26 +1386,6 @@
             linkLabel1.Text = "Criado por Heisler Stlano";
             linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
-            // pictureBox3
-            // 
-            pictureBox3.Image = Properties.Resources.search;
-            pictureBox3.Location = new Point(920, 55);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(125, 62);
-            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox3.TabIndex = 13;
-            pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.Image = Properties.Resources.exam;
-            pictureBox4.Location = new Point(35, 571);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(125, 62);
-            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox4.TabIndex = 31;
-            pictureBox4.TabStop = false;
-            // 
             // Main
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -1393,10 +1394,10 @@
             ClientSize = new Size(1397, 747);
             Controls.Add(menuStrip1);
             Controls.Add(footerpanel);
-            Controls.Add(recursoshumanos);
             Controls.Add(crmpanel);
             Controls.Add(contabilidade);
             Controls.Add(armazem);
+            Controls.Add(recursoshumanos);
             FormBorderStyle = FormBorderStyle.Fixed3D;
             MainMenuStrip = menuStrip1;
             MaximizeBox = false;
@@ -1405,9 +1406,11 @@
             Load += Main_Load;
             contabilidade.ResumeLayout(false);
             contabilidade.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             recursoshumanos.ResumeLayout(false);
             recursoshumanos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             armazem.ResumeLayout(false);
             armazem.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
@@ -1421,8 +1424,6 @@
             panel2.ResumeLayout(false);
             footerpanel.ResumeLayout(false);
             footerpanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -1430,7 +1431,6 @@
         #endregion
         private Panel contabilidade;
         private Label label1;
-        private Panel recursoshumanos;
         private Label label2;
         private Panel armazem;
         private Label label4;
@@ -1502,12 +1502,8 @@
         private Button button4;
         private Label label31;
         private ComboBox comboBox16;
-        private ComboBox comboBox8;
-        private ComboBox comboBox7;
         private ComboBox comboBox6;
-        private ComboBox comboBox5;
         private ComboBox comboBox4;
-        private ComboBox comboBox3;
         private Label label34;
         private Panel panel3;
         private ComboBox comboBox26;
@@ -1551,5 +1547,10 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
+        public Panel recursoshumanos;
+        public ComboBox comboBox8;
+        public ComboBox comboBox7;
+        public ComboBox comboBox3;
+        public ComboBox comboBox5;
     }
 }

@@ -20,22 +20,29 @@ namespace ERP_HEISLER.Views
             {
                 throw new ArgumentNullException("não pode ser null");
             }
-            //f1.comboBox2.Items.Add("Aparece");
-
-
 
             string ConnectionString = ConfigurationManager.ConnectionStrings["ERP"].ConnectionString;
             SqlConnection conn = new SqlConnection(ConnectionString);
-         
-                    string query = "SELECT nome_da_empresa from entrada_do_lead";
-                    SqlDataAdapter da = new SqlDataAdapter(query, conn);
-                    conn.Open();
-                    DataSet ds = new DataSet();
-                    da.Fill(ds, "nome_da_empresa");
-                    f1.comboBox2.DataSource = ds.Tables["entrada_do_lead"];
-                    f1.comboBox2.Items.Add(da);
-           
-            
+
+            string query = "SELECT nome_da_empresa from entrada_do_lead";
+            SqlDataAdapter da = new SqlDataAdapter(query, conn);
+            conn.Open();
+
+            SqlCommand cmd = new SqlCommand(query, conn);
+            SqlDataReader DR = cmd.ExecuteReader();
+
+            while (DR.Read())
+            {
+                f1.comboBox2.Items.Add(DR[0]);
+                f1.comboBox8.Items.Add(DR[0]);
+                f1.comboBox7.Items.Add(DR[0]);
+                f1.comboBox3.Items.Add(DR[0]);
+                f1.comboBox5.Items.Add(DR[0]);
+
+
+            }
+
+
 
         }
 
