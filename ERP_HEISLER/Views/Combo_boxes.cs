@@ -37,7 +37,6 @@ namespace ERP_HEISLER.Views
                 f1.comboBox8.Items.Add(DR[0]);
                 f1.comboBox7.Items.Add(DR[0]);
                 f1.comboBox3.Items.Add(DR[0]);
-                f1.comboBox5.Items.Add(DR[0]);
 
 
             }

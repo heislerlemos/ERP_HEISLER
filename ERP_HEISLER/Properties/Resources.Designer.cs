@@ -73,6 +73,16 @@ namespace ERP_HEISLER.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_crm_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-crm-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap man_5678220_1280 {
             get {
                 object obj = ResourceManager.GetObject("man-5678220_1280", resourceCulture);

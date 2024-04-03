@@ -89,9 +89,9 @@ namespace ERP_HEISLER
             Process.Start(new ProcessStartInfo("https://www.linkedin.com/in/heisler-stlano-969624146/") { UseShellExecute = true });
         }
 
-        private void label31_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
-
+            Crm_controller.adicionar_clientes();
         }
 
         public static implicit operator Main(string v)

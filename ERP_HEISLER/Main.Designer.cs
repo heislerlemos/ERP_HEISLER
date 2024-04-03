@@ -95,35 +95,29 @@
             crmToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1 = new MenuStrip();
             crmpanel = new Panel();
+            label3 = new Label();
+            richTextBox9 = new RichTextBox();
+            pictureBox5 = new PictureBox();
             label35 = new Label();
             label34 = new Label();
             panel3 = new Panel();
-            comboBox26 = new ComboBox();
             comboBox27 = new ComboBox();
             comboBox28 = new ComboBox();
             comboBox29 = new ComboBox();
-            comboBox30 = new ComboBox();
-            comboBox31 = new ComboBox();
             comboBox32 = new ComboBox();
             comboBox33 = new ComboBox();
             label33 = new Label();
             panel4 = new Panel();
-            comboBox18 = new ComboBox();
             comboBox19 = new ComboBox();
             comboBox20 = new ComboBox();
             comboBox21 = new ComboBox();
-            comboBox22 = new ComboBox();
-            comboBox23 = new ComboBox();
             comboBox24 = new ComboBox();
             comboBox25 = new ComboBox();
             label32 = new Label();
             panel1 = new Panel();
-            comboBox9 = new ComboBox();
             comboBox10 = new ComboBox();
             comboBox11 = new ComboBox();
             comboBox12 = new ComboBox();
-            comboBox13 = new ComboBox();
-            comboBox14 = new ComboBox();
             comboBox15 = new ComboBox();
             comboBox17 = new ComboBox();
             label31 = new Label();
@@ -140,12 +134,9 @@
             label26 = new Label();
             label25 = new Label();
             panel2 = new Panel();
-            comboBox16 = new ComboBox();
             comboBox8 = new ComboBox();
             comboBox7 = new ComboBox();
             comboBox6 = new ComboBox();
-            comboBox5 = new ComboBox();
-            comboBox4 = new ComboBox();
             comboBox3 = new ComboBox();
             comboBox2 = new ComboBox();
             label24 = new Label();
@@ -160,6 +151,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             menuStrip1.SuspendLayout();
             crmpanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             panel3.SuspendLayout();
             panel4.SuspendLayout();
             panel1.SuspendLayout();
@@ -842,6 +834,9 @@
             // crmpanel
             // 
             crmpanel.BackColor = Color.Teal;
+            crmpanel.Controls.Add(label3);
+            crmpanel.Controls.Add(richTextBox9);
+            crmpanel.Controls.Add(pictureBox5);
             crmpanel.Controls.Add(label35);
             crmpanel.Controls.Add(label34);
             crmpanel.Controls.Add(panel3);
@@ -870,6 +865,35 @@
             crmpanel.Size = new Size(1397, 747);
             crmpanel.TabIndex = 31;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label3.ForeColor = SystemColors.ButtonHighlight;
+            label3.Location = new Point(393, 431);
+            label3.Name = "label3";
+            label3.Size = new Size(126, 20);
+            label3.TabIndex = 25;
+            label3.Text = "Datas  Ano 2024";
+            // 
+            // richTextBox9
+            // 
+            richTextBox9.Location = new Point(388, 474);
+            richTextBox9.Name = "richTextBox9";
+            richTextBox9.Size = new Size(939, 151);
+            richTextBox9.TabIndex = 24;
+            richTextBox9.Text = "";
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Image = Properties.Resources.icons8_crm_64;
+            pictureBox5.Location = new Point(96, 50);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(125, 62);
+            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox5.TabIndex = 23;
+            pictureBox5.TabStop = false;
+            // 
             // label35
             // 
             label35.AutoSize = true;
@@ -896,26 +920,15 @@
             // panel3
             // 
             panel3.BackColor = Color.Azure;
-            panel3.Controls.Add(comboBox26);
             panel3.Controls.Add(comboBox27);
             panel3.Controls.Add(comboBox28);
             panel3.Controls.Add(comboBox29);
-            panel3.Controls.Add(comboBox30);
-            panel3.Controls.Add(comboBox31);
             panel3.Controls.Add(comboBox32);
             panel3.Controls.Add(comboBox33);
             panel3.Location = new Point(1100, 170);
             panel3.Name = "panel3";
-            panel3.Size = new Size(205, 354);
+            panel3.Size = new Size(205, 233);
             panel3.TabIndex = 20;
-            // 
-            // comboBox26
-            // 
-            comboBox26.FormattingEnabled = true;
-            comboBox26.Location = new Point(23, 301);
-            comboBox26.Name = "comboBox26";
-            comboBox26.Size = new Size(151, 28);
-            comboBox26.TabIndex = 7;
             // 
             // comboBox27
             // 
@@ -940,22 +953,6 @@
             comboBox29.Name = "comboBox29";
             comboBox29.Size = new Size(151, 28);
             comboBox29.TabIndex = 4;
-            // 
-            // comboBox30
-            // 
-            comboBox30.FormattingEnabled = true;
-            comboBox30.Location = new Point(23, 226);
-            comboBox30.Name = "comboBox30";
-            comboBox30.Size = new Size(151, 28);
-            comboBox30.TabIndex = 3;
-            // 
-            // comboBox31
-            // 
-            comboBox31.FormattingEnabled = true;
-            comboBox31.Location = new Point(23, 266);
-            comboBox31.Name = "comboBox31";
-            comboBox31.Size = new Size(151, 28);
-            comboBox31.TabIndex = 2;
             // 
             // comboBox32
             // 
@@ -987,26 +984,15 @@
             // panel4
             // 
             panel4.BackColor = Color.DarkTurquoise;
-            panel4.Controls.Add(comboBox18);
             panel4.Controls.Add(comboBox19);
             panel4.Controls.Add(comboBox20);
             panel4.Controls.Add(comboBox21);
-            panel4.Controls.Add(comboBox22);
-            panel4.Controls.Add(comboBox23);
             panel4.Controls.Add(comboBox24);
             panel4.Controls.Add(comboBox25);
             panel4.Location = new Point(859, 166);
             panel4.Name = "panel4";
-            panel4.Size = new Size(205, 354);
+            panel4.Size = new Size(205, 237);
             panel4.TabIndex = 18;
-            // 
-            // comboBox18
-            // 
-            comboBox18.FormattingEnabled = true;
-            comboBox18.Location = new Point(23, 301);
-            comboBox18.Name = "comboBox18";
-            comboBox18.Size = new Size(151, 28);
-            comboBox18.TabIndex = 7;
             // 
             // comboBox19
             // 
@@ -1031,22 +1017,6 @@
             comboBox21.Name = "comboBox21";
             comboBox21.Size = new Size(151, 28);
             comboBox21.TabIndex = 4;
-            // 
-            // comboBox22
-            // 
-            comboBox22.FormattingEnabled = true;
-            comboBox22.Location = new Point(23, 226);
-            comboBox22.Name = "comboBox22";
-            comboBox22.Size = new Size(151, 28);
-            comboBox22.TabIndex = 3;
-            // 
-            // comboBox23
-            // 
-            comboBox23.FormattingEnabled = true;
-            comboBox23.Location = new Point(23, 266);
-            comboBox23.Name = "comboBox23";
-            comboBox23.Size = new Size(151, 28);
-            comboBox23.TabIndex = 2;
             // 
             // comboBox24
             // 
@@ -1078,26 +1048,15 @@
             // panel1
             // 
             panel1.BackColor = Color.Honeydew;
-            panel1.Controls.Add(comboBox9);
             panel1.Controls.Add(comboBox10);
             panel1.Controls.Add(comboBox11);
             panel1.Controls.Add(comboBox12);
-            panel1.Controls.Add(comboBox13);
-            panel1.Controls.Add(comboBox14);
             panel1.Controls.Add(comboBox15);
             panel1.Controls.Add(comboBox17);
             panel1.Location = new Point(623, 168);
             panel1.Name = "panel1";
-            panel1.Size = new Size(205, 354);
+            panel1.Size = new Size(205, 235);
             panel1.TabIndex = 16;
-            // 
-            // comboBox9
-            // 
-            comboBox9.FormattingEnabled = true;
-            comboBox9.Location = new Point(23, 306);
-            comboBox9.Name = "comboBox9";
-            comboBox9.Size = new Size(151, 28);
-            comboBox9.TabIndex = 7;
             // 
             // comboBox10
             // 
@@ -1122,22 +1081,6 @@
             comboBox12.Name = "comboBox12";
             comboBox12.Size = new Size(151, 28);
             comboBox12.TabIndex = 4;
-            // 
-            // comboBox13
-            // 
-            comboBox13.FormattingEnabled = true;
-            comboBox13.Location = new Point(23, 226);
-            comboBox13.Name = "comboBox13";
-            comboBox13.Size = new Size(151, 28);
-            comboBox13.TabIndex = 3;
-            // 
-            // comboBox14
-            // 
-            comboBox14.FormattingEnabled = true;
-            comboBox14.Location = new Point(23, 266);
-            comboBox14.Name = "comboBox14";
-            comboBox14.Size = new Size(151, 28);
-            comboBox14.TabIndex = 2;
             // 
             // comboBox15
             // 
@@ -1165,7 +1108,6 @@
             label31.Size = new Size(91, 20);
             label31.TabIndex = 15;
             label31.Text = "Interagindo";
-            label31.Click += label31_Click;
             // 
             // button4
             // 
@@ -1175,6 +1117,7 @@
             button4.TabIndex = 14;
             button4.Text = "Submeter";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // textBox12
             // 
@@ -1275,26 +1218,15 @@
             // panel2
             // 
             panel2.BackColor = Color.DarkSeaGreen;
-            panel2.Controls.Add(comboBox16);
             panel2.Controls.Add(comboBox8);
             panel2.Controls.Add(comboBox7);
             panel2.Controls.Add(comboBox6);
-            panel2.Controls.Add(comboBox5);
-            panel2.Controls.Add(comboBox4);
             panel2.Controls.Add(comboBox3);
             panel2.Controls.Add(comboBox2);
             panel2.Location = new Point(396, 168);
             panel2.Name = "panel2";
-            panel2.Size = new Size(205, 354);
+            panel2.Size = new Size(205, 237);
             panel2.TabIndex = 2;
-            // 
-            // comboBox16
-            // 
-            comboBox16.FormattingEnabled = true;
-            comboBox16.Location = new Point(23, 301);
-            comboBox16.Name = "comboBox16";
-            comboBox16.Size = new Size(151, 28);
-            comboBox16.TabIndex = 7;
             // 
             // comboBox8
             // 
@@ -1320,22 +1252,6 @@
             comboBox6.Size = new Size(151, 28);
             comboBox6.TabIndex = 4;
             // 
-            // comboBox5
-            // 
-            comboBox5.FormattingEnabled = true;
-            comboBox5.Location = new Point(23, 226);
-            comboBox5.Name = "comboBox5";
-            comboBox5.Size = new Size(151, 28);
-            comboBox5.TabIndex = 3;
-            // 
-            // comboBox4
-            // 
-            comboBox4.FormattingEnabled = true;
-            comboBox4.Location = new Point(23, 266);
-            comboBox4.Name = "comboBox4";
-            comboBox4.Size = new Size(151, 28);
-            comboBox4.TabIndex = 2;
-            // 
             // comboBox3
             // 
             comboBox3.FormattingEnabled = true;
@@ -1357,7 +1273,7 @@
             label24.AutoSize = true;
             label24.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label24.ForeColor = SystemColors.ButtonFace;
-            label24.Location = new Point(71, 65);
+            label24.Location = new Point(226, 66);
             label24.Name = "label24";
             label24.Size = new Size(405, 31);
             label24.TabIndex = 0;
@@ -1418,6 +1334,7 @@
             menuStrip1.PerformLayout();
             crmpanel.ResumeLayout(false);
             crmpanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             panel3.ResumeLayout(false);
             panel4.ResumeLayout(false);
             panel1.ResumeLayout(false);
@@ -1501,37 +1418,26 @@
         private Label label27;
         private Button button4;
         private Label label31;
-        private ComboBox comboBox16;
         private ComboBox comboBox6;
-        private ComboBox comboBox4;
         private Label label34;
         private Panel panel3;
-        private ComboBox comboBox26;
         private ComboBox comboBox27;
         private ComboBox comboBox28;
         private ComboBox comboBox29;
-        private ComboBox comboBox30;
-        private ComboBox comboBox31;
         private ComboBox comboBox32;
         private ComboBox comboBox33;
         private Label label33;
         private Panel panel4;
-        private ComboBox comboBox18;
         private ComboBox comboBox19;
         private ComboBox comboBox20;
         private ComboBox comboBox21;
-        private ComboBox comboBox22;
-        private ComboBox comboBox23;
         private ComboBox comboBox24;
         private ComboBox comboBox25;
         private Label label32;
         private Panel panel1;
-        private ComboBox comboBox9;
         private ComboBox comboBox10;
         private ComboBox comboBox11;
         private ComboBox comboBox12;
-        private ComboBox comboBox13;
-        private ComboBox comboBox14;
         private ComboBox comboBox15;
         private ComboBox comboBox17;
         public TextBox textBox8;
@@ -1551,6 +1457,8 @@
         public ComboBox comboBox8;
         public ComboBox comboBox7;
         public ComboBox comboBox3;
-        public ComboBox comboBox5;
+        private Label label3;
+        private RichTextBox richTextBox9;
+        private PictureBox pictureBox5;
     }
 }
