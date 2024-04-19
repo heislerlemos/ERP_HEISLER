@@ -94,6 +94,11 @@ namespace ERP_HEISLER
             Crm_controller.adicionar_clientes();
         }
 
+        private void richTextBox9_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         public static implicit operator Main(string v)
         {
             throw new NotImplementedException();

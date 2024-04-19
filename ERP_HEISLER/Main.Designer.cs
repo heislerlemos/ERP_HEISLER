@@ -142,6 +142,7 @@
             label24 = new Label();
             footerpanel = new Panel();
             linkLabel1 = new LinkLabel();
+            button5 = new Button();
             contabilidade.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -834,6 +835,7 @@
             // crmpanel
             // 
             crmpanel.BackColor = Color.Teal;
+            crmpanel.Controls.Add(button5);
             crmpanel.Controls.Add(label3);
             crmpanel.Controls.Add(richTextBox9);
             crmpanel.Controls.Add(pictureBox5);
@@ -883,6 +885,7 @@
             richTextBox9.Size = new Size(939, 151);
             richTextBox9.TabIndex = 24;
             richTextBox9.Text = "";
+            richTextBox9.TextChanged += richTextBox9_TextChanged;
             // 
             // pictureBox5
             // 
@@ -1302,6 +1305,15 @@
             linkLabel1.Text = "Criado por Heisler Stlano";
             linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
+            // button5
+            // 
+            button5.Location = new Point(537, 426);
+            button5.Name = "button5";
+            button5.Size = new Size(94, 29);
+            button5.TabIndex = 26;
+            button5.Text = "Submeter";
+            button5.UseVisualStyleBackColor = true;
+            // 
             // Main
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -1460,5 +1472,6 @@
         private Label label3;
         private RichTextBox richTextBox9;
         private PictureBox pictureBox5;
+        private Button button5;
     }
 }
