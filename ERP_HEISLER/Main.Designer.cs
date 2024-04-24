@@ -95,6 +95,7 @@
             crmToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1 = new MenuStrip();
             crmpanel = new Panel();
+            button5 = new Button();
             label3 = new Label();
             richTextBox9 = new RichTextBox();
             pictureBox5 = new PictureBox();
@@ -142,7 +143,16 @@
             label24 = new Label();
             footerpanel = new Panel();
             linkLabel1 = new LinkLabel();
-            button5 = new Button();
+            paneldelogin = new Panel();
+            label39 = new Label();
+            label38 = new Label();
+            textBox14 = new TextBox();
+            textBox13 = new TextBox();
+            label37 = new Label();
+            label36 = new Label();
+            label10 = new Label();
+            pictureBox6 = new PictureBox();
+            button6 = new Button();
             contabilidade.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -158,6 +168,8 @@
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             footerpanel.SuspendLayout();
+            paneldelogin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
             // 
             // contabilidade
@@ -867,6 +879,15 @@
             crmpanel.Size = new Size(1397, 747);
             crmpanel.TabIndex = 31;
             // 
+            // button5
+            // 
+            button5.Location = new Point(537, 426);
+            button5.Name = "button5";
+            button5.Size = new Size(94, 29);
+            button5.TabIndex = 26;
+            button5.Text = "Submeter";
+            button5.UseVisualStyleBackColor = true;
+            // 
             // label3
             // 
             label3.AutoSize = true;
@@ -885,7 +906,6 @@
             richTextBox9.Size = new Size(939, 151);
             richTextBox9.TabIndex = 24;
             richTextBox9.Text = "";
-            richTextBox9.TextChanged += richTextBox9_TextChanged;
             // 
             // pictureBox5
             // 
@@ -1305,14 +1325,105 @@
             linkLabel1.Text = "Criado por Heisler Stlano";
             linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
-            // button5
+            // paneldelogin
             // 
-            button5.Location = new Point(537, 426);
-            button5.Name = "button5";
-            button5.Size = new Size(94, 29);
-            button5.TabIndex = 26;
-            button5.Text = "Submeter";
-            button5.UseVisualStyleBackColor = true;
+            paneldelogin.BackColor = Color.Teal;
+            paneldelogin.Controls.Add(button6);
+            paneldelogin.Controls.Add(label39);
+            paneldelogin.Controls.Add(label38);
+            paneldelogin.Controls.Add(textBox14);
+            paneldelogin.Controls.Add(textBox13);
+            paneldelogin.Controls.Add(label37);
+            paneldelogin.Controls.Add(label36);
+            paneldelogin.Controls.Add(label10);
+            paneldelogin.Controls.Add(pictureBox6);
+            paneldelogin.Dock = DockStyle.Fill;
+            paneldelogin.Location = new Point(0, 0);
+            paneldelogin.Name = "paneldelogin";
+            paneldelogin.Size = new Size(1397, 747);
+            paneldelogin.TabIndex = 27;
+            // 
+            // label39
+            // 
+            label39.AutoSize = true;
+            label39.ForeColor = SystemColors.ButtonHighlight;
+            label39.Location = new Point(477, 445);
+            label39.Name = "label39";
+            label39.Size = new Size(142, 20);
+            label39.TabIndex = 7;
+            label39.Text = "Por favor faça login ";
+            // 
+            // label38
+            // 
+            label38.AutoSize = true;
+            label38.ForeColor = SystemColors.ButtonHighlight;
+            label38.Location = new Point(475, 544);
+            label38.Name = "label38";
+            label38.Size = new Size(87, 20);
+            label38.TabIndex = 6;
+            label38.Text = "PASSWORD";
+            // 
+            // textBox14
+            // 
+            textBox14.Location = new Point(603, 537);
+            textBox14.Name = "textBox14";
+            textBox14.Size = new Size(266, 27);
+            textBox14.TabIndex = 5;
+            // 
+            // textBox13
+            // 
+            textBox13.Location = new Point(603, 497);
+            textBox13.Name = "textBox13";
+            textBox13.Size = new Size(266, 27);
+            textBox13.TabIndex = 4;
+            // 
+            // label37
+            // 
+            label37.AutoSize = true;
+            label37.ForeColor = SystemColors.ButtonHighlight;
+            label37.Location = new Point(475, 497);
+            label37.Name = "label37";
+            label37.Size = new Size(86, 20);
+            label37.TabIndex = 3;
+            label37.Text = "USERNAME";
+            // 
+            // label36
+            // 
+            label36.AutoSize = true;
+            label36.Location = new Point(475, 487);
+            label36.Name = "label36";
+            label36.Size = new Size(0, 20);
+            label36.TabIndex = 2;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI", 28.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label10.ForeColor = SystemColors.ButtonFace;
+            label10.Location = new Point(640, 55);
+            label10.Name = "label10";
+            label10.Size = new Size(229, 62);
+            label10.TabIndex = 1;
+            label10.Text = "ERP APP ";
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Image = Properties.Resources.welcome;
+            pictureBox6.Location = new Point(205, 142);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(986, 263);
+            pictureBox6.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox6.TabIndex = 0;
+            pictureBox6.TabStop = false;
+            // 
+            // button6
+            // 
+            button6.Location = new Point(607, 594);
+            button6.Name = "button6";
+            button6.Size = new Size(262, 51);
+            button6.TabIndex = 8;
+            button6.Text = "Submeter";
+            button6.UseVisualStyleBackColor = true;
             // 
             // Main
             // 
@@ -1322,6 +1433,7 @@
             ClientSize = new Size(1397, 747);
             Controls.Add(menuStrip1);
             Controls.Add(footerpanel);
+            Controls.Add(paneldelogin);
             Controls.Add(crmpanel);
             Controls.Add(contabilidade);
             Controls.Add(armazem);
@@ -1353,6 +1465,9 @@
             panel2.ResumeLayout(false);
             footerpanel.ResumeLayout(false);
             footerpanel.PerformLayout();
+            paneldelogin.ResumeLayout(false);
+            paneldelogin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -1473,5 +1588,15 @@
         private RichTextBox richTextBox9;
         private PictureBox pictureBox5;
         private Button button5;
+        private Panel paneldelogin;
+        private PictureBox pictureBox6;
+        private Label label37;
+        private Label label36;
+        private Label label10;
+        private Label label38;
+        private TextBox textBox14;
+        private TextBox textBox13;
+        private Label label39;
+        private Button button6;
     }
 }

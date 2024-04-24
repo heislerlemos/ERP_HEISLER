@@ -38,6 +38,8 @@ namespace ERP_HEISLER.Views
                 f1.comboBox7.Items.Add(DR[0]);
                 f1.comboBox3.Items.Add(DR[0]);
 
+                /** Mais tarde irei adicionar os restantes combo box adicionar feature para guardar as informações **/
+
 
             }
 
