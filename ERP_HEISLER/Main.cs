@@ -69,6 +69,7 @@ namespace ERP_HEISLER
         private void Main_Load(object sender, EventArgs e)
         {
             Combo_boxes.display();
+            menuStrip1.Hide();
         }
 
 
@@ -107,43 +108,55 @@ namespace ERP_HEISLER
             {
 
 
+
+                string ConnectionString = ConfigurationManager.ConnectionStrings["ERP"].ConnectionString;
+
+                SqlConnection con = new SqlConnection(ConnectionString);
+                con.Open();
+              
+
                 // Fazendo trableshoot do problema de connexão 
                 String query = "SELECT * FROM login_user WHERE username= '" + textusername.Text + "' AND password='" + textpassword.Text + "'";
-                SqlDataAdapter sda = new SqlDataAdapter(query, conn);
+                    SqlDataAdapter sda = new SqlDataAdapter(query, con);
 
-                DataTable dtable = new DataTable();
-                sda.Fill(dtable);
+                    DataTable dtable = new DataTable();
+                    sda.Fill(dtable);
 
-                if(dtable.Rows.Count > 0) 
-                {
+                    if (dtable.Rows.Count > 0)
+                    {
 
-                    username = textusername.Text;
-                    password = textpassword.Text;
+                        username = textusername.Text;
+                        password = textpassword.Text;
 
-                    // pagina que vai abrir a seguir
-                    listPanel.Add(recursoshumanos);
-                    recursoshumanos.BringToFront();
-                    this.Hide();
+                        // pagina que vai abrir a seguir
+                       listPanel.Add(recursoshumanos);
+                       recursoshumanos.BringToFront();
+                       menuStrip1.Show();
 
-
-                }
-
-                else
-                {
-                    MessageBox.Show("password ou username errado", "erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                      
 
 
+                    }
+                
 
-                }
+                    else
+                    {
+                        MessageBox.Show("password ou username errado", "erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    textpassword.Clear();
+                    textusername.Clear();
 
+
+
+                    }
+                con.Close();
             }
-            catch 
-            
+            catch
+
             {
-                MessageBox.Show("Erro");
-            
-            }
+                MessageBox.Show("Erro Interno");
 
+            } 
+      
         }
 
         public static implicit operator Main(string v)

@@ -144,7 +144,6 @@
             footerpanel = new Panel();
             linkLabel1 = new LinkLabel();
             paneldelogin = new Panel();
-            button7 = new Button();
             button6 = new Button();
             label39 = new Label();
             label38 = new Label();
@@ -1329,7 +1328,6 @@
             // paneldelogin
             // 
             paneldelogin.BackColor = Color.Teal;
-            paneldelogin.Controls.Add(button7);
             paneldelogin.Controls.Add(button6);
             paneldelogin.Controls.Add(label39);
             paneldelogin.Controls.Add(label38);
@@ -1345,20 +1343,11 @@
             paneldelogin.Size = new Size(1397, 747);
             paneldelogin.TabIndex = 27;
             // 
-            // button7
-            // 
-            button7.Location = new Point(749, 594);
-            button7.Name = "button7";
-            button7.Size = new Size(120, 51);
-            button7.TabIndex = 9;
-            button7.Text = "Limpar";
-            button7.UseVisualStyleBackColor = true;
-            // 
             // button6
             // 
             button6.Location = new Point(607, 594);
             button6.Name = "button6";
-            button6.Size = new Size(120, 51);
+            button6.Size = new Size(262, 51);
             button6.TabIndex = 8;
             button6.Text = "Submeter";
             button6.UseVisualStyleBackColor = true;
@@ -1610,6 +1599,5 @@
         private TextBox textusername;
         private Label label39;
         private Button button6;
-        private Button button7;
     }
 }
