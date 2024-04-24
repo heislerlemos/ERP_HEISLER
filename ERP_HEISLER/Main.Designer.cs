@@ -144,15 +144,16 @@
             footerpanel = new Panel();
             linkLabel1 = new LinkLabel();
             paneldelogin = new Panel();
+            button7 = new Button();
+            button6 = new Button();
             label39 = new Label();
             label38 = new Label();
-            textBox14 = new TextBox();
-            textBox13 = new TextBox();
+            textpassword = new TextBox();
+            textusername = new TextBox();
             label37 = new Label();
             label36 = new Label();
             label10 = new Label();
             pictureBox6 = new PictureBox();
-            button6 = new Button();
             contabilidade.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -1328,11 +1329,12 @@
             // paneldelogin
             // 
             paneldelogin.BackColor = Color.Teal;
+            paneldelogin.Controls.Add(button7);
             paneldelogin.Controls.Add(button6);
             paneldelogin.Controls.Add(label39);
             paneldelogin.Controls.Add(label38);
-            paneldelogin.Controls.Add(textBox14);
-            paneldelogin.Controls.Add(textBox13);
+            paneldelogin.Controls.Add(textpassword);
+            paneldelogin.Controls.Add(textusername);
             paneldelogin.Controls.Add(label37);
             paneldelogin.Controls.Add(label36);
             paneldelogin.Controls.Add(label10);
@@ -1342,6 +1344,25 @@
             paneldelogin.Name = "paneldelogin";
             paneldelogin.Size = new Size(1397, 747);
             paneldelogin.TabIndex = 27;
+            // 
+            // button7
+            // 
+            button7.Location = new Point(749, 594);
+            button7.Name = "button7";
+            button7.Size = new Size(120, 51);
+            button7.TabIndex = 9;
+            button7.Text = "Limpar";
+            button7.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            button6.Location = new Point(607, 594);
+            button6.Name = "button6";
+            button6.Size = new Size(120, 51);
+            button6.TabIndex = 8;
+            button6.Text = "Submeter";
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // label39
             // 
@@ -1363,19 +1384,19 @@
             label38.TabIndex = 6;
             label38.Text = "PASSWORD";
             // 
-            // textBox14
+            // textpassword
             // 
-            textBox14.Location = new Point(603, 537);
-            textBox14.Name = "textBox14";
-            textBox14.Size = new Size(266, 27);
-            textBox14.TabIndex = 5;
+            textpassword.Location = new Point(603, 537);
+            textpassword.Name = "textpassword";
+            textpassword.Size = new Size(266, 27);
+            textpassword.TabIndex = 5;
             // 
-            // textBox13
+            // textusername
             // 
-            textBox13.Location = new Point(603, 497);
-            textBox13.Name = "textBox13";
-            textBox13.Size = new Size(266, 27);
-            textBox13.TabIndex = 4;
+            textusername.Location = new Point(603, 497);
+            textusername.Name = "textusername";
+            textusername.Size = new Size(266, 27);
+            textusername.TabIndex = 4;
             // 
             // label37
             // 
@@ -1409,21 +1430,12 @@
             // pictureBox6
             // 
             pictureBox6.Image = Properties.Resources.welcome;
-            pictureBox6.Location = new Point(205, 142);
+            pictureBox6.Location = new Point(265, 148);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(986, 263);
             pictureBox6.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox6.TabIndex = 0;
             pictureBox6.TabStop = false;
-            // 
-            // button6
-            // 
-            button6.Location = new Point(607, 594);
-            button6.Name = "button6";
-            button6.Size = new Size(262, 51);
-            button6.TabIndex = 8;
-            button6.Text = "Submeter";
-            button6.UseVisualStyleBackColor = true;
             // 
             // Main
             // 
@@ -1594,9 +1606,10 @@
         private Label label36;
         private Label label10;
         private Label label38;
-        private TextBox textBox14;
-        private TextBox textBox13;
+        private TextBox textpassword;
+        private TextBox textusername;
         private Label label39;
         private Button button6;
+        private Button button7;
     }
 }

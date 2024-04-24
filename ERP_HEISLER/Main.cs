@@ -94,6 +94,57 @@ namespace ERP_HEISLER
             Crm_controller.adicionar_clientes();
         }
 
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+            String username, password;
+
+            username = textusername.Text;
+            password = textpassword.Text;
+
+
+            try
+            {
+
+
+                // Fazendo trableshoot do problema de connexão 
+                String query = "SELECT * FROM login_user WHERE username= '" + textusername.Text + "' AND password='" + textpassword.Text + "'";
+                SqlDataAdapter sda = new SqlDataAdapter(query, conn);
+
+                DataTable dtable = new DataTable();
+                sda.Fill(dtable);
+
+                if(dtable.Rows.Count > 0) 
+                {
+
+                    username = textusername.Text;
+                    password = textpassword.Text;
+
+                    // pagina que vai abrir a seguir
+                    listPanel.Add(recursoshumanos);
+                    recursoshumanos.BringToFront();
+                    this.Hide();
+
+
+                }
+
+                else
+                {
+                    MessageBox.Show("password ou username errado", "erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+
+
+                }
+
+            }
+            catch 
+            
+            {
+                MessageBox.Show("Erro");
+            
+            }
+
+        }
 
         public static implicit operator Main(string v)
         {
