@@ -155,6 +155,14 @@
             label10 = new Label();
             pictureBox6 = new PictureBox();
             panelPOS = new Panel();
+            label40 = new Label();
+            dataGridView1 = new DataGridView();
+            Column1 = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewTextBoxColumn();
+            panel7 = new Panel();
+            panel6 = new Panel();
+            panel5 = new Panel();
             contabilidade.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -172,6 +180,8 @@
             footerpanel.SuspendLayout();
             paneldelogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            panelPOS.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // contabilidade
@@ -1440,11 +1450,81 @@
             // panelPOS
             // 
             panelPOS.BackColor = Color.Gainsboro;
+            panelPOS.Controls.Add(label40);
+            panelPOS.Controls.Add(dataGridView1);
+            panelPOS.Controls.Add(panel7);
+            panelPOS.Controls.Add(panel6);
+            panelPOS.Controls.Add(panel5);
             panelPOS.Dock = DockStyle.Fill;
             panelPOS.Location = new Point(0, 0);
             panelPOS.Name = "panelPOS";
             panelPOS.Size = new Size(1397, 747);
             panelPOS.TabIndex = 9;
+            // 
+            // label40
+            // 
+            label40.BackColor = Color.White;
+            label40.BorderStyle = BorderStyle.Fixed3D;
+            label40.Location = new Point(428, 452);
+            label40.Name = "label40";
+            label40.Size = new Size(330, 51);
+            label40.TabIndex = 4;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.BackgroundColor = SystemColors.ButtonFace;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3 });
+            dataGridView1.Location = new Point(425, 64);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(337, 378);
+            dataGridView1.TabIndex = 3;
+            // 
+            // Column1
+            // 
+            Column1.HeaderText = "Item";
+            Column1.MinimumWidth = 6;
+            Column1.Name = "Column1";
+            Column1.Width = 125;
+            // 
+            // Column2
+            // 
+            Column2.HeaderText = "Quantidade";
+            Column2.MinimumWidth = 6;
+            Column2.Name = "Column2";
+            Column2.Width = 125;
+            // 
+            // Column3
+            // 
+            Column3.HeaderText = "Preço";
+            Column3.MinimumWidth = 6;
+            Column3.Name = "Column3";
+            Column3.Width = 125;
+            // 
+            // panel7
+            // 
+            panel7.BorderStyle = BorderStyle.Fixed3D;
+            panel7.Location = new Point(11, 514);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(1360, 164);
+            panel7.TabIndex = 2;
+            // 
+            // panel6
+            // 
+            panel6.BorderStyle = BorderStyle.Fixed3D;
+            panel6.Location = new Point(769, 43);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(602, 464);
+            panel6.TabIndex = 1;
+            // 
+            // panel5
+            // 
+            panel5.BorderStyle = BorderStyle.Fixed3D;
+            panel5.Location = new Point(11, 43);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(402, 460);
+            panel5.TabIndex = 0;
             // 
             // Main
             // 
@@ -1455,11 +1535,11 @@
             Controls.Add(paneldelogin);
             Controls.Add(menuStrip1);
             Controls.Add(footerpanel);
+            Controls.Add(panelPOS);
             Controls.Add(crmpanel);
             Controls.Add(contabilidade);
             Controls.Add(armazem);
             Controls.Add(recursoshumanos);
-            Controls.Add(panelPOS);
             FormBorderStyle = FormBorderStyle.Fixed3D;
             MainMenuStrip = menuStrip1;
             MaximizeBox = false;
@@ -1490,6 +1570,8 @@
             paneldelogin.ResumeLayout(false);
             paneldelogin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            panelPOS.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -1622,5 +1704,13 @@
         private Button button6;
         private ToolStripMenuItem pOSToolStripMenuItem;
         private Panel panelPOS;
+        private Panel panel7;
+        private Panel panel6;
+        private Panel panel5;
+        private DataGridView dataGridView1;
+        private Label label40;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn Column2;
+        private DataGridViewTextBoxColumn Column3;
     }
 }
