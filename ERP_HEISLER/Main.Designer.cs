@@ -155,14 +155,42 @@
             label10 = new Label();
             pictureBox6 = new PictureBox();
             panelPOS = new Panel();
-            label40 = new Label();
+            labelBarCode = new Label();
             dataGridView1 = new DataGridView();
             Column1 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
             Column3 = new DataGridViewTextBoxColumn();
             panel7 = new Panel();
             panel6 = new Panel();
+            button31 = new Button();
+            button34 = new Button();
+            button37 = new Button();
+            button40 = new Button();
+            button19 = new Button();
+            button25 = new Button();
+            button20 = new Button();
+            button30 = new Button();
+            button21 = new Button();
+            button29 = new Button();
+            button22 = new Button();
+            button28 = new Button();
+            button23 = new Button();
+            button27 = new Button();
+            button24 = new Button();
+            button26 = new Button();
             panel5 = new Panel();
+            button16 = new Button();
+            button17 = new Button();
+            button18 = new Button();
+            button13 = new Button();
+            button14 = new Button();
+            button15 = new Button();
+            button10 = new Button();
+            button11 = new Button();
+            button12 = new Button();
+            button9 = new Button();
+            button8 = new Button();
+            button7 = new Button();
             contabilidade.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -182,6 +210,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panelPOS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            panel6.SuspendLayout();
+            panel5.SuspendLayout();
             SuspendLayout();
             // 
             // contabilidade
@@ -1450,7 +1480,7 @@
             // panelPOS
             // 
             panelPOS.BackColor = Color.Gainsboro;
-            panelPOS.Controls.Add(label40);
+            panelPOS.Controls.Add(labelBarCode);
             panelPOS.Controls.Add(dataGridView1);
             panelPOS.Controls.Add(panel7);
             panelPOS.Controls.Add(panel6);
@@ -1461,21 +1491,22 @@
             panelPOS.Size = new Size(1397, 747);
             panelPOS.TabIndex = 9;
             // 
-            // label40
+            // labelBarCode
             // 
-            label40.BackColor = Color.White;
-            label40.BorderStyle = BorderStyle.Fixed3D;
-            label40.Location = new Point(428, 452);
-            label40.Name = "label40";
-            label40.Size = new Size(330, 51);
-            label40.TabIndex = 4;
+            labelBarCode.BackColor = Color.White;
+            labelBarCode.BorderStyle = BorderStyle.Fixed3D;
+            labelBarCode.Font = new Font("C39HrP24DlTt", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelBarCode.Location = new Point(393, 436);
+            labelBarCode.Name = "labelBarCode";
+            labelBarCode.Size = new Size(330, 51);
+            labelBarCode.TabIndex = 4;
             // 
             // dataGridView1
             // 
             dataGridView1.BackgroundColor = SystemColors.ButtonFace;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3 });
-            dataGridView1.Location = new Point(425, 64);
+            dataGridView1.Location = new Point(393, 43);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(337, 378);
@@ -1513,18 +1544,298 @@
             // panel6
             // 
             panel6.BorderStyle = BorderStyle.Fixed3D;
-            panel6.Location = new Point(769, 43);
+            panel6.Controls.Add(button31);
+            panel6.Controls.Add(button34);
+            panel6.Controls.Add(button37);
+            panel6.Controls.Add(button40);
+            panel6.Controls.Add(button19);
+            panel6.Controls.Add(button25);
+            panel6.Controls.Add(button20);
+            panel6.Controls.Add(button30);
+            panel6.Controls.Add(button21);
+            panel6.Controls.Add(button29);
+            panel6.Controls.Add(button22);
+            panel6.Controls.Add(button28);
+            panel6.Controls.Add(button23);
+            panel6.Controls.Add(button27);
+            panel6.Controls.Add(button24);
+            panel6.Controls.Add(button26);
+            panel6.Location = new Point(736, 43);
             panel6.Name = "panel6";
-            panel6.Size = new Size(602, 464);
+            panel6.Size = new Size(635, 464);
             panel6.TabIndex = 1;
+            // 
+            // button31
+            // 
+            button31.Location = new Point(463, 340);
+            button31.Name = "button31";
+            button31.Size = new Size(103, 89);
+            button31.TabIndex = 35;
+            button31.Text = "button31";
+            button31.UseVisualStyleBackColor = true;
+            // 
+            // button34
+            // 
+            button34.Location = new Point(463, 228);
+            button34.Name = "button34";
+            button34.Size = new Size(103, 89);
+            button34.TabIndex = 32;
+            button34.Text = "button34";
+            button34.UseVisualStyleBackColor = true;
+            // 
+            // button37
+            // 
+            button37.Location = new Point(463, 127);
+            button37.Name = "button37";
+            button37.Size = new Size(103, 89);
+            button37.TabIndex = 29;
+            button37.Text = "button37";
+            button37.UseVisualStyleBackColor = true;
+            // 
+            // button40
+            // 
+            button40.Location = new Point(463, 21);
+            button40.Name = "button40";
+            button40.Size = new Size(103, 89);
+            button40.TabIndex = 26;
+            button40.Text = "button40";
+            button40.UseVisualStyleBackColor = true;
+            // 
+            // button19
+            // 
+            button19.Location = new Point(327, 342);
+            button19.Name = "button19";
+            button19.Size = new Size(103, 89);
+            button19.TabIndex = 23;
+            button19.Text = "button19";
+            button19.UseVisualStyleBackColor = true;
+            // 
+            // button25
+            // 
+            button25.Location = new Point(327, 129);
+            button25.Name = "button25";
+            button25.Size = new Size(103, 89);
+            button25.TabIndex = 17;
+            button25.Text = "button25";
+            button25.UseVisualStyleBackColor = true;
+            // 
+            // button20
+            // 
+            button20.Location = new Point(208, 339);
+            button20.Name = "button20";
+            button20.Size = new Size(103, 89);
+            button20.TabIndex = 22;
+            button20.Text = "button20";
+            button20.UseVisualStyleBackColor = true;
+            // 
+            // button30
+            // 
+            button30.Location = new Point(89, 20);
+            button30.Name = "button30";
+            button30.Size = new Size(103, 89);
+            button30.TabIndex = 12;
+            button30.Text = "button30";
+            button30.UseVisualStyleBackColor = true;
+            // 
+            // button21
+            // 
+            button21.Location = new Point(89, 339);
+            button21.Name = "button21";
+            button21.Size = new Size(103, 89);
+            button21.TabIndex = 21;
+            button21.Text = "button21";
+            button21.UseVisualStyleBackColor = true;
+            // 
+            // button29
+            // 
+            button29.Location = new Point(208, 20);
+            button29.Name = "button29";
+            button29.Size = new Size(103, 89);
+            button29.TabIndex = 13;
+            button29.Text = "button29";
+            button29.UseVisualStyleBackColor = true;
+            // 
+            // button22
+            // 
+            button22.Location = new Point(327, 230);
+            button22.Name = "button22";
+            button22.Size = new Size(103, 89);
+            button22.TabIndex = 20;
+            button22.Text = "button22";
+            button22.UseVisualStyleBackColor = true;
+            // 
+            // button28
+            // 
+            button28.Location = new Point(327, 23);
+            button28.Name = "button28";
+            button28.Size = new Size(103, 89);
+            button28.TabIndex = 14;
+            button28.Text = "button28";
+            button28.UseVisualStyleBackColor = true;
+            // 
+            // button23
+            // 
+            button23.Location = new Point(208, 227);
+            button23.Name = "button23";
+            button23.Size = new Size(103, 89);
+            button23.TabIndex = 19;
+            button23.Text = "button23";
+            button23.UseVisualStyleBackColor = true;
+            // 
+            // button27
+            // 
+            button27.Location = new Point(89, 126);
+            button27.Name = "button27";
+            button27.Size = new Size(103, 89);
+            button27.TabIndex = 15;
+            button27.Text = "button27";
+            button27.UseVisualStyleBackColor = true;
+            // 
+            // button24
+            // 
+            button24.Location = new Point(89, 227);
+            button24.Name = "button24";
+            button24.Size = new Size(103, 89);
+            button24.TabIndex = 18;
+            button24.Text = "button24";
+            button24.UseVisualStyleBackColor = true;
+            // 
+            // button26
+            // 
+            button26.Location = new Point(208, 126);
+            button26.Name = "button26";
+            button26.Size = new Size(103, 89);
+            button26.TabIndex = 16;
+            button26.Text = "button26";
+            button26.UseVisualStyleBackColor = true;
             // 
             // panel5
             // 
             panel5.BorderStyle = BorderStyle.Fixed3D;
+            panel5.Controls.Add(button16);
+            panel5.Controls.Add(button17);
+            panel5.Controls.Add(button18);
+            panel5.Controls.Add(button13);
+            panel5.Controls.Add(button14);
+            panel5.Controls.Add(button15);
+            panel5.Controls.Add(button10);
+            panel5.Controls.Add(button11);
+            panel5.Controls.Add(button12);
+            panel5.Controls.Add(button9);
+            panel5.Controls.Add(button8);
+            panel5.Controls.Add(button7);
             panel5.Location = new Point(11, 43);
             panel5.Name = "panel5";
-            panel5.Size = new Size(402, 460);
+            panel5.Size = new Size(371, 460);
             panel5.TabIndex = 0;
+            // 
+            // button16
+            // 
+            button16.Location = new Point(252, 334);
+            button16.Name = "button16";
+            button16.Size = new Size(103, 89);
+            button16.TabIndex = 11;
+            button16.Text = "button16";
+            button16.UseVisualStyleBackColor = true;
+            // 
+            // button17
+            // 
+            button17.Location = new Point(133, 331);
+            button17.Name = "button17";
+            button17.Size = new Size(103, 89);
+            button17.TabIndex = 10;
+            button17.Text = "button17";
+            button17.UseVisualStyleBackColor = true;
+            // 
+            // button18
+            // 
+            button18.Location = new Point(14, 331);
+            button18.Name = "button18";
+            button18.Size = new Size(103, 89);
+            button18.TabIndex = 9;
+            button18.Text = "button18";
+            button18.UseVisualStyleBackColor = true;
+            // 
+            // button13
+            // 
+            button13.Location = new Point(252, 222);
+            button13.Name = "button13";
+            button13.Size = new Size(103, 89);
+            button13.TabIndex = 8;
+            button13.Text = "button13";
+            button13.UseVisualStyleBackColor = true;
+            // 
+            // button14
+            // 
+            button14.Location = new Point(133, 219);
+            button14.Name = "button14";
+            button14.Size = new Size(103, 89);
+            button14.TabIndex = 7;
+            button14.Text = "button14";
+            button14.UseVisualStyleBackColor = true;
+            // 
+            // button15
+            // 
+            button15.Location = new Point(14, 219);
+            button15.Name = "button15";
+            button15.Size = new Size(103, 89);
+            button15.TabIndex = 6;
+            button15.Text = "button15";
+            button15.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            button10.Location = new Point(252, 121);
+            button10.Name = "button10";
+            button10.Size = new Size(103, 89);
+            button10.TabIndex = 5;
+            button10.Text = "button10";
+            button10.UseVisualStyleBackColor = true;
+            // 
+            // button11
+            // 
+            button11.Location = new Point(133, 118);
+            button11.Name = "button11";
+            button11.Size = new Size(103, 89);
+            button11.TabIndex = 4;
+            button11.Text = "button11";
+            button11.UseVisualStyleBackColor = true;
+            // 
+            // button12
+            // 
+            button12.Location = new Point(14, 118);
+            button12.Name = "button12";
+            button12.Size = new Size(103, 89);
+            button12.TabIndex = 3;
+            button12.Text = "button12";
+            button12.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            button9.Location = new Point(252, 15);
+            button9.Name = "button9";
+            button9.Size = new Size(103, 89);
+            button9.TabIndex = 2;
+            button9.Text = "button9";
+            button9.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            button8.Location = new Point(133, 12);
+            button8.Name = "button8";
+            button8.Size = new Size(103, 89);
+            button8.TabIndex = 1;
+            button8.Text = "button8";
+            button8.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            button7.Location = new Point(14, 12);
+            button7.Name = "button7";
+            button7.Size = new Size(103, 89);
+            button7.TabIndex = 0;
+            button7.Text = "button7";
+            button7.UseVisualStyleBackColor = true;
             // 
             // Main
             // 
@@ -1572,6 +1883,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             panelPOS.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            panel6.ResumeLayout(false);
+            panel5.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -1708,9 +2021,37 @@
         private Panel panel6;
         private Panel panel5;
         private DataGridView dataGridView1;
-        private Label label40;
+        private Label labelBarCode;
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column3;
+        private Button button31;
+        private Button button34;
+        private Button button37;
+        private Button button40;
+        private Button button19;
+        private Button button25;
+        private Button button20;
+        private Button button30;
+        private Button button21;
+        private Button button29;
+        private Button button22;
+        private Button button28;
+        private Button button23;
+        private Button button27;
+        private Button button24;
+        private Button button26;
+        private Button button16;
+        private Button button17;
+        private Button button18;
+        private Button button13;
+        private Button button14;
+        private Button button15;
+        private Button button10;
+        private Button button11;
+        private Button button12;
+        private Button button9;
+        private Button button8;
+        private Button button7;
     }
 }
