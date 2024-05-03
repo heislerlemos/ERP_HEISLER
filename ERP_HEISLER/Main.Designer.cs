@@ -94,8 +94,10 @@
             armazemToolStripMenuItem = new ToolStripMenuItem();
             crmToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1 = new MenuStrip();
+            pOSToolStripMenuItem = new ToolStripMenuItem();
             crmpanel = new Panel();
             button5 = new Button();
+            label39 = new Label();
             label3 = new Label();
             richTextBox9 = new RichTextBox();
             pictureBox5 = new PictureBox();
@@ -145,7 +147,6 @@
             linkLabel1 = new LinkLabel();
             paneldelogin = new Panel();
             button6 = new Button();
-            label39 = new Label();
             label38 = new Label();
             textpassword = new TextBox();
             textusername = new TextBox();
@@ -153,6 +154,7 @@
             label36 = new Label();
             label10 = new Label();
             pictureBox6 = new PictureBox();
+            panelPOS = new Panel();
             contabilidade.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -837,17 +839,26 @@
             // 
             menuStrip1.BackColor = Color.DimGray;
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { contabilidadeToolStripMenuItem, recursosHumanosToolStripMenuItem, armazemToolStripMenuItem, crmToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { contabilidadeToolStripMenuItem, recursosHumanosToolStripMenuItem, armazemToolStripMenuItem, crmToolStripMenuItem, pOSToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(1397, 28);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
+            // pOSToolStripMenuItem
+            // 
+            pOSToolStripMenuItem.ForeColor = SystemColors.ButtonHighlight;
+            pOSToolStripMenuItem.Name = "pOSToolStripMenuItem";
+            pOSToolStripMenuItem.Size = new Size(50, 24);
+            pOSToolStripMenuItem.Text = "POS";
+            pOSToolStripMenuItem.Click += pOSToolStripMenuItem_Click;
+            // 
             // crmpanel
             // 
             crmpanel.BackColor = Color.Teal;
             crmpanel.Controls.Add(button5);
+            crmpanel.Controls.Add(label39);
             crmpanel.Controls.Add(label3);
             crmpanel.Controls.Add(richTextBox9);
             crmpanel.Controls.Add(pictureBox5);
@@ -887,6 +898,16 @@
             button5.TabIndex = 26;
             button5.Text = "Submeter";
             button5.UseVisualStyleBackColor = true;
+            // 
+            // label39
+            // 
+            label39.AutoSize = true;
+            label39.ForeColor = SystemColors.ButtonHighlight;
+            label39.Location = new Point(477, 445);
+            label39.Name = "label39";
+            label39.Size = new Size(142, 20);
+            label39.TabIndex = 7;
+            label39.Text = "Por favor faça login ";
             // 
             // label3
             // 
@@ -1329,7 +1350,6 @@
             // 
             paneldelogin.BackColor = Color.Teal;
             paneldelogin.Controls.Add(button6);
-            paneldelogin.Controls.Add(label39);
             paneldelogin.Controls.Add(label38);
             paneldelogin.Controls.Add(textpassword);
             paneldelogin.Controls.Add(textusername);
@@ -1338,10 +1358,11 @@
             paneldelogin.Controls.Add(label10);
             paneldelogin.Controls.Add(pictureBox6);
             paneldelogin.Dock = DockStyle.Fill;
-            paneldelogin.Location = new Point(0, 0);
+            paneldelogin.Location = new Point(0, 28);
             paneldelogin.Name = "paneldelogin";
-            paneldelogin.Size = new Size(1397, 747);
+            paneldelogin.Size = new Size(1397, 656);
             paneldelogin.TabIndex = 27;
+            paneldelogin.Paint += paneldelogin_Paint;
             // 
             // button6
             // 
@@ -1352,16 +1373,6 @@
             button6.Text = "Submeter";
             button6.UseVisualStyleBackColor = true;
             button6.Click += button6_Click;
-            // 
-            // label39
-            // 
-            label39.AutoSize = true;
-            label39.ForeColor = SystemColors.ButtonHighlight;
-            label39.Location = new Point(477, 445);
-            label39.Name = "label39";
-            label39.Size = new Size(142, 20);
-            label39.TabIndex = 7;
-            label39.Text = "Por favor faça login ";
             // 
             // label38
             // 
@@ -1426,19 +1437,29 @@
             pictureBox6.TabIndex = 0;
             pictureBox6.TabStop = false;
             // 
+            // panelPOS
+            // 
+            panelPOS.BackColor = Color.Gainsboro;
+            panelPOS.Dock = DockStyle.Fill;
+            panelPOS.Location = new Point(0, 0);
+            panelPOS.Name = "panelPOS";
+            panelPOS.Size = new Size(1397, 747);
+            panelPOS.TabIndex = 9;
+            // 
             // Main
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.RosyBrown;
             ClientSize = new Size(1397, 747);
+            Controls.Add(paneldelogin);
             Controls.Add(menuStrip1);
             Controls.Add(footerpanel);
-            Controls.Add(paneldelogin);
             Controls.Add(crmpanel);
             Controls.Add(contabilidade);
             Controls.Add(armazem);
             Controls.Add(recursoshumanos);
+            Controls.Add(panelPOS);
             FormBorderStyle = FormBorderStyle.Fixed3D;
             MainMenuStrip = menuStrip1;
             MaximizeBox = false;
@@ -1599,5 +1620,7 @@
         private TextBox textusername;
         private Label label39;
         private Button button6;
+        private ToolStripMenuItem pOSToolStripMenuItem;
+        private Panel panelPOS;
     }
 }

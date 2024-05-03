@@ -113,41 +113,41 @@ namespace ERP_HEISLER
 
                 SqlConnection con = new SqlConnection(ConnectionString);
                 con.Open();
-              
+
 
                 // Fazendo trableshoot do problema de connexão 
                 String query = "SELECT * FROM login_user WHERE username= '" + textusername.Text + "' AND password='" + textpassword.Text + "'";
-                    SqlDataAdapter sda = new SqlDataAdapter(query, con);
+                SqlDataAdapter sda = new SqlDataAdapter(query, con);
 
-                    DataTable dtable = new DataTable();
-                    sda.Fill(dtable);
+                DataTable dtable = new DataTable();
+                sda.Fill(dtable);
 
-                    if (dtable.Rows.Count > 0)
-                    {
+                if (dtable.Rows.Count > 0)
+                {
 
-                        username = textusername.Text;
-                        password = textpassword.Text;
+                    username = textusername.Text;
+                    password = textpassword.Text;
 
-                        // pagina que vai abrir a seguir
-                       listPanel.Add(recursoshumanos);
-                       recursoshumanos.BringToFront();
-                       menuStrip1.Show();
-
-                      
+                    // pagina que vai abrir a seguir
+                    listPanel.Add(recursoshumanos);
+                    recursoshumanos.BringToFront();
+                    menuStrip1.Show();
 
 
-                    }
-                
 
-                    else
-                    {
-                        MessageBox.Show("password ou username errado", "erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+
+
+                else
+                {
+                    MessageBox.Show("password ou username errado", "erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     textpassword.Clear();
                     textusername.Clear();
 
 
 
-                    }
+                }
                 con.Close();
             }
             catch
@@ -155,8 +155,20 @@ namespace ERP_HEISLER
             {
                 MessageBox.Show("Erro Interno");
 
-            } 
-      
+            }
+
+        }
+
+        private void pOSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            listPanel.Add(panelPOS);
+            panelPOS.BringToFront();
+
+        }
+
+        private void paneldelogin_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
         public static implicit operator Main(string v)
