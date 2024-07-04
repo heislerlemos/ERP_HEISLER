@@ -1,16 +1,30 @@
-Aplicativo  de Entreprise Recource Planning 
 
-Integra-se  Planeamento ,  Compras , Inventario , Vendas e Recursos Humanos 
+# Aplicativo de Enterprise Resource Planning (ERP)
 
-Tecnologias :
+Este é um aplicativo de ERP desenvolvido para [descreva o propósito do seu aplicativo, como gerenciamento de recursos, automação de processos, etc.].
+Ele oferece uma solução robusta e escalável para [explique as funcionalidades principais do seu aplicativo, como gerenciamento de estoque, finanças, recursos humanos, etc.].
 
-Frameworks 
-.Net Core 
-Windows Forms 
 
-Linguagem de Programação 
-C#
 
-Base de dados 
-SQL server 
+## Tecnologias Utilizadas
+
+- **Linguagem de Programação:** C#
+- **Banco de Dados:** Sqlserver
+- **Framework:** Windowsform
+
+## Como Contribuir
+
+Se você deseja contribuir para este projeto, siga as etapas abaixo:
+
+1. Faça um fork deste repositório.
+2. Crie uma branch com o nome da sua funcionalidade (`git checkout -b minha-nova-funcionalidade`).
+3. Faça suas alterações e commit (`git commit -m 'Adicionando nova funcionalidade'`).
+4. Envie suas alterações para o seu fork (`git push origin minha-nova-funcionalidade`).
+5. Abra um pull request neste repositório.
+
+## Licença
+
+Este projeto está licenciado sob a [sua licença escolhida, como MIT, Apache, etc.].
+
+---
 
