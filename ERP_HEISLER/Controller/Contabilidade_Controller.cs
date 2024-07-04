@@ -13,7 +13,7 @@ namespace ERP_HEISLER.Controller
     {
 
         public static Main? f1 = Application.OpenForms.OfType<Main>().FirstOrDefault();
-        
+
         public static int IncrementarId()
         {
             string ConnectionString = ConfigurationManager.ConnectionStrings["ERP"].ConnectionString;
@@ -42,7 +42,7 @@ namespace ERP_HEISLER.Controller
         {
             if (f1 == null)
             {
-             
+
                 throw new ArgumentNullException("não pode ser null");
 
             }

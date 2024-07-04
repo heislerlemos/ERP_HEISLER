@@ -146,14 +146,13 @@
             footerpanel = new Panel();
             linkLabel1 = new LinkLabel();
             paneldelogin = new Panel();
+            pictureBox6 = new PictureBox();
+            textusername = new TextBox();
             button6 = new Button();
             label38 = new Label();
             textpassword = new TextBox();
-            textusername = new TextBox();
             label37 = new Label();
             label36 = new Label();
-            label10 = new Label();
-            pictureBox6 = new PictureBox();
             panelPOS = new Panel();
             labelBarCode = new Label();
             dataGridView1 = new DataGridView();
@@ -191,6 +190,7 @@
             button9 = new Button();
             button8 = new Button();
             button7 = new Button();
+            printDocument1 = new System.Drawing.Printing.PrintDocument();
             contabilidade.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -1389,26 +1389,43 @@
             // paneldelogin
             // 
             paneldelogin.BackColor = Color.Teal;
+            paneldelogin.Controls.Add(textusername);
             paneldelogin.Controls.Add(button6);
             paneldelogin.Controls.Add(label38);
             paneldelogin.Controls.Add(textpassword);
-            paneldelogin.Controls.Add(textusername);
             paneldelogin.Controls.Add(label37);
             paneldelogin.Controls.Add(label36);
-            paneldelogin.Controls.Add(label10);
             paneldelogin.Controls.Add(pictureBox6);
             paneldelogin.Dock = DockStyle.Fill;
             paneldelogin.Location = new Point(0, 28);
             paneldelogin.Name = "paneldelogin";
             paneldelogin.Size = new Size(1397, 656);
             paneldelogin.TabIndex = 27;
-            paneldelogin.Paint += paneldelogin_Paint;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Dock = DockStyle.Fill;
+            pictureBox6.Image = Properties.Resources.ERP;
+            pictureBox6.Location = new Point(0, 0);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(1397, 656);
+            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox6.TabIndex = 9;
+            pictureBox6.TabStop = false;
+          
+            // 
+            // textusername
+            // 
+            textusername.Location = new Point(217, 435);
+            textusername.Name = "textusername";
+            textusername.Size = new Size(266, 27);
+            textusername.TabIndex = 4;
             // 
             // button6
             // 
-            button6.Location = new Point(607, 594);
+            button6.Location = new Point(67, 524);
             button6.Name = "button6";
-            button6.Size = new Size(262, 51);
+            button6.Size = new Size(364, 51);
             button6.TabIndex = 8;
             button6.Text = "Submeter";
             button6.UseVisualStyleBackColor = true;
@@ -1417,8 +1434,9 @@
             // label38
             // 
             label38.AutoSize = true;
+            label38.BackColor = SystemColors.ActiveCaption;
             label38.ForeColor = SystemColors.ButtonHighlight;
-            label38.Location = new Point(475, 544);
+            label38.Location = new Point(73, 472);
             label38.Name = "label38";
             label38.Size = new Size(87, 20);
             label38.TabIndex = 6;
@@ -1426,23 +1444,17 @@
             // 
             // textpassword
             // 
-            textpassword.Location = new Point(603, 537);
+            textpassword.Location = new Point(217, 470);
             textpassword.Name = "textpassword";
             textpassword.Size = new Size(266, 27);
             textpassword.TabIndex = 5;
             // 
-            // textusername
-            // 
-            textusername.Location = new Point(603, 497);
-            textusername.Name = "textusername";
-            textusername.Size = new Size(266, 27);
-            textusername.TabIndex = 4;
-            // 
             // label37
             // 
             label37.AutoSize = true;
+            label37.BackColor = SystemColors.ActiveCaption;
             label37.ForeColor = SystemColors.ButtonHighlight;
-            label37.Location = new Point(475, 497);
+            label37.Location = new Point(73, 435);
             label37.Name = "label37";
             label37.Size = new Size(86, 20);
             label37.TabIndex = 3;
@@ -1455,27 +1467,6 @@
             label36.Name = "label36";
             label36.Size = new Size(0, 20);
             label36.TabIndex = 2;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI", 28.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.ForeColor = SystemColors.ButtonFace;
-            label10.Location = new Point(640, 55);
-            label10.Name = "label10";
-            label10.Size = new Size(229, 62);
-            label10.TabIndex = 1;
-            label10.Text = "ERP APP ";
-            // 
-            // pictureBox6
-            // 
-            pictureBox6.Image = Properties.Resources.welcome;
-            pictureBox6.Location = new Point(265, 148);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(986, 263);
-            pictureBox6.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox6.TabIndex = 0;
-            pictureBox6.TabStop = false;
             // 
             // panelPOS
             // 
@@ -2006,10 +1997,8 @@
         private PictureBox pictureBox5;
         private Button button5;
         private Panel paneldelogin;
-        private PictureBox pictureBox6;
         private Label label37;
         private Label label36;
-        private Label label10;
         private Label label38;
         private TextBox textpassword;
         private TextBox textusername;
@@ -2053,5 +2042,7 @@
         private Button button9;
         private Button button8;
         private Button button7;
+        private System.Drawing.Printing.PrintDocument printDocument1;
+        private PictureBox pictureBox6;
     }
 }

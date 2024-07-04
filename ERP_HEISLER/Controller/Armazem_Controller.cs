@@ -9,7 +9,7 @@ using System.Configuration;
 
 namespace ERP_HEISLER.Controller
 {
-    internal  class Armazem_Controller
+    internal class Armazem_Controller
     {
 
         public static Main? f1 = Application.OpenForms.OfType<Main>().FirstOrDefault();
@@ -32,13 +32,13 @@ namespace ERP_HEISLER.Controller
                 {
                     throw new ArgumentNullException("não pode ser null");
                 }
-          
+
 
                 string nome_do_producto = f1.richTextBox4.Text;
                 System.Diagnostics.Debug.WriteLine(nome_do_producto);
 
                 string marca_do_producto = f1.richTextBox5.Text;
-                System.Diagnostics.Debug.WriteLine (marca_do_producto);
+                System.Diagnostics.Debug.WriteLine(marca_do_producto);
 
                 string numero_de_serie = f1.richTextBox6.Text;
                 System.Diagnostics.Debug.WriteLine(numero_de_serie);
@@ -82,14 +82,14 @@ namespace ERP_HEISLER.Controller
             con.Open();
 
             string Query = "INSERT INTO armazem_adicionar ( nome_do_produto, marca, sn, quantidade, criado)" +
-                " VALUES ('" + nome_do_producto + "', '"+marca_do_producto+"', '"+numero_de_serie+"'," +
-                " '"+quantidade_do_produto+"','"+data_de_criacao+"')";
+                " VALUES ('" + nome_do_producto + "', '" + marca_do_producto + "', '" + numero_de_serie + "'," +
+                " '" + quantidade_do_produto + "','" + data_de_criacao + "')";
 
             SqlCommand cmd = new SqlCommand(Query, con);
             cmd.ExecuteNonQuery();
             con.Close();
 
-        
+
         }
 
 

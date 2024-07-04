@@ -27,7 +27,7 @@ namespace ERP_HEISLER.Controller
             string ConnectionString = ConfigurationManager.ConnectionStrings["ERP"].ConnectionString;
             SqlConnection con = new SqlConnection(ConnectionString);
             con.Open();
-            string Query = "SELECT MAX(id) From rh_adicionar";    
+            string Query = "SELECT MAX(id) From rh_adicionar";
             SqlCommand cmd = new SqlCommand(Query, con);
             SqlDataReader reader = cmd.ExecuteReader();
 
@@ -41,7 +41,7 @@ namespace ERP_HEISLER.Controller
 
             return 0;
 
-        
+
 
         }
 
@@ -63,7 +63,7 @@ namespace ERP_HEISLER.Controller
             string nome_do_funcionario = f1.textBox1.Text;
             string numero_de_serie = f1.textBox3.Text;
             string email = f1.textBox5.Text;
-            string data_de_nascimento= f1.dateTimePicker1.Value.ToString("yyyy-MM-dd");
+            string data_de_nascimento = f1.dateTimePicker1.Value.ToString("yyyy-MM-dd");
             string nacionalidade = f1.textBox6.Text;
             string telefone = f1.textBox7.Text;
             string estado_civil = f1.checkedListBox2.Text;
@@ -71,20 +71,20 @@ namespace ERP_HEISLER.Controller
 
             string ConnectionString = ConfigurationManager.ConnectionStrings["ERP"].ConnectionString;
             SqlConnection con = new SqlConnection(ConnectionString);
-        
-                con.Open();
 
-                string Query = "INSERT INTO rh_adicionar ( id, nome, nif, genero, localidade, email, data_de_nascimento, " +
-                    " nacionalidade, telefone, estado_civil)" +
-                    " VALUES ( '" + IncrementarId() + "','" + nome_do_funcionario + "', '" + numero_de_serie + "', '" + genero + "'," +
-                    " '" + localidade + "', '" + email + "','" + data_de_nascimento + "', '" + nacionalidade + "', '" + telefone + "', '" + estado_civil + "' )";
+            con.Open();
+
+            string Query = "INSERT INTO rh_adicionar ( id, nome, nif, genero, localidade, email, data_de_nascimento, " +
+                " nacionalidade, telefone, estado_civil)" +
+                " VALUES ( '" + IncrementarId() + "','" + nome_do_funcionario + "', '" + numero_de_serie + "', '" + genero + "'," +
+                " '" + localidade + "', '" + email + "','" + data_de_nascimento + "', '" + nacionalidade + "', '" + telefone + "', '" + estado_civil + "' )";
 
 
-                SqlCommand cmd = new SqlCommand(Query, con);
-                cmd.ExecuteNonQuery();
-                con.Close();
+            SqlCommand cmd = new SqlCommand(Query, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
 
-            
+
         }
 
         public static void removerdb()
@@ -109,22 +109,22 @@ namespace ERP_HEISLER.Controller
             int UserExist = (int)check_User_Name.ExecuteScalar();
 
             if (UserExist > 0)
-            {                
+            {
                 System.Diagnostics.Debug.WriteLine("nome ja existe");
                 f1.label16.Visible = true;
 
-                f1.label16.Text = "O nome ja existe por favor adiciona outro nome ";            
+                f1.label16.Text = "O nome ja existe por favor adiciona outro nome ";
             }
             else
-            
-            
+
+
             {
                 string Query = "INSERT INTO rh_remover ( nome, nif, apagado)" +
                     " VALUES ( '" + nome_do_funcionario + "', '" + nif + "', '" + data_de_criacao + "')";
 
                 SqlCommand cmd = new SqlCommand(Query, con);
 
-            cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();
 
             }
             con.Close();

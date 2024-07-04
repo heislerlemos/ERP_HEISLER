@@ -10,7 +10,7 @@ using System.Data;
 
 namespace ERP_HEISLER.Views
 {
-   internal class Combo_boxes
+    internal class Combo_boxes
     {
         public static Main? f1 = Application.OpenForms.OfType<Main>().FirstOrDefault();
 

@@ -49,7 +49,7 @@ namespace ERP_HEISLER.Controller
             string nome_da_empresa = f1.textBox8.Text;
             string site = f1.textBox9.Text;
             string telefone_da_empresa = f1.textBox10.Text;
-            string nome_do_decisor = f1.textBox11.Text; 
+            string nome_do_decisor = f1.textBox11.Text;
             string email_do_decisor = f1.textBox12.Text;
 
             // storing information into the database
@@ -59,7 +59,7 @@ namespace ERP_HEISLER.Controller
 
             string Query = "INSERT INTO entrada_do_lead ( id , nome_da_empresa, site, telefone_da_empresa, nome_do_decisor, email_do_decisor)" +
                 " VALUES ( '" + IncrementarId() + "' ,'" + nome_da_empresa + "', '" + site + "', '" + telefone_da_empresa + "', " +
-                "'"+ nome_do_decisor +"', '"+email_do_decisor+"')";
+                "'" + nome_do_decisor + "', '" + email_do_decisor + "')";
 
             SqlCommand cmd = new SqlCommand(Query, con);
             cmd.ExecuteNonQuery();
@@ -71,7 +71,7 @@ namespace ERP_HEISLER.Controller
         }
 
 
-        
+
 
 
     }
