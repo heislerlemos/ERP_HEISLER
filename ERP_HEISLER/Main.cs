@@ -164,16 +164,22 @@ namespace ERP_HEISLER
 
         private void pOSToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //listPanel.Add(panelPOS);
-            //panelPOS.BringToFront();
+            listPanel.Add(panelPOS);
+            panelPOS.BringToFront();
             // ainda não vou mexer nesta parte for now..
+        }
+
+        private void panelPOS_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
 
 
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Pos_Controller.Incremet() ;
 
-
-
-
+        }
     }
 }

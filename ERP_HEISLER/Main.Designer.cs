@@ -152,6 +152,12 @@
             label36 = new Label();
             pictureBox6 = new PictureBox();
             panelPOS = new Panel();
+            label41 = new Label();
+            label40 = new Label();
+            label39 = new Label();
+            textBox13 = new TextBox();
+            button7 = new Button();
+            comboxpos = new ComboBox();
             printDocument1 = new System.Drawing.Printing.PrintDocument();
             contabilidade.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -169,6 +175,7 @@
             footerpanel.SuspendLayout();
             paneldelogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            panelPOS.SuspendLayout();
             SuspendLayout();
             // 
             // contabilidade
@@ -1405,11 +1412,73 @@
             // 
             // panelPOS
             // 
-            panelPOS.BackColor = Color.Gainsboro;
+            panelPOS.BackColor = SystemColors.Window;
+            panelPOS.Controls.Add(label41);
+            panelPOS.Controls.Add(label40);
+            panelPOS.Controls.Add(label39);
+            panelPOS.Controls.Add(textBox13);
+            panelPOS.Controls.Add(button7);
+            panelPOS.Controls.Add(comboxpos);
             panelPOS.Location = new Point(0, 0);
             panelPOS.Name = "panelPOS";
             panelPOS.Size = new Size(1397, 747);
             panelPOS.TabIndex = 9;
+            panelPOS.Paint += panelPOS_Paint;
+            // 
+            // label41
+            // 
+            label41.AutoSize = true;
+            label41.Location = new Point(377, 85);
+            label41.Name = "label41";
+            label41.Size = new Size(42, 20);
+            label41.TabIndex = 6;
+            label41.Text = "Total";
+            // 
+            // label40
+            // 
+            label40.AutoSize = true;
+            label40.Location = new Point(21, 85);
+            label40.Name = "label40";
+            label40.Size = new Size(64, 20);
+            label40.TabIndex = 5;
+            label40.Text = "Licenças";
+            // 
+            // label39
+            // 
+            label39.AutoSize = true;
+            label39.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            label39.Location = new Point(1003, 611);
+            label39.Name = "label39";
+            label39.Size = new Size(369, 46);
+            label39.TabIndex = 4;
+            label39.Text = "Sistema Point of Sales";
+            // 
+            // textBox13
+            // 
+            textBox13.Location = new Point(327, 124);
+            textBox13.Name = "textBox13";
+            textBox13.Size = new Size(192, 27);
+            textBox13.TabIndex = 2;
+            // 
+            // button7
+            // 
+            button7.Location = new Point(247, 124);
+            button7.Name = "button7";
+            button7.Size = new Size(45, 29);
+            button7.TabIndex = 1;
+            button7.Text = "+";
+            button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
+            // 
+            // comboxpos
+            // 
+            comboxpos.BackColor = SystemColors.Menu;
+            comboxpos.FormattingEnabled = true;
+            comboxpos.Items.AddRange(new object[] { "Primavera ERP 50 MIL KZ  " });
+            comboxpos.Location = new Point(18, 124);
+            comboxpos.Name = "comboxpos";
+            comboxpos.Size = new Size(181, 28);
+            comboxpos.TabIndex = 0;
             // 
             // Main
             // 
@@ -1454,6 +1523,8 @@
             paneldelogin.ResumeLayout(false);
             paneldelogin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            panelPOS.ResumeLayout(false);
+            panelPOS.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -1584,5 +1655,11 @@
         private Panel panelPOS;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private PictureBox pictureBox6;
+        private Label label39;
+        private Button button7;
+        private Label label41;
+        private Label label40;
+        public ComboBox comboxpos;
+        public TextBox textBox13;
     }
 }
