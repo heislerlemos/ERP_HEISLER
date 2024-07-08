@@ -30,7 +30,6 @@
         {
             contabilidade = new Panel();
             pictureBox3 = new PictureBox();
-            pictureBox1 = new PictureBox();
             visualizar_movimentos_contabilidade = new Button();
             richTextBox3 = new RichTextBox();
             dateTimePicker3 = new DateTimePicker();
@@ -97,7 +96,6 @@
             pOSToolStripMenuItem = new ToolStripMenuItem();
             crmpanel = new Panel();
             button5 = new Button();
-            label39 = new Label();
             label3 = new Label();
             richTextBox9 = new RichTextBox();
             pictureBox5 = new PictureBox();
@@ -143,57 +141,21 @@
             comboBox3 = new ComboBox();
             comboBox2 = new ComboBox();
             label24 = new Label();
+            label39 = new Label();
             footerpanel = new Panel();
             linkLabel1 = new LinkLabel();
             paneldelogin = new Panel();
-            pictureBox6 = new PictureBox();
             textusername = new TextBox();
             button6 = new Button();
             label38 = new Label();
             textpassword = new TextBox();
             label37 = new Label();
             label36 = new Label();
+            pictureBox6 = new PictureBox();
             panelPOS = new Panel();
-            labelBarCode = new Label();
-            dataGridView1 = new DataGridView();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
-            panel7 = new Panel();
-            panel6 = new Panel();
-            button31 = new Button();
-            button34 = new Button();
-            button37 = new Button();
-            button40 = new Button();
-            button19 = new Button();
-            button25 = new Button();
-            button20 = new Button();
-            button30 = new Button();
-            button21 = new Button();
-            button29 = new Button();
-            button22 = new Button();
-            button28 = new Button();
-            button23 = new Button();
-            button27 = new Button();
-            button24 = new Button();
-            button26 = new Button();
-            panel5 = new Panel();
-            button16 = new Button();
-            button17 = new Button();
-            button18 = new Button();
-            button13 = new Button();
-            button14 = new Button();
-            button15 = new Button();
-            button10 = new Button();
-            button11 = new Button();
-            button12 = new Button();
-            button9 = new Button();
-            button8 = new Button();
-            button7 = new Button();
             printDocument1 = new System.Drawing.Printing.PrintDocument();
             contabilidade.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             recursoshumanos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             armazem.SuspendLayout();
@@ -208,17 +170,12 @@
             footerpanel.SuspendLayout();
             paneldelogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            panelPOS.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            panel6.SuspendLayout();
-            panel5.SuspendLayout();
             SuspendLayout();
             // 
             // contabilidade
             // 
-            contabilidade.BackColor = Color.Teal;
+            contabilidade.BackColor = SystemColors.Window;
             contabilidade.Controls.Add(pictureBox3);
-            contabilidade.Controls.Add(pictureBox1);
             contabilidade.Controls.Add(visualizar_movimentos_contabilidade);
             contabilidade.Controls.Add(richTextBox3);
             contabilidade.Controls.Add(dateTimePicker3);
@@ -244,16 +201,6 @@
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 13;
             pictureBox3.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.man_5678220_1280;
-            pictureBox1.Location = new Point(289, 218);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(536, 460);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 12;
-            pictureBox1.TabStop = false;
             // 
             // visualizar_movimentos_contabilidade
             // 
@@ -282,7 +229,7 @@
             // data_contabilidade
             // 
             data_contabilidade.AutoSize = true;
-            data_contabilidade.ForeColor = SystemColors.ButtonFace;
+            data_contabilidade.ForeColor = SystemColors.ActiveCaptionText;
             data_contabilidade.Location = new Point(24, 400);
             data_contabilidade.Name = "data_contabilidade";
             data_contabilidade.Size = new Size(41, 20);
@@ -300,7 +247,7 @@
             // produto_contabilidade
             // 
             produto_contabilidade.AutoSize = true;
-            produto_contabilidade.ForeColor = SystemColors.ButtonFace;
+            produto_contabilidade.ForeColor = SystemColors.ActiveCaptionText;
             produto_contabilidade.Location = new Point(22, 310);
             produto_contabilidade.Name = "produto_contabilidade";
             produto_contabilidade.Size = new Size(62, 20);
@@ -318,7 +265,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.ForeColor = SystemColors.ButtonFace;
+            label9.ForeColor = SystemColors.ActiveCaptionText;
             label9.Location = new Point(20, 222);
             label9.Name = "label9";
             label9.Size = new Size(43, 20);
@@ -339,7 +286,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 18F);
-            label1.ForeColor = SystemColors.ButtonFace;
+            label1.ForeColor = SystemColors.ActiveCaptionText;
             label1.Location = new Point(39, 60);
             label1.Name = "label1";
             label1.Size = new Size(203, 41);
@@ -348,7 +295,7 @@
             // 
             // recursoshumanos
             // 
-            recursoshumanos.BackColor = Color.Teal;
+            recursoshumanos.BackColor = SystemColors.Window;
             recursoshumanos.Controls.Add(pictureBox4);
             recursoshumanos.Controls.Add(label23);
             recursoshumanos.Controls.Add(checkedListBox2);
@@ -421,7 +368,7 @@
             // label22
             // 
             label22.AutoSize = true;
-            label22.ForeColor = SystemColors.ButtonFace;
+            label22.ForeColor = SystemColors.ActiveCaptionText;
             label22.Location = new Point(397, 289);
             label22.Name = "label22";
             label22.Size = new Size(86, 20);
@@ -438,7 +385,7 @@
             // label21
             // 
             label21.AutoSize = true;
-            label21.ForeColor = SystemColors.ButtonFace;
+            label21.ForeColor = SystemColors.ActiveCaptionText;
             label21.Location = new Point(395, 165);
             label21.Name = "label21";
             label21.Size = new Size(66, 20);
@@ -455,7 +402,7 @@
             // label20
             // 
             label20.AutoSize = true;
-            label20.ForeColor = SystemColors.ButtonFace;
+            label20.ForeColor = SystemColors.ActiveCaptionText;
             label20.Location = new Point(395, 89);
             label20.Name = "label20";
             label20.Size = new Size(106, 20);
@@ -472,7 +419,7 @@
             // label19
             // 
             label19.AutoSize = true;
-            label19.ForeColor = SystemColors.ButtonFace;
+            label19.ForeColor = SystemColors.ActiveCaptionText;
             label19.Location = new Point(24, 329);
             label19.Name = "label19";
             label19.Size = new Size(46, 20);
@@ -514,7 +461,7 @@
             // label17
             // 
             label17.AutoSize = true;
-            label17.ForeColor = SystemColors.ButtonFace;
+            label17.ForeColor = SystemColors.ActiveCaptionText;
             label17.Location = new Point(26, 187);
             label17.Name = "label17";
             label17.Size = new Size(57, 20);
@@ -542,7 +489,7 @@
             // label15
             // 
             label15.AutoSize = true;
-            label15.ForeColor = SystemColors.ButtonFace;
+            label15.ForeColor = SystemColors.ActiveCaptionText;
             label15.Location = new Point(956, 202);
             label15.Name = "label15";
             label15.Size = new Size(31, 20);
@@ -559,7 +506,7 @@
             // label14
             // 
             label14.AutoSize = true;
-            label14.ForeColor = SystemColors.ButtonFace;
+            label14.ForeColor = SystemColors.ActiveCaptionText;
             label14.Location = new Point(22, 426);
             label14.Name = "label14";
             label14.Size = new Size(31, 20);
@@ -607,7 +554,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.ForeColor = SystemColors.ButtonFace;
+            label7.ForeColor = SystemColors.ActiveCaptionText;
             label7.Location = new Point(20, 500);
             label7.Name = "label7";
             label7.Size = new Size(149, 20);
@@ -642,7 +589,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.ForeColor = SystemColors.ButtonFace;
+            label5.ForeColor = SystemColors.ActiveCaptionText;
             label5.Location = new Point(944, 60);
             label5.Name = "label5";
             label5.Size = new Size(251, 31);
@@ -653,7 +600,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.ForeColor = SystemColors.ButtonFace;
+            label4.ForeColor = SystemColors.ActiveCaptionText;
             label4.Location = new Point(224, 49);
             label4.Name = "label4";
             label4.Size = new Size(253, 31);
@@ -663,7 +610,7 @@
             // Nome
             // 
             Nome.AutoSize = true;
-            Nome.ForeColor = SystemColors.ButtonFace;
+            Nome.ForeColor = SystemColors.ActiveCaptionText;
             Nome.Location = new Point(20, 77);
             Nome.Name = "Nome";
             Nome.Size = new Size(120, 20);
@@ -673,7 +620,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.ForeColor = SystemColors.ButtonFace;
+            label2.ForeColor = SystemColors.ActiveCaptionText;
             label2.Location = new Point(26, 28);
             label2.Name = "label2";
             label2.Size = new Size(134, 20);
@@ -683,7 +630,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.ForeColor = SystemColors.ButtonFace;
+            label8.ForeColor = SystemColors.ActiveCaptionText;
             label8.Location = new Point(956, 320);
             label8.Name = "label8";
             label8.Size = new Size(41, 20);
@@ -692,7 +639,7 @@
             // 
             // armazem
             // 
-            armazem.BackColor = Color.Teal;
+            armazem.BackColor = SystemColors.Window;
             armazem.Controls.Add(pictureBox2);
             armazem.Controls.Add(button3);
             armazem.Controls.Add(richTextBox8);
@@ -735,9 +682,9 @@
             // 
             // richTextBox8
             // 
-            richTextBox8.Location = new Point(708, 234);
+            richTextBox8.Location = new Point(708, 134);
             richTextBox8.Name = "richTextBox8";
-            richTextBox8.Size = new Size(635, 426);
+            richTextBox8.Size = new Size(635, 526);
             richTextBox8.TabIndex = 12;
             richTextBox8.Text = "";
             // 
@@ -761,7 +708,7 @@
             // data
             // 
             data.AutoSize = true;
-            data.ForeColor = SystemColors.ButtonFace;
+            data.ForeColor = SystemColors.ActiveCaptionText;
             data.Location = new Point(374, 251);
             data.Name = "data";
             data.Size = new Size(41, 20);
@@ -779,7 +726,7 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.ForeColor = SystemColors.ButtonFace;
+            label13.ForeColor = SystemColors.ActiveCaptionText;
             label13.Location = new Point(369, 163);
             label13.Name = "label13";
             label13.Size = new Size(87, 20);
@@ -797,7 +744,7 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.ForeColor = SystemColors.ButtonFace;
+            label12.ForeColor = SystemColors.ActiveCaptionText;
             label12.Location = new Point(20, 254);
             label12.Name = "label12";
             label12.Size = new Size(121, 20);
@@ -815,7 +762,7 @@
             // marca_do_produto
             // 
             marca_do_produto.AutoSize = true;
-            marca_do_produto.ForeColor = SystemColors.ButtonFace;
+            marca_do_produto.ForeColor = SystemColors.ActiveCaptionText;
             marca_do_produto.Location = new Point(20, 167);
             marca_do_produto.Name = "marca_do_produto";
             marca_do_produto.Size = new Size(50, 20);
@@ -833,7 +780,7 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.ForeColor = SystemColors.ButtonFace;
+            label11.ForeColor = SystemColors.ActiveCaptionText;
             label11.Location = new Point(20, 77);
             label11.Name = "label11";
             label11.Size = new Size(129, 20);
@@ -896,9 +843,8 @@
             // 
             // crmpanel
             // 
-            crmpanel.BackColor = Color.Teal;
+            crmpanel.BackColor = SystemColors.Window;
             crmpanel.Controls.Add(button5);
-            crmpanel.Controls.Add(label39);
             crmpanel.Controls.Add(label3);
             crmpanel.Controls.Add(richTextBox9);
             crmpanel.Controls.Add(pictureBox5);
@@ -939,21 +885,11 @@
             button5.Text = "Submeter";
             button5.UseVisualStyleBackColor = true;
             // 
-            // label39
-            // 
-            label39.AutoSize = true;
-            label39.ForeColor = SystemColors.ButtonHighlight;
-            label39.Location = new Point(477, 445);
-            label39.Name = "label39";
-            label39.Size = new Size(142, 20);
-            label39.TabIndex = 7;
-            label39.Text = "Por favor faça login ";
-            // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label3.ForeColor = SystemColors.ButtonHighlight;
+            label3.ForeColor = SystemColors.ActiveCaptionText;
             label3.Location = new Point(393, 431);
             label3.Name = "label3";
             label3.Size = new Size(126, 20);
@@ -982,7 +918,7 @@
             // 
             label35.AutoSize = true;
             label35.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
-            label35.ForeColor = SystemColors.Control;
+            label35.ForeColor = SystemColors.ActiveCaptionText;
             label35.Location = new Point(26, 568);
             label35.Name = "label35";
             label35.Size = new Size(328, 35);
@@ -994,7 +930,7 @@
             // 
             label34.AutoSize = true;
             label34.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label34.ForeColor = SystemColors.ButtonFace;
+            label34.ForeColor = SystemColors.ActiveCaptionText;
             label34.Location = new Point(1133, 138);
             label34.Name = "label34";
             label34.Size = new Size(95, 20);
@@ -1058,7 +994,7 @@
             // 
             label33.AutoSize = true;
             label33.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label33.ForeColor = SystemColors.ButtonFace;
+            label33.ForeColor = SystemColors.ActiveCaptionText;
             label33.Location = new Point(892, 134);
             label33.Name = "label33";
             label33.Size = new Size(71, 20);
@@ -1122,8 +1058,8 @@
             // 
             label32.AutoSize = true;
             label32.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label32.ForeColor = SystemColors.ButtonFace;
-            label32.Location = new Point(646, 132);
+            label32.ForeColor = SystemColors.ActiveCaptionText;
+            label32.Location = new Point(646, 135);
             label32.Name = "label32";
             label32.Size = new Size(136, 20);
             label32.TabIndex = 17;
@@ -1186,7 +1122,7 @@
             // 
             label31.AutoSize = true;
             label31.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label31.ForeColor = SystemColors.ButtonFace;
+            label31.ForeColor = SystemColors.ActiveCaptionText;
             label31.Location = new Point(451, 135);
             label31.Name = "label31";
             label31.Size = new Size(91, 20);
@@ -1213,7 +1149,7 @@
             // label30
             // 
             label30.AutoSize = true;
-            label30.ForeColor = SystemColors.ButtonFace;
+            label30.ForeColor = SystemColors.ActiveCaptionText;
             label30.Location = new Point(73, 419);
             label30.Name = "label30";
             label30.Size = new Size(122, 20);
@@ -1230,7 +1166,7 @@
             // label29
             // 
             label29.AutoSize = true;
-            label29.ForeColor = SystemColors.ButtonFace;
+            label29.ForeColor = SystemColors.ActiveCaptionText;
             label29.Location = new Point(71, 361);
             label29.Name = "label29";
             label29.Size = new Size(126, 20);
@@ -1247,7 +1183,7 @@
             // label28
             // 
             label28.AutoSize = true;
-            label28.ForeColor = SystemColors.ButtonFace;
+            label28.ForeColor = SystemColors.ActiveCaptionText;
             label28.Location = new Point(71, 297);
             label28.Name = "label28";
             label28.Size = new Size(148, 20);
@@ -1264,7 +1200,7 @@
             // label27
             // 
             label27.AutoSize = true;
-            label27.ForeColor = SystemColors.ButtonFace;
+            label27.ForeColor = SystemColors.ActiveCaptionText;
             label27.Location = new Point(71, 239);
             label27.Name = "label27";
             label27.Size = new Size(34, 20);
@@ -1281,7 +1217,7 @@
             // label26
             // 
             label26.AutoSize = true;
-            label26.ForeColor = SystemColors.ButtonFace;
+            label26.ForeColor = SystemColors.ActiveCaptionText;
             label26.Location = new Point(67, 179);
             label26.Name = "label26";
             label26.Size = new Size(132, 20);
@@ -1292,7 +1228,7 @@
             // 
             label25.AutoSize = true;
             label25.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label25.ForeColor = SystemColors.ButtonFace;
+            label25.ForeColor = SystemColors.ActiveCaptionText;
             label25.Location = new Point(67, 149);
             label25.Name = "label25";
             label25.Size = new Size(122, 20);
@@ -1356,12 +1292,22 @@
             // 
             label24.AutoSize = true;
             label24.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label24.ForeColor = SystemColors.ButtonFace;
+            label24.ForeColor = SystemColors.ActiveCaptionText;
             label24.Location = new Point(226, 66);
             label24.Name = "label24";
             label24.Size = new Size(405, 31);
             label24.TabIndex = 0;
             label24.Text = "Customer Relationship Management";
+            // 
+            // label39
+            // 
+            label39.AutoSize = true;
+            label39.ForeColor = SystemColors.ActiveCaptionText;
+            label39.Location = new Point(0, 0);
+            label39.Name = "label39";
+            label39.Size = new Size(142, 20);
+            label39.TabIndex = 7;
+            label39.Text = "Por favor faça login ";
             // 
             // footerpanel
             // 
@@ -1389,6 +1335,7 @@
             // paneldelogin
             // 
             paneldelogin.BackColor = Color.Teal;
+            paneldelogin.Controls.Add(label39);
             paneldelogin.Controls.Add(textusername);
             paneldelogin.Controls.Add(button6);
             paneldelogin.Controls.Add(label38);
@@ -1397,35 +1344,23 @@
             paneldelogin.Controls.Add(label36);
             paneldelogin.Controls.Add(pictureBox6);
             paneldelogin.Dock = DockStyle.Fill;
-            paneldelogin.Location = new Point(0, 28);
+            paneldelogin.Location = new Point(0, 0);
             paneldelogin.Name = "paneldelogin";
-            paneldelogin.Size = new Size(1397, 656);
+            paneldelogin.Size = new Size(1397, 747);
             paneldelogin.TabIndex = 27;
-            // 
-            // pictureBox6
-            // 
-            pictureBox6.Dock = DockStyle.Fill;
-            pictureBox6.Image = Properties.Resources.ERP;
-            pictureBox6.Location = new Point(0, 0);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(1397, 656);
-            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.TabIndex = 9;
-            pictureBox6.TabStop = false;
-          
             // 
             // textusername
             // 
-            textusername.Location = new Point(217, 435);
+            textusername.Location = new Point(165, 519);
             textusername.Name = "textusername";
-            textusername.Size = new Size(266, 27);
+            textusername.Size = new Size(281, 27);
             textusername.TabIndex = 4;
             // 
             // button6
             // 
-            button6.Location = new Point(67, 524);
+            button6.Location = new Point(39, 591);
             button6.Name = "button6";
-            button6.Size = new Size(364, 51);
+            button6.Size = new Size(407, 66);
             button6.TabIndex = 8;
             button6.Text = "Submeter";
             button6.UseVisualStyleBackColor = true;
@@ -1436,7 +1371,7 @@
             label38.AutoSize = true;
             label38.BackColor = SystemColors.ActiveCaption;
             label38.ForeColor = SystemColors.ButtonHighlight;
-            label38.Location = new Point(73, 472);
+            label38.Location = new Point(55, 558);
             label38.Name = "label38";
             label38.Size = new Size(87, 20);
             label38.TabIndex = 6;
@@ -1444,9 +1379,10 @@
             // 
             // textpassword
             // 
-            textpassword.Location = new Point(217, 470);
+            textpassword.Location = new Point(166, 558);
             textpassword.Name = "textpassword";
-            textpassword.Size = new Size(266, 27);
+            textpassword.PasswordChar = '*';
+            textpassword.Size = new Size(280, 27);
             textpassword.TabIndex = 5;
             // 
             // label37
@@ -1454,7 +1390,7 @@
             label37.AutoSize = true;
             label37.BackColor = SystemColors.ActiveCaption;
             label37.ForeColor = SystemColors.ButtonHighlight;
-            label37.Location = new Point(73, 435);
+            label37.Location = new Point(56, 522);
             label37.Name = "label37";
             label37.Size = new Size(86, 20);
             label37.TabIndex = 3;
@@ -1468,365 +1404,25 @@
             label36.Size = new Size(0, 20);
             label36.TabIndex = 2;
             // 
+            // pictureBox6
+            // 
+            pictureBox6.Dock = DockStyle.Fill;
+            pictureBox6.Image = Properties.Resources.ERP;
+            pictureBox6.Location = new Point(0, 0);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(1397, 747);
+            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox6.TabIndex = 9;
+            pictureBox6.TabStop = false;
+            // 
             // panelPOS
             // 
             panelPOS.BackColor = Color.Gainsboro;
-            panelPOS.Controls.Add(labelBarCode);
-            panelPOS.Controls.Add(dataGridView1);
-            panelPOS.Controls.Add(panel7);
-            panelPOS.Controls.Add(panel6);
-            panelPOS.Controls.Add(panel5);
-            panelPOS.Dock = DockStyle.Fill;
             panelPOS.Location = new Point(0, 0);
             panelPOS.Name = "panelPOS";
             panelPOS.Size = new Size(1397, 747);
             panelPOS.TabIndex = 9;
-            // 
-            // labelBarCode
-            // 
-            labelBarCode.BackColor = Color.White;
-            labelBarCode.BorderStyle = BorderStyle.Fixed3D;
-            labelBarCode.Font = new Font("C39HrP24DlTt", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelBarCode.Location = new Point(393, 436);
-            labelBarCode.Name = "labelBarCode";
-            labelBarCode.Size = new Size(330, 51);
-            labelBarCode.TabIndex = 4;
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.BackgroundColor = SystemColors.ButtonFace;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3 });
-            dataGridView1.Location = new Point(393, 43);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(337, 378);
-            dataGridView1.TabIndex = 3;
-            // 
-            // Column1
-            // 
-            Column1.HeaderText = "Item";
-            Column1.MinimumWidth = 6;
-            Column1.Name = "Column1";
-            Column1.Width = 125;
-            // 
-            // Column2
-            // 
-            Column2.HeaderText = "Quantidade";
-            Column2.MinimumWidth = 6;
-            Column2.Name = "Column2";
-            Column2.Width = 125;
-            // 
-            // Column3
-            // 
-            Column3.HeaderText = "Preço";
-            Column3.MinimumWidth = 6;
-            Column3.Name = "Column3";
-            Column3.Width = 125;
-            // 
-            // panel7
-            // 
-            panel7.BorderStyle = BorderStyle.Fixed3D;
-            panel7.Location = new Point(11, 514);
-            panel7.Name = "panel7";
-            panel7.Size = new Size(1360, 164);
-            panel7.TabIndex = 2;
-            // 
-            // panel6
-            // 
-            panel6.BorderStyle = BorderStyle.Fixed3D;
-            panel6.Controls.Add(button31);
-            panel6.Controls.Add(button34);
-            panel6.Controls.Add(button37);
-            panel6.Controls.Add(button40);
-            panel6.Controls.Add(button19);
-            panel6.Controls.Add(button25);
-            panel6.Controls.Add(button20);
-            panel6.Controls.Add(button30);
-            panel6.Controls.Add(button21);
-            panel6.Controls.Add(button29);
-            panel6.Controls.Add(button22);
-            panel6.Controls.Add(button28);
-            panel6.Controls.Add(button23);
-            panel6.Controls.Add(button27);
-            panel6.Controls.Add(button24);
-            panel6.Controls.Add(button26);
-            panel6.Location = new Point(736, 43);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(635, 464);
-            panel6.TabIndex = 1;
-            // 
-            // button31
-            // 
-            button31.Location = new Point(463, 340);
-            button31.Name = "button31";
-            button31.Size = new Size(103, 89);
-            button31.TabIndex = 35;
-            button31.Text = "button31";
-            button31.UseVisualStyleBackColor = true;
-            // 
-            // button34
-            // 
-            button34.Location = new Point(463, 228);
-            button34.Name = "button34";
-            button34.Size = new Size(103, 89);
-            button34.TabIndex = 32;
-            button34.Text = "button34";
-            button34.UseVisualStyleBackColor = true;
-            // 
-            // button37
-            // 
-            button37.Location = new Point(463, 127);
-            button37.Name = "button37";
-            button37.Size = new Size(103, 89);
-            button37.TabIndex = 29;
-            button37.Text = "button37";
-            button37.UseVisualStyleBackColor = true;
-            // 
-            // button40
-            // 
-            button40.Location = new Point(463, 21);
-            button40.Name = "button40";
-            button40.Size = new Size(103, 89);
-            button40.TabIndex = 26;
-            button40.Text = "button40";
-            button40.UseVisualStyleBackColor = true;
-            // 
-            // button19
-            // 
-            button19.Location = new Point(327, 342);
-            button19.Name = "button19";
-            button19.Size = new Size(103, 89);
-            button19.TabIndex = 23;
-            button19.Text = "button19";
-            button19.UseVisualStyleBackColor = true;
-            // 
-            // button25
-            // 
-            button25.Location = new Point(327, 129);
-            button25.Name = "button25";
-            button25.Size = new Size(103, 89);
-            button25.TabIndex = 17;
-            button25.Text = "button25";
-            button25.UseVisualStyleBackColor = true;
-            // 
-            // button20
-            // 
-            button20.Location = new Point(208, 339);
-            button20.Name = "button20";
-            button20.Size = new Size(103, 89);
-            button20.TabIndex = 22;
-            button20.Text = "button20";
-            button20.UseVisualStyleBackColor = true;
-            // 
-            // button30
-            // 
-            button30.Location = new Point(89, 20);
-            button30.Name = "button30";
-            button30.Size = new Size(103, 89);
-            button30.TabIndex = 12;
-            button30.Text = "button30";
-            button30.UseVisualStyleBackColor = true;
-            // 
-            // button21
-            // 
-            button21.Location = new Point(89, 339);
-            button21.Name = "button21";
-            button21.Size = new Size(103, 89);
-            button21.TabIndex = 21;
-            button21.Text = "button21";
-            button21.UseVisualStyleBackColor = true;
-            // 
-            // button29
-            // 
-            button29.Location = new Point(208, 20);
-            button29.Name = "button29";
-            button29.Size = new Size(103, 89);
-            button29.TabIndex = 13;
-            button29.Text = "button29";
-            button29.UseVisualStyleBackColor = true;
-            // 
-            // button22
-            // 
-            button22.Location = new Point(327, 230);
-            button22.Name = "button22";
-            button22.Size = new Size(103, 89);
-            button22.TabIndex = 20;
-            button22.Text = "button22";
-            button22.UseVisualStyleBackColor = true;
-            // 
-            // button28
-            // 
-            button28.Location = new Point(327, 23);
-            button28.Name = "button28";
-            button28.Size = new Size(103, 89);
-            button28.TabIndex = 14;
-            button28.Text = "button28";
-            button28.UseVisualStyleBackColor = true;
-            // 
-            // button23
-            // 
-            button23.Location = new Point(208, 227);
-            button23.Name = "button23";
-            button23.Size = new Size(103, 89);
-            button23.TabIndex = 19;
-            button23.Text = "button23";
-            button23.UseVisualStyleBackColor = true;
-            // 
-            // button27
-            // 
-            button27.Location = new Point(89, 126);
-            button27.Name = "button27";
-            button27.Size = new Size(103, 89);
-            button27.TabIndex = 15;
-            button27.Text = "button27";
-            button27.UseVisualStyleBackColor = true;
-            // 
-            // button24
-            // 
-            button24.Location = new Point(89, 227);
-            button24.Name = "button24";
-            button24.Size = new Size(103, 89);
-            button24.TabIndex = 18;
-            button24.Text = "button24";
-            button24.UseVisualStyleBackColor = true;
-            // 
-            // button26
-            // 
-            button26.Location = new Point(208, 126);
-            button26.Name = "button26";
-            button26.Size = new Size(103, 89);
-            button26.TabIndex = 16;
-            button26.Text = "button26";
-            button26.UseVisualStyleBackColor = true;
-            // 
-            // panel5
-            // 
-            panel5.BorderStyle = BorderStyle.Fixed3D;
-            panel5.Controls.Add(button16);
-            panel5.Controls.Add(button17);
-            panel5.Controls.Add(button18);
-            panel5.Controls.Add(button13);
-            panel5.Controls.Add(button14);
-            panel5.Controls.Add(button15);
-            panel5.Controls.Add(button10);
-            panel5.Controls.Add(button11);
-            panel5.Controls.Add(button12);
-            panel5.Controls.Add(button9);
-            panel5.Controls.Add(button8);
-            panel5.Controls.Add(button7);
-            panel5.Location = new Point(11, 43);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(371, 460);
-            panel5.TabIndex = 0;
-            // 
-            // button16
-            // 
-            button16.Location = new Point(252, 334);
-            button16.Name = "button16";
-            button16.Size = new Size(103, 89);
-            button16.TabIndex = 11;
-            button16.Text = "button16";
-            button16.UseVisualStyleBackColor = true;
-            // 
-            // button17
-            // 
-            button17.Location = new Point(133, 331);
-            button17.Name = "button17";
-            button17.Size = new Size(103, 89);
-            button17.TabIndex = 10;
-            button17.Text = "button17";
-            button17.UseVisualStyleBackColor = true;
-            // 
-            // button18
-            // 
-            button18.Location = new Point(14, 331);
-            button18.Name = "button18";
-            button18.Size = new Size(103, 89);
-            button18.TabIndex = 9;
-            button18.Text = "button18";
-            button18.UseVisualStyleBackColor = true;
-            // 
-            // button13
-            // 
-            button13.Location = new Point(252, 222);
-            button13.Name = "button13";
-            button13.Size = new Size(103, 89);
-            button13.TabIndex = 8;
-            button13.Text = "button13";
-            button13.UseVisualStyleBackColor = true;
-            // 
-            // button14
-            // 
-            button14.Location = new Point(133, 219);
-            button14.Name = "button14";
-            button14.Size = new Size(103, 89);
-            button14.TabIndex = 7;
-            button14.Text = "button14";
-            button14.UseVisualStyleBackColor = true;
-            // 
-            // button15
-            // 
-            button15.Location = new Point(14, 219);
-            button15.Name = "button15";
-            button15.Size = new Size(103, 89);
-            button15.TabIndex = 6;
-            button15.Text = "button15";
-            button15.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            button10.Location = new Point(252, 121);
-            button10.Name = "button10";
-            button10.Size = new Size(103, 89);
-            button10.TabIndex = 5;
-            button10.Text = "button10";
-            button10.UseVisualStyleBackColor = true;
-            // 
-            // button11
-            // 
-            button11.Location = new Point(133, 118);
-            button11.Name = "button11";
-            button11.Size = new Size(103, 89);
-            button11.TabIndex = 4;
-            button11.Text = "button11";
-            button11.UseVisualStyleBackColor = true;
-            // 
-            // button12
-            // 
-            button12.Location = new Point(14, 118);
-            button12.Name = "button12";
-            button12.Size = new Size(103, 89);
-            button12.TabIndex = 3;
-            button12.Text = "button12";
-            button12.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            button9.Location = new Point(252, 15);
-            button9.Name = "button9";
-            button9.Size = new Size(103, 89);
-            button9.TabIndex = 2;
-            button9.Text = "button9";
-            button9.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            button8.Location = new Point(133, 12);
-            button8.Name = "button8";
-            button8.Size = new Size(103, 89);
-            button8.TabIndex = 1;
-            button8.Text = "button8";
-            button8.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            button7.Location = new Point(14, 12);
-            button7.Name = "button7";
-            button7.Size = new Size(103, 89);
-            button7.TabIndex = 0;
-            button7.Text = "button7";
-            button7.UseVisualStyleBackColor = true;
+            panelPOS.Paint += panelPOS_Paint;
             // 
             // Main
             // 
@@ -1834,9 +1430,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.RosyBrown;
             ClientSize = new Size(1397, 747);
-            Controls.Add(paneldelogin);
             Controls.Add(menuStrip1);
             Controls.Add(footerpanel);
+            Controls.Add(paneldelogin);
             Controls.Add(panelPOS);
             Controls.Add(crmpanel);
             Controls.Add(contabilidade);
@@ -1851,7 +1447,6 @@
             contabilidade.ResumeLayout(false);
             contabilidade.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             recursoshumanos.ResumeLayout(false);
             recursoshumanos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
@@ -1872,10 +1467,6 @@
             paneldelogin.ResumeLayout(false);
             paneldelogin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            panelPOS.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            panel6.ResumeLayout(false);
-            panel5.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -1984,7 +1575,6 @@
         private Panel footerpanel;
         private LinkLabel linkLabel1;
         public ComboBox comboBox2;
-        private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
@@ -2006,42 +1596,6 @@
         private Button button6;
         private ToolStripMenuItem pOSToolStripMenuItem;
         private Panel panelPOS;
-        private Panel panel7;
-        private Panel panel6;
-        private Panel panel5;
-        private DataGridView dataGridView1;
-        private Label labelBarCode;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column3;
-        private Button button31;
-        private Button button34;
-        private Button button37;
-        private Button button40;
-        private Button button19;
-        private Button button25;
-        private Button button20;
-        private Button button30;
-        private Button button21;
-        private Button button29;
-        private Button button22;
-        private Button button28;
-        private Button button23;
-        private Button button27;
-        private Button button24;
-        private Button button26;
-        private Button button16;
-        private Button button17;
-        private Button button18;
-        private Button button13;
-        private Button button14;
-        private Button button15;
-        private Button button10;
-        private Button button11;
-        private Button button12;
-        private Button button9;
-        private Button button8;
-        private Button button7;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private PictureBox pictureBox6;
     }

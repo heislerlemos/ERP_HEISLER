@@ -104,6 +104,9 @@ namespace ERP_HEISLER
             password = textpassword.Text;
 
 
+
+
+
             try
             {
 
@@ -161,9 +164,9 @@ namespace ERP_HEISLER
 
         private void pOSToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            listPanel.Add(panelPOS);
-            panelPOS.BringToFront();
-
+            //listPanel.Add(panelPOS);
+            //panelPOS.BringToFront();
+            // ainda não vou mexer nesta parte for now..
         }
 
         private void paneldelogin_Paint(object sender, PaintEventArgs e)
@@ -175,6 +178,11 @@ namespace ERP_HEISLER
         public static implicit operator Main(string v)
         {
             throw new NotImplementedException();
+        }
+
+        private void panelPOS_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
