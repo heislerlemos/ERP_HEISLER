@@ -141,7 +141,6 @@
             comboBox3 = new ComboBox();
             comboBox2 = new ComboBox();
             label24 = new Label();
-            label39 = new Label();
             footerpanel = new Panel();
             linkLabel1 = new LinkLabel();
             paneldelogin = new Panel();
@@ -1299,16 +1298,6 @@
             label24.TabIndex = 0;
             label24.Text = "Customer Relationship Management";
             // 
-            // label39
-            // 
-            label39.AutoSize = true;
-            label39.ForeColor = SystemColors.ActiveCaptionText;
-            label39.Location = new Point(0, 0);
-            label39.Name = "label39";
-            label39.Size = new Size(142, 20);
-            label39.TabIndex = 7;
-            label39.Text = "Por favor faça login ";
-            // 
             // footerpanel
             // 
             footerpanel.BackColor = Color.DimGray;
@@ -1335,7 +1324,6 @@
             // paneldelogin
             // 
             paneldelogin.BackColor = Color.Teal;
-            paneldelogin.Controls.Add(label39);
             paneldelogin.Controls.Add(textusername);
             paneldelogin.Controls.Add(button6);
             paneldelogin.Controls.Add(label38);
@@ -1351,7 +1339,7 @@
             // 
             // textusername
             // 
-            textusername.Location = new Point(165, 519);
+            textusername.Location = new Point(164, 519);
             textusername.Name = "textusername";
             textusername.Size = new Size(281, 27);
             textusername.TabIndex = 4;
@@ -1422,7 +1410,6 @@
             panelPOS.Name = "panelPOS";
             panelPOS.Size = new Size(1397, 747);
             panelPOS.TabIndex = 9;
-            panelPOS.Paint += panelPOS_Paint;
             // 
             // Main
             // 
@@ -1592,7 +1579,6 @@
         private Label label38;
         private TextBox textpassword;
         private TextBox textusername;
-        private Label label39;
         private Button button6;
         private ToolStripMenuItem pOSToolStripMenuItem;
         private Panel panelPOS;

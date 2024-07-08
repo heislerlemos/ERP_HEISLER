@@ -169,20 +169,11 @@ namespace ERP_HEISLER
             // ainda não vou mexer nesta parte for now..
         }
 
-        private void paneldelogin_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
 
-        public static implicit operator Main(string v)
-        {
-            throw new NotImplementedException();
-        }
 
-        private void panelPOS_Paint(object sender, PaintEventArgs e)
-        {
 
-        }
+
+
     }
 }
