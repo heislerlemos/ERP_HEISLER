@@ -1474,7 +1474,7 @@
             // 
             comboxpos.BackColor = SystemColors.Menu;
             comboxpos.FormattingEnabled = true;
-            comboxpos.Items.AddRange(new object[] { "Primavera ERP 50 MIL KZ  " });
+            comboxpos.Items.AddRange(new object[] { "Primavera ERP 50 MIL KZ  ", "OFFICE ERP 20 MIL KZ  " });
             comboxpos.Location = new Point(18, 124);
             comboxpos.Name = "comboxpos";
             comboxpos.Size = new Size(181, 28);

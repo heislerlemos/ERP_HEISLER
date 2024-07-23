@@ -18,8 +18,7 @@ namespace ERP_HEISLER.Controller
 
         public static Main? f1 = Application.OpenForms.OfType<Main>().FirstOrDefault();
 
-        private static int Total;
-
+        /**
         public static void Incremet()
         {
 
@@ -34,8 +33,9 @@ namespace ERP_HEISLER.Controller
 
             int valor_inicial = 50;
             int Total = valor_inicial *= 2;
-            Total++;
 
+
+           
             System.Diagnostics.Debug.WriteLine(Total.ToString());
             f1.textBox13.Text = Total.ToString();
 
@@ -43,7 +43,10 @@ namespace ERP_HEISLER.Controller
 
 
 
+
         }
+          Not using this function  
+        */
 
     }
 }

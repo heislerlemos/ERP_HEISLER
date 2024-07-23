@@ -175,10 +175,17 @@ namespace ERP_HEISLER
         }
 
 
-
+        private int Total = 50;
         private void button7_Click(object sender, EventArgs e)
         {
-            Pos_Controller.Incremet() ;
+
+
+
+            Total *= 2;
+
+            textBox13.Text = Total.ToString();
+
+
 
         }
     }
