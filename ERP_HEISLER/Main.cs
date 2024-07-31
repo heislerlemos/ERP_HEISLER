@@ -19,6 +19,12 @@ namespace ERP_HEISLER
             InitializeComponent();
         }
 
+        private void Main_Load(object sender, EventArgs e)
+        {
+            Combo_boxes.display();
+            menuStrip1.Hide();
+        }
+
 
         private void armazemToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -38,6 +44,16 @@ namespace ERP_HEISLER
             listPanel.Add(recursoshumanos);
             recursoshumanos.BringToFront();
         }
+
+        private void pOSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            listPanel.Add(panelPOS);
+            panelPOS.BringToFront();
+
+
+            // ainda não vou mexer nesta parte for now..
+        }
+
 
 
         private void button2_Click(object sender, EventArgs e)
@@ -66,11 +82,6 @@ namespace ERP_HEISLER
         }
 
 
-        private void Main_Load(object sender, EventArgs e)
-        {
-            Combo_boxes.display();
-            menuStrip1.Hide();
-        }
 
 
         private void crmToolStripMenuItem_Click(object sender, EventArgs e)
@@ -103,20 +114,13 @@ namespace ERP_HEISLER
             username = textusername.Text;
             password = textpassword.Text;
 
-
-
-
-
             try
             {
-
-
 
                 string ConnectionString = ConfigurationManager.ConnectionStrings["ERP"].ConnectionString;
 
                 SqlConnection con = new SqlConnection(ConnectionString);
                 con.Open();
-
 
                 // Fazendo trableshoot do problema de connexão 
                 String query = "SELECT * FROM login_user WHERE username= '" + textusername.Text + "' AND password='" + textpassword.Text + "'";
@@ -135,10 +139,6 @@ namespace ERP_HEISLER
                     listPanel.Add(recursoshumanos);
                     recursoshumanos.BringToFront();
                     menuStrip1.Show();
-
-
-
-
                 }
 
 
@@ -147,9 +147,6 @@ namespace ERP_HEISLER
                     MessageBox.Show("password ou username errado", "erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     textpassword.Clear();
                     textusername.Clear();
-
-
-
                 }
                 con.Close();
             }
@@ -157,36 +154,18 @@ namespace ERP_HEISLER
 
             {
                 MessageBox.Show("Erro Interno");
-
             }
 
         }
 
-        private void pOSToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            listPanel.Add(panelPOS);
-            panelPOS.BringToFront();
-            // ainda não vou mexer nesta parte for now..
-        }
 
-        private void panelPOS_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-
+        // POS button increment
         private int Total = 50;
         private void button7_Click(object sender, EventArgs e)
         {
-
-
-
             Total *= 2;
-
             textBox13.Text = Total.ToString();
-
-
-
         }
+
     }
 }
