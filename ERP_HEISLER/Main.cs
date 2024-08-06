@@ -49,9 +49,6 @@ namespace ERP_HEISLER
         {
             listPanel.Add(panelPOS);
             panelPOS.BringToFront();
-
-
-            // ainda não vou mexer nesta parte for now..
         }
 
 
@@ -64,7 +61,6 @@ namespace ERP_HEISLER
         private void button1_Click(object sender, EventArgs e)
         {
             Rh_Controller.adicionardb();
-
         }
 
 
@@ -80,9 +76,6 @@ namespace ERP_HEISLER
             Armazem_Controller.adicionarproductodb();
 
         }
-
-
-
 
         private void crmToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -159,13 +152,39 @@ namespace ERP_HEISLER
         }
 
 
-        // POS button increment
-        private int Total = 50;
+        // POS button increment 1
+        private int Total1 = 50;
         private void button7_Click(object sender, EventArgs e)
         {
-            Total *= 2;
-            textBox13.Text = Total.ToString();
+            Total1 *= 2;
+            textBox13.Text = Total1.ToString();
         }
 
+        // POS button increment 2
+        private int Total2 = 40;
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Total2 *= 2;
+            textBox14.Text = Total2.ToString();
+        }
+
+        // POS button incremnt 3 
+        private int Total3 = 20;
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Total3 *= 2;
+            textBox15.Text = Total3.ToString();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            int TotalValue = Total1 + Total2 + Total3;
+            richTextBox10.Text = TotalValue.ToString();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            richTextBox10.Clear();  
+        }
     }
 }

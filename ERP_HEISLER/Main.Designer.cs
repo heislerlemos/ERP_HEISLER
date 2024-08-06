@@ -152,26 +152,29 @@
             label36 = new Label();
             pictureBox6 = new PictureBox();
             panelPOS = new Panel();
+            button11 = new Button();
+            label44 = new Label();
+            label42 = new Label();
             label41 = new Label();
+            label46 = new Label();
+            button10 = new Button();
+            label45 = new Label();
+            textBox15 = new TextBox();
+            button9 = new Button();
+            comboBox5 = new ComboBox();
+            label43 = new Label();
+            textBox14 = new TextBox();
+            button8 = new Button();
+            comboBox4 = new ComboBox();
+            label10 = new Label();
+            richTextBox10 = new RichTextBox();
             label40 = new Label();
             label39 = new Label();
             textBox13 = new TextBox();
             button7 = new Button();
             comboxpos = new ComboBox();
             printDocument1 = new System.Drawing.Printing.PrintDocument();
-            richTextBox10 = new RichTextBox();
-            label10 = new Label();
-            label42 = new Label();
-            label43 = new Label();
-            textBox14 = new TextBox();
-            button8 = new Button();
-            comboBox4 = new ComboBox();
-            label44 = new Label();
-            label45 = new Label();
-            textBox15 = new TextBox();
-            button9 = new Button();
-            comboBox5 = new ComboBox();
-            button10 = new Button();
+            button12 = new Button();
             contabilidade.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             recursoshumanos.SuspendLayout();
@@ -1426,20 +1429,23 @@
             // panelPOS
             // 
             panelPOS.BackColor = SystemColors.Menu;
-            panelPOS.Controls.Add(button10);
+            panelPOS.Controls.Add(button12);
+            panelPOS.Controls.Add(button11);
             panelPOS.Controls.Add(label44);
+            panelPOS.Controls.Add(label42);
+            panelPOS.Controls.Add(label41);
+            panelPOS.Controls.Add(label46);
+            panelPOS.Controls.Add(button10);
             panelPOS.Controls.Add(label45);
             panelPOS.Controls.Add(textBox15);
             panelPOS.Controls.Add(button9);
             panelPOS.Controls.Add(comboBox5);
-            panelPOS.Controls.Add(label42);
             panelPOS.Controls.Add(label43);
             panelPOS.Controls.Add(textBox14);
             panelPOS.Controls.Add(button8);
             panelPOS.Controls.Add(comboBox4);
             panelPOS.Controls.Add(label10);
             panelPOS.Controls.Add(richTextBox10);
-            panelPOS.Controls.Add(label41);
             panelPOS.Controls.Add(label40);
             panelPOS.Controls.Add(label39);
             panelPOS.Controls.Add(textBox13);
@@ -1451,19 +1457,163 @@
             panelPOS.Size = new Size(1397, 747);
             panelPOS.TabIndex = 9;
             // 
+            // button11
+            // 
+            button11.BackColor = Color.Linen;
+            button11.Location = new Point(724, 455);
+            button11.Name = "button11";
+            button11.Size = new Size(164, 64);
+            button11.TabIndex = 24;
+            button11.Text = "Limpar";
+            button11.UseVisualStyleBackColor = false;
+            button11.Click += button11_Click;
+            // 
+            // label44
+            // 
+            label44.AutoSize = true;
+            label44.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label44.Location = new Point(872, 146);
+            label44.Name = "label44";
+            label44.Size = new Size(43, 20);
+            label44.TabIndex = 23;
+            label44.Text = "KWZ";
+            // 
+            // label42
+            // 
+            label42.AutoSize = true;
+            label42.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label42.Location = new Point(874, 219);
+            label42.Name = "label42";
+            label42.Size = new Size(43, 20);
+            label42.TabIndex = 22;
+            label42.Text = "KWZ";
+            // 
             // label41
             // 
             label41.AutoSize = true;
-            label41.Location = new Point(765, 122);
+            label41.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label41.Location = new Point(879, 305);
             label41.Name = "label41";
-            label41.Size = new Size(42, 20);
-            label41.TabIndex = 6;
-            label41.Text = "Total";
+            label41.Size = new Size(43, 20);
+            label41.TabIndex = 21;
+            label41.Text = "KWZ";
+            // 
+            // label46
+            // 
+            label46.AutoSize = true;
+            label46.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label46.Location = new Point(650, 390);
+            label46.Name = "label46";
+            label46.Size = new Size(43, 20);
+            label46.TabIndex = 20;
+            label46.Text = "KWZ";
+            // 
+            // button10
+            // 
+            button10.BackColor = Color.Cyan;
+            button10.Location = new Point(724, 372);
+            button10.Name = "button10";
+            button10.Size = new Size(164, 64);
+            button10.TabIndex = 19;
+            button10.Text = "Verificar";
+            button10.UseVisualStyleBackColor = false;
+            button10.Click += button10_Click;
+            // 
+            // label45
+            // 
+            label45.AutoSize = true;
+            label45.Location = new Point(406, 306);
+            label45.Name = "label45";
+            label45.Size = new Size(53, 20);
+            label45.TabIndex = 17;
+            label45.Text = "Item-3";
+            // 
+            // textBox15
+            // 
+            textBox15.Location = new Point(784, 302);
+            textBox15.Name = "textBox15";
+            textBox15.Size = new Size(84, 27);
+            textBox15.TabIndex = 16;
+            // 
+            // button9
+            // 
+            button9.BackColor = Color.MediumSpringGreen;
+            button9.Location = new Point(704, 302);
+            button9.Name = "button9";
+            button9.Size = new Size(45, 29);
+            button9.TabIndex = 15;
+            button9.Text = "+";
+            button9.UseVisualStyleBackColor = false;
+            button9.Click += button9_Click;
+            // 
+            // comboBox5
+            // 
+            comboBox5.BackColor = SystemColors.Menu;
+            comboBox5.FormattingEnabled = true;
+            comboBox5.Items.AddRange(new object[] { "WINDOWS 20 MIL KZ  " });
+            comboBox5.Location = new Point(475, 302);
+            comboBox5.Name = "comboBox5";
+            comboBox5.Size = new Size(181, 28);
+            comboBox5.TabIndex = 14;
+            // 
+            // label43
+            // 
+            label43.AutoSize = true;
+            label43.Location = new Point(406, 219);
+            label43.Name = "label43";
+            label43.Size = new Size(53, 20);
+            label43.TabIndex = 12;
+            label43.Text = "Item-2";
+            // 
+            // textBox14
+            // 
+            textBox14.Location = new Point(784, 219);
+            textBox14.Name = "textBox14";
+            textBox14.Size = new Size(84, 27);
+            textBox14.TabIndex = 11;
+            // 
+            // button8
+            // 
+            button8.BackColor = Color.MediumSpringGreen;
+            button8.Location = new Point(704, 219);
+            button8.Name = "button8";
+            button8.Size = new Size(45, 29);
+            button8.TabIndex = 10;
+            button8.Text = "+";
+            button8.UseVisualStyleBackColor = false;
+            button8.Click += button8_Click;
+            // 
+            // comboBox4
+            // 
+            comboBox4.BackColor = SystemColors.Menu;
+            comboBox4.FormattingEnabled = true;
+            comboBox4.Items.AddRange(new object[] { "OFFICE 40 MIL KZ  " });
+            comboBox4.Location = new Point(475, 219);
+            comboBox4.Name = "comboBox4";
+            comboBox4.Size = new Size(181, 28);
+            comboBox4.TabIndex = 9;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(448, 390);
+            label10.Name = "label10";
+            label10.Size = new Size(80, 20);
+            label10.TabIndex = 8;
+            label10.Text = "Valor Total";
+            // 
+            // richTextBox10
+            // 
+            richTextBox10.Location = new Point(544, 387);
+            richTextBox10.Name = "richTextBox10";
+            richTextBox10.Size = new Size(78, 26);
+            richTextBox10.TabIndex = 7;
+            richTextBox10.Text = "";
             // 
             // label40
             // 
             label40.AutoSize = true;
-            label40.Location = new Point(406, 121);
+            label40.Location = new Point(405, 153);
             label40.Name = "label40";
             label40.Size = new Size(53, 20);
             label40.TabIndex = 5;
@@ -1473,7 +1623,7 @@
             // 
             label39.AutoSize = true;
             label39.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
-            label39.Location = new Point(475, 49);
+            label39.Location = new Point(1016, 594);
             label39.Name = "label39";
             label39.Size = new Size(369, 46);
             label39.TabIndex = 4;
@@ -1481,19 +1631,20 @@
             // 
             // textBox13
             // 
-            textBox13.Location = new Point(715, 161);
+            textBox13.Location = new Point(784, 146);
             textBox13.Name = "textBox13";
-            textBox13.Size = new Size(192, 27);
+            textBox13.Size = new Size(82, 27);
             textBox13.TabIndex = 2;
             // 
             // button7
             // 
-            button7.Location = new Point(635, 161);
+            button7.BackColor = Color.MediumSpringGreen;
+            button7.Location = new Point(704, 146);
             button7.Name = "button7";
             button7.Size = new Size(45, 29);
             button7.TabIndex = 1;
             button7.Text = "+";
-            button7.UseVisualStyleBackColor = true;
+            button7.UseVisualStyleBackColor = false;
             button7.Click += button7_Click;
             // 
             // comboxpos
@@ -1501,124 +1652,21 @@
             comboxpos.BackColor = SystemColors.Menu;
             comboxpos.FormattingEnabled = true;
             comboxpos.Items.AddRange(new object[] { "Primavera ERP 50 MIL KZ  " });
-            comboxpos.Location = new Point(406, 161);
+            comboxpos.Location = new Point(475, 146);
             comboxpos.Name = "comboxpos";
             comboxpos.Size = new Size(181, 28);
             comboxpos.TabIndex = 0;
             // 
-            // richTextBox10
+            // button12
             // 
-            richTextBox10.Location = new Point(554, 427);
-            richTextBox10.Name = "richTextBox10";
-            richTextBox10.Size = new Size(245, 26);
-            richTextBox10.TabIndex = 7;
-            richTextBox10.Text = "";
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Location = new Point(618, 395);
-            label10.Name = "label10";
-            label10.Size = new Size(80, 20);
-            label10.TabIndex = 8;
-            label10.Text = "Valor Total";
-            // 
-            // label42
-            // 
-            label42.AutoSize = true;
-            label42.Location = new Point(765, 195);
-            label42.Name = "label42";
-            label42.Size = new Size(42, 20);
-            label42.TabIndex = 13;
-            label42.Text = "Total";
-            // 
-            // label43
-            // 
-            label43.AutoSize = true;
-            label43.Location = new Point(409, 197);
-            label43.Name = "label43";
-            label43.Size = new Size(53, 20);
-            label43.TabIndex = 12;
-            label43.Text = "Item-2";
-            // 
-            // textBox14
-            // 
-            textBox14.Location = new Point(715, 234);
-            textBox14.Name = "textBox14";
-            textBox14.Size = new Size(192, 27);
-            textBox14.TabIndex = 11;
-            // 
-            // button8
-            // 
-            button8.Location = new Point(635, 234);
-            button8.Name = "button8";
-            button8.Size = new Size(45, 29);
-            button8.TabIndex = 10;
-            button8.Text = "+";
-            button8.UseVisualStyleBackColor = true;
-            // 
-            // comboBox4
-            // 
-            comboBox4.BackColor = SystemColors.Menu;
-            comboBox4.FormattingEnabled = true;
-            comboBox4.Items.AddRange(new object[] { "OFFICE 40 MIL KZ  " });
-            comboBox4.Location = new Point(406, 234);
-            comboBox4.Name = "comboBox4";
-            comboBox4.Size = new Size(181, 28);
-            comboBox4.TabIndex = 9;
-            // 
-            // label44
-            // 
-            label44.AutoSize = true;
-            label44.Location = new Point(765, 278);
-            label44.Name = "label44";
-            label44.Size = new Size(42, 20);
-            label44.TabIndex = 18;
-            label44.Text = "Total";
-            // 
-            // label45
-            // 
-            label45.AutoSize = true;
-            label45.Location = new Point(409, 278);
-            label45.Name = "label45";
-            label45.Size = new Size(53, 20);
-            label45.TabIndex = 17;
-            label45.Text = "Item-3";
-            // 
-            // textBox15
-            // 
-            textBox15.Location = new Point(715, 317);
-            textBox15.Name = "textBox15";
-            textBox15.Size = new Size(192, 27);
-            textBox15.TabIndex = 16;
-            // 
-            // button9
-            // 
-            button9.Location = new Point(635, 317);
-            button9.Name = "button9";
-            button9.Size = new Size(45, 29);
-            button9.TabIndex = 15;
-            button9.Text = "+";
-            button9.UseVisualStyleBackColor = true;
-            // 
-            // comboBox5
-            // 
-            comboBox5.BackColor = SystemColors.Menu;
-            comboBox5.FormattingEnabled = true;
-            comboBox5.Items.AddRange(new object[] { "WINDOWS 20 MIL KZ  " });
-            comboBox5.Location = new Point(406, 317);
-            comboBox5.Name = "comboBox5";
-            comboBox5.Size = new Size(181, 28);
-            comboBox5.TabIndex = 14;
-            // 
-            // button10
-            // 
-            button10.Location = new Point(582, 487);
-            button10.Name = "button10";
-            button10.Size = new Size(164, 29);
-            button10.TabIndex = 19;
-            button10.Text = "Submeter-Compra";
-            button10.UseVisualStyleBackColor = true;
+            button12.BackColor = Color.ForestGreen;
+            button12.ForeColor = SystemColors.ButtonHighlight;
+            button12.Location = new Point(400, 437);
+            button12.Name = "button12";
+            button12.Size = new Size(293, 82);
+            button12.TabIndex = 25;
+            button12.Text = "Check-in";
+            button12.UseVisualStyleBackColor = false;
             // 
             // Main
             // 
@@ -1797,22 +1845,25 @@
         private PictureBox pictureBox6;
         private Label label39;
         private Button button7;
-        private Label label41;
         private Label label40;
         public ComboBox comboxpos;
         public TextBox textBox13;
         private Button button10;
-        private Label label44;
         private Label label45;
         public TextBox textBox15;
         private Button button9;
         public ComboBox comboBox5;
-        private Label label42;
         private Label label43;
         public TextBox textBox14;
         private Button button8;
         public ComboBox comboBox4;
         private Label label10;
         private RichTextBox richTextBox10;
+        private Label label44;
+        private Label label42;
+        private Label label41;
+        private Label label46;
+        private Button button11;
+        private Button button12;
     }
 }
