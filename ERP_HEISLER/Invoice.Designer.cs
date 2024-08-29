@@ -32,11 +32,13 @@
 			label1 = new Label();
 			label3 = new Label();
 			panel1 = new Panel();
+			label7 = new Label();
+			label6 = new Label();
+			label5 = new Label();
 			label4 = new Label();
 			label2 = new Label();
-			label5 = new Label();
-			label6 = new Label();
-			label7 = new Label();
+			printDocument1 = new System.Drawing.Printing.PrintDocument();
+			button1 = new Button();
 			panel1.SuspendLayout();
 			SuspendLayout();
 			// 
@@ -79,10 +81,37 @@
 			panel1.Controls.Add(label1);
 			panel1.Controls.Add(label3);
 			panel1.Controls.Add(faturalabel);
-			panel1.Location = new Point(12, 26);
+			panel1.Location = new Point(12, 52);
 			panel1.Name = "panel1";
-			panel1.Size = new Size(312, 596);
+			panel1.Size = new Size(312, 570);
 			panel1.TabIndex = 4;
+			// 
+			// label7
+			// 
+			label7.AutoSize = true;
+			label7.Location = new Point(92, 123);
+			label7.Name = "label7";
+			label7.Size = new Size(109, 20);
+			label7.TabIndex = 9;
+			label7.Text = "FRI 04/07/2024";
+			// 
+			// label6
+			// 
+			label6.AutoSize = true;
+			label6.Location = new Point(92, 80);
+			label6.Name = "label6";
+			label6.Size = new Size(109, 20);
+			label6.TabIndex = 8;
+			label6.Text = "Luanda Angola";
+			// 
+			// label5
+			// 
+			label5.AutoSize = true;
+			label5.Location = new Point(82, 51);
+			label5.Name = "label5";
+			label5.Size = new Size(135, 20);
+			label5.TabIndex = 7;
+			label5.Text = "Heisler ERP Invoice";
 			// 
 			// label4
 			// 
@@ -102,38 +131,25 @@
 			label2.TabIndex = 5;
 			label2.Text = "---------------------------------------------\r\n";
 			// 
-			// label5
+			// printDocument1
 			// 
-			label5.AutoSize = true;
-			label5.Location = new Point(82, 16);
-			label5.Name = "label5";
-			label5.Size = new Size(135, 20);
-			label5.TabIndex = 7;
-			label5.Text = "Heisler ERP Invoice";
 			// 
-			// label6
+			// button1
 			// 
-			label6.AutoSize = true;
-			label6.Location = new Point(92, 45);
-			label6.Name = "label6";
-			label6.Size = new Size(109, 20);
-			label6.TabIndex = 8;
-			label6.Text = "Luanda Angola";
-			// 
-			// label7
-			// 
-			label7.AutoSize = true;
-			label7.Location = new Point(92, 94);
-			label7.Name = "label7";
-			label7.Size = new Size(109, 20);
-			label7.TabIndex = 9;
-			label7.Text = "FRI 04/07/2024";
+			button1.Location = new Point(119, 17);
+			button1.Name = "button1";
+			button1.Size = new Size(94, 29);
+			button1.TabIndex = 5;
+			button1.Text = "Imprimir";
+			button1.UseVisualStyleBackColor = true;
+			button1.Click += button1_Click;
 			// 
 			// Invoice
 			// 
 			AutoScaleDimensions = new SizeF(8F, 20F);
 			AutoScaleMode = AutoScaleMode.Font;
 			ClientSize = new Size(336, 648);
+			Controls.Add(button1);
 			Controls.Add(panel1);
 			Name = "Invoice";
 			Text = "Invoice";
@@ -153,5 +169,7 @@
 		private Label label6;
 		private Label label5;
 		private Label label7;
+		private System.Drawing.Printing.PrintDocument printDocument1;
+		private Button button1;
 	}
 }
