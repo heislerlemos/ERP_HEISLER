@@ -23,7 +23,10 @@ namespace ERP_HEISLER
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			PrintDialog printDialog = new PrintDialog();
+			//PrintDialog printDialog = new PrintDialog();
+			printPreviewDialog1.Document = printDocument1;
+			printPreviewDialog1.ShowDialog(panel1);
+		/*
 			printDialog.Document = printDocument;
 			//Show Print Dialog
 			if (printDialog.ShowDialog() == DialogResult.OK)
@@ -31,8 +34,12 @@ namespace ERP_HEISLER
 				//Print the page
 				printDocument.Print();
 			}
+		*/
 		}
 
-
+		private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+		{
+			e.Graphics.DrawString("Impressão de fatura visualização",new Font("Arial", 12 , FontStyle.Regular ),Brushes.Black, new Point(100,10));
+		}
 	}
 }
