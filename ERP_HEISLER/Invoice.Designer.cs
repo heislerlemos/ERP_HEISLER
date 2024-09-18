@@ -79,6 +79,7 @@
 			printPreviewDialog1.AutoScrollMargin = new Size(0, 0);
 			printPreviewDialog1.AutoScrollMinSize = new Size(0, 0);
 			printPreviewDialog1.ClientSize = new Size(400, 300);
+			printPreviewDialog1.Document = printDocument1;
 			printPreviewDialog1.Enabled = true;
 			printPreviewDialog1.Icon = (Icon)resources.GetObject("printPreviewDialog1.Icon");
 			printPreviewDialog1.Name = "printPreviewDialog1";

@@ -23,23 +23,27 @@ namespace ERP_HEISLER
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			//PrintDialog printDialog = new PrintDialog();
-			printPreviewDialog1.Document = printDocument1;
-			printPreviewDialog1.ShowDialog(panel1);
-		/*
-			printDialog.Document = printDocument;
-			//Show Print Dialog
-			if (printDialog.ShowDialog() == DialogResult.OK)
+		
+			if (printPreviewDialog1.ShowDialog() == DialogResult.OK)
 			{
-				//Print the page
 				printDocument.Print();
 			}
-		*/
+		
 		}
+
+		Bitmap bmp;
+
 
 		private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
 		{
-			e.Graphics.DrawString("Impressão de fatura visualização",new Font("Arial", 12 , FontStyle.Regular ),Brushes.Black, new Point(100,10));
+
+			e.Graphics.DrawString("Fatura", new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new Point(370, 10));
+			e.Graphics.DrawString("-----------------------------", new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new Point(300, 20));
+			e.Graphics.DrawString("Heisler ERP, Lda", new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new Point(300, 40));
+			e.Graphics.DrawString("Rua Santa Catarina", new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new Point(300, 60));
+			e.Graphics.DrawString("Total", new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new Point(300, 100));
+			e.Graphics.DrawString("-----", new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new Point(300, 120));
+			e.Graphics.DrawString(faturalabel.Text + " MIL " + "KZ", new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new Point(300, 140));
 		}
 	}
 }
