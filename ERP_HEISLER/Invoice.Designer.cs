@@ -39,7 +39,7 @@
 			label4 = new Label();
 			label5 = new Label();
 			label6 = new Label();
-			label7 = new Label();
+			datelabel = new Label();
 			label8 = new Label();
 			label9 = new Label();
 			label10 = new Label();
@@ -149,14 +149,14 @@
 			label6.TabIndex = 8;
 			label6.Text = "Rua Santa Catarina";
 			// 
-			// label7
+			// datelabel
 			// 
-			label7.AutoSize = true;
-			label7.Location = new Point(178, 130);
-			label7.Name = "label7";
-			label7.Size = new Size(124, 20);
-			label7.TabIndex = 9;
-			label7.Text = "04/07/2024 12:43";
+			datelabel.AutoSize = true;
+			datelabel.Location = new Point(178, 130);
+			datelabel.Name = "datelabel";
+			datelabel.Size = new Size(124, 20);
+			datelabel.TabIndex = 9;
+			datelabel.Text = "04/07/2024 12:43";
 			// 
 			// label8
 			// 
@@ -321,7 +321,7 @@
 			panel1.Controls.Add(label10);
 			panel1.Controls.Add(label9);
 			panel1.Controls.Add(label8);
-			panel1.Controls.Add(label7);
+			panel1.Controls.Add(datelabel);
 			panel1.Controls.Add(label6);
 			panel1.Controls.Add(label5);
 			panel1.Controls.Add(label4);
@@ -359,7 +359,6 @@
 		private Label label4;
 		private Label label5;
 		private Label label6;
-		private Label label7;
 		private Label label8;
 		private Label label9;
 		private Label label10;
@@ -377,5 +376,6 @@
 		private Label label22;
 		private Label label23;
 		public Panel panel1;
+		public Label datelabel;
 	}
 }
