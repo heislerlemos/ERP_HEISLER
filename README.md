@@ -1,8 +1,8 @@
 
 # Aplicativo de Enterprise Resource Planning (ERP)
 
-Este é um aplicativo de ERP desenvolvido para [descreva o propósito do seu aplicativo, como gerenciamento de recursos, automação de processos, etc.].
-Ele oferece uma solução robusta e escalável para [explique as funcionalidades principais do seu aplicativo, como gerenciamento de estoque, finanças, recursos humanos, etc.].
+Este é um aplicativo de ERP desenvolvido para gerenciamento de recursos, automação de processos, etc.
+Ele oferece uma solução robusta e escalável para como gerenciamento de estoque, finanças, recursos humanos, etc.
 
 
 
