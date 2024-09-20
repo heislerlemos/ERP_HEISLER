@@ -1,5 +1,9 @@
 ﻿using System.Configuration;
+using System.Data.Common;
+using System.Data;
 using System.Data.SqlClient;
+using System.Windows.Forms;
+using System.Security.Cryptography;
 
 namespace ERP_HEISLER.Controller
 {
@@ -15,7 +19,7 @@ namespace ERP_HEISLER.Controller
             System.Diagnostics.Debug.WriteLine(nome + "debuging");
 
         }
-
+        // Apagar esta funçao ja não esta a ser utilizada
 
         public static void adicionarproduto()
         {
@@ -85,6 +89,32 @@ namespace ERP_HEISLER.Controller
 
 
         }
+
+        // Visualizar os items 
+
+        public static void VisualizarStockdb ()
+        {
+
+			if (f1 == null)
+			{
+				throw new ArgumentNullException("não pode ser null");
+
+			}
+
+
+			string ConnectionString = ConfigurationManager.ConnectionStrings["ERP"].ConnectionString;
+
+			SqlConnection cnn = new SqlConnection(ConnectionString);
+			SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM armazem_adicionar;", cnn);
+
+			DataTable data = new DataTable();
+			sda.Fill(data);
+
+			f1.warehouse_grid.DataSource = data;
+
+			
+
+		}
 
 
 

@@ -193,5 +193,15 @@ namespace ERP_HEISLER
 			int Total = Total1 + Total2 + Total3;
 			form.faturalabel.Text = Total.ToString();
 		}
+
+		private void button3_Click_1(object sender, EventArgs e)
+		{
+			Armazem_Controller.VisualizarStockdb();
+		}
+
+		private void pictureBox6_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

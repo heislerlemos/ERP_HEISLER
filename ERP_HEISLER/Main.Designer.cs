@@ -29,9 +29,8 @@
 		private void InitializeComponent()
 		{
 			contabilidade = new Panel();
-			pictureBox3 = new PictureBox();
+			dataGridView3 = new DataGridView();
 			visualizar_movimentos_contabilidade = new Button();
-			richTextBox3 = new RichTextBox();
 			dateTimePicker3 = new DateTimePicker();
 			data_contabilidade = new Label();
 			richTextBox2 = new RichTextBox();
@@ -41,7 +40,6 @@
 			Submeter_contabilidade = new Button();
 			label1 = new Label();
 			recursoshumanos = new Panel();
-			pictureBox4 = new PictureBox();
 			label23 = new Label();
 			checkedListBox2 = new CheckedListBox();
 			label22 = new Label();
@@ -74,9 +72,8 @@
 			label2 = new Label();
 			label8 = new Label();
 			armazem = new Panel();
-			pictureBox2 = new PictureBox();
+			warehouse_grid = new DataGridView();
 			button3 = new Button();
-			richTextBox8 = new RichTextBox();
 			submeter_dados = new Button();
 			data_de_criaçao = new DateTimePicker();
 			data = new Label();
@@ -95,10 +92,9 @@
 			menuStrip1 = new MenuStrip();
 			pOSToolStripMenuItem = new ToolStripMenuItem();
 			crmpanel = new Panel();
+			dataGridView1 = new DataGridView();
 			button5 = new Button();
 			label3 = new Label();
-			richTextBox9 = new RichTextBox();
-			pictureBox5 = new PictureBox();
 			label35 = new Label();
 			label34 = new Label();
 			panel3 = new Panel();
@@ -152,6 +148,8 @@
 			label36 = new Label();
 			pictureBox6 = new PictureBox();
 			panelPOS = new Panel();
+			button13 = new Button();
+			dataGridView2 = new DataGridView();
 			button12 = new Button();
 			button11 = new Button();
 			label44 = new Label();
@@ -176,14 +174,13 @@
 			comboxpos = new ComboBox();
 			printDocument1 = new System.Drawing.Printing.PrintDocument();
 			contabilidade.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+			((System.ComponentModel.ISupportInitialize)dataGridView3).BeginInit();
 			recursoshumanos.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
 			armazem.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+			((System.ComponentModel.ISupportInitialize)warehouse_grid).BeginInit();
 			menuStrip1.SuspendLayout();
 			crmpanel.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+			((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
 			panel3.SuspendLayout();
 			panel4.SuspendLayout();
 			panel1.SuspendLayout();
@@ -192,14 +189,14 @@
 			paneldelogin.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
 			panelPOS.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
 			SuspendLayout();
 			// 
 			// contabilidade
 			// 
 			contabilidade.BackColor = SystemColors.Menu;
-			contabilidade.Controls.Add(pictureBox3);
+			contabilidade.Controls.Add(dataGridView3);
 			contabilidade.Controls.Add(visualizar_movimentos_contabilidade);
-			contabilidade.Controls.Add(richTextBox3);
 			contabilidade.Controls.Add(dateTimePicker3);
 			contabilidade.Controls.Add(data_contabilidade);
 			contabilidade.Controls.Add(richTextBox2);
@@ -214,32 +211,23 @@
 			contabilidade.Size = new Size(1397, 747);
 			contabilidade.TabIndex = 1;
 			// 
-			// pictureBox3
+			// dataGridView3
 			// 
-			pictureBox3.Image = Properties.Resources.search;
-			pictureBox3.Location = new Point(920, 55);
-			pictureBox3.Name = "pictureBox3";
-			pictureBox3.Size = new Size(125, 62);
-			pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-			pictureBox3.TabIndex = 13;
-			pictureBox3.TabStop = false;
+			dataGridView3.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			dataGridView3.Location = new Point(690, 167);
+			dataGridView3.Name = "dataGridView3";
+			dataGridView3.RowHeadersWidth = 51;
+			dataGridView3.Size = new Size(637, 340);
+			dataGridView3.TabIndex = 11;
 			// 
 			// visualizar_movimentos_contabilidade
 			// 
-			visualizar_movimentos_contabilidade.Location = new Point(1066, 47);
+			visualizar_movimentos_contabilidade.Location = new Point(834, 47);
 			visualizar_movimentos_contabilidade.Name = "visualizar_movimentos_contabilidade";
 			visualizar_movimentos_contabilidade.Size = new Size(224, 72);
 			visualizar_movimentos_contabilidade.TabIndex = 10;
 			visualizar_movimentos_contabilidade.Text = "Visualizar Contas";
 			visualizar_movimentos_contabilidade.UseVisualStyleBackColor = true;
-			// 
-			// richTextBox3
-			// 
-			richTextBox3.Location = new Point(834, 188);
-			richTextBox3.Name = "richTextBox3";
-			richTextBox3.Size = new Size(480, 415);
-			richTextBox3.TabIndex = 9;
-			richTextBox3.Text = "";
 			// 
 			// dateTimePicker3
 			// 
@@ -318,7 +306,6 @@
 			// recursoshumanos
 			// 
 			recursoshumanos.BackColor = SystemColors.MenuBar;
-			recursoshumanos.Controls.Add(pictureBox4);
 			recursoshumanos.Controls.Add(label23);
 			recursoshumanos.Controls.Add(checkedListBox2);
 			recursoshumanos.Controls.Add(label22);
@@ -355,16 +342,6 @@
 			recursoshumanos.Name = "recursoshumanos";
 			recursoshumanos.Size = new Size(1397, 747);
 			recursoshumanos.TabIndex = 2;
-			// 
-			// pictureBox4
-			// 
-			pictureBox4.Image = Properties.Resources.exam;
-			pictureBox4.Location = new Point(35, 571);
-			pictureBox4.Name = "pictureBox4";
-			pictureBox4.Size = new Size(125, 62);
-			pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
-			pictureBox4.TabIndex = 31;
-			pictureBox4.TabStop = false;
 			// 
 			// label23
 			// 
@@ -541,7 +518,7 @@
 			button2.ForeColor = SystemColors.ButtonFace;
 			button2.Location = new Point(956, 409);
 			button2.Name = "button2";
-			button2.Size = new Size(371, 37);
+			button2.Size = new Size(193, 37);
 			button2.TabIndex = 12;
 			button2.Text = "Submeter";
 			button2.UseVisualStyleBackColor = false;
@@ -551,9 +528,9 @@
 			// 
 			button1.BackColor = SystemColors.ActiveCaption;
 			button1.ForeColor = SystemColors.ButtonFace;
-			button1.Location = new Point(190, 578);
+			button1.Location = new Point(21, 594);
 			button1.Name = "button1";
-			button1.Size = new Size(573, 55);
+			button1.Size = new Size(300, 55);
 			button1.TabIndex = 11;
 			button1.Text = "Submeter";
 			button1.UseVisualStyleBackColor = false;
@@ -662,9 +639,8 @@
 			// armazem
 			// 
 			armazem.BackColor = SystemColors.Menu;
-			armazem.Controls.Add(pictureBox2);
+			armazem.Controls.Add(warehouse_grid);
 			armazem.Controls.Add(button3);
-			armazem.Controls.Add(richTextBox8);
 			armazem.Controls.Add(submeter_dados);
 			armazem.Controls.Add(data_de_criaçao);
 			armazem.Controls.Add(data);
@@ -683,38 +659,30 @@
 			armazem.Size = new Size(1397, 747);
 			armazem.TabIndex = 3;
 			// 
-			// pictureBox2
+			// warehouse_grid
 			// 
-			pictureBox2.Image = Properties.Resources.search;
-			pictureBox2.Location = new Point(872, 47);
-			pictureBox2.Name = "pictureBox2";
-			pictureBox2.Size = new Size(125, 62);
-			pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-			pictureBox2.TabIndex = 15;
-			pictureBox2.TabStop = false;
+			warehouse_grid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			warehouse_grid.Location = new Point(635, 118);
+			warehouse_grid.Name = "warehouse_grid";
+			warehouse_grid.RowHeadersWidth = 51;
+			warehouse_grid.Size = new Size(679, 350);
+			warehouse_grid.TabIndex = 16;
 			// 
 			// button3
 			// 
-			button3.Location = new Point(1003, 46);
+			button3.Location = new Point(635, 44);
 			button3.Name = "button3";
-			button3.Size = new Size(165, 65);
+			button3.Size = new Size(134, 65);
 			button3.TabIndex = 14;
 			button3.Text = "Visualizar stock ";
 			button3.UseVisualStyleBackColor = true;
-			// 
-			// richTextBox8
-			// 
-			richTextBox8.Location = new Point(708, 134);
-			richTextBox8.Name = "richTextBox8";
-			richTextBox8.Size = new Size(635, 526);
-			richTextBox8.TabIndex = 12;
-			richTextBox8.Text = "";
+			button3.Click += button3_Click_1;
 			// 
 			// submeter_dados
 			// 
 			submeter_dados.Location = new Point(27, 430);
 			submeter_dados.Name = "submeter_dados";
-			submeter_dados.Size = new Size(592, 65);
+			submeter_dados.Size = new Size(238, 65);
 			submeter_dados.TabIndex = 11;
 			submeter_dados.Text = "submeter";
 			submeter_dados.UseVisualStyleBackColor = true;
@@ -722,9 +690,9 @@
 			// 
 			// data_de_criaçao
 			// 
-			data_de_criaçao.Location = new Point(369, 289);
+			data_de_criaçao.Location = new Point(292, 290);
 			data_de_criaçao.Name = "data_de_criaçao";
-			data_de_criaçao.Size = new Size(250, 27);
+			data_de_criaçao.Size = new Size(264, 27);
 			data_de_criaçao.TabIndex = 10;
 			// 
 			// data
@@ -866,10 +834,9 @@
 			// crmpanel
 			// 
 			crmpanel.BackColor = SystemColors.Menu;
+			crmpanel.Controls.Add(dataGridView1);
 			crmpanel.Controls.Add(button5);
 			crmpanel.Controls.Add(label3);
-			crmpanel.Controls.Add(richTextBox9);
-			crmpanel.Controls.Add(pictureBox5);
 			crmpanel.Controls.Add(label35);
 			crmpanel.Controls.Add(label34);
 			crmpanel.Controls.Add(panel3);
@@ -898,6 +865,15 @@
 			crmpanel.Size = new Size(1397, 747);
 			crmpanel.TabIndex = 31;
 			// 
+			// dataGridView1
+			// 
+			dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			dataGridView1.Location = new Point(410, 482);
+			dataGridView1.Name = "dataGridView1";
+			dataGridView1.RowHeadersWidth = 51;
+			dataGridView1.Size = new Size(931, 103);
+			dataGridView1.TabIndex = 27;
+			// 
 			// button5
 			// 
 			button5.Location = new Point(537, 426);
@@ -917,24 +893,6 @@
 			label3.Size = new Size(126, 20);
 			label3.TabIndex = 25;
 			label3.Text = "Datas  Ano 2024";
-			// 
-			// richTextBox9
-			// 
-			richTextBox9.Location = new Point(388, 474);
-			richTextBox9.Name = "richTextBox9";
-			richTextBox9.Size = new Size(939, 151);
-			richTextBox9.TabIndex = 24;
-			richTextBox9.Text = "";
-			// 
-			// pictureBox5
-			// 
-			pictureBox5.Image = Properties.Resources.icons8_crm_64;
-			pictureBox5.Location = new Point(96, 50);
-			pictureBox5.Name = "pictureBox5";
-			pictureBox5.Size = new Size(125, 62);
-			pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
-			pictureBox5.TabIndex = 23;
-			pictureBox5.TabStop = false;
 			// 
 			// label35
 			// 
@@ -1315,7 +1273,7 @@
 			label24.AutoSize = true;
 			label24.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
 			label24.ForeColor = SystemColors.ActiveCaptionText;
-			label24.Location = new Point(226, 66);
+			label24.Location = new Point(39, 57);
 			label24.Name = "label24";
 			label24.Size = new Size(405, 31);
 			label24.TabIndex = 0;
@@ -1428,10 +1386,13 @@
 			pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
 			pictureBox6.TabIndex = 9;
 			pictureBox6.TabStop = false;
+			pictureBox6.Click += pictureBox6_Click;
 			// 
 			// panelPOS
 			// 
 			panelPOS.BackColor = SystemColors.Menu;
+			panelPOS.Controls.Add(button13);
+			panelPOS.Controls.Add(dataGridView2);
 			panelPOS.Controls.Add(button12);
 			panelPOS.Controls.Add(button11);
 			panelPOS.Controls.Add(label44);
@@ -1460,11 +1421,29 @@
 			panelPOS.Size = new Size(1397, 747);
 			panelPOS.TabIndex = 9;
 			// 
+			// button13
+			// 
+			button13.Location = new Point(742, 71);
+			button13.Name = "button13";
+			button13.Size = new Size(214, 29);
+			button13.TabIndex = 27;
+			button13.Text = "Verificar Facturas";
+			button13.UseVisualStyleBackColor = true;
+			// 
+			// dataGridView2
+			// 
+			dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			dataGridView2.Location = new Point(742, 126);
+			dataGridView2.Name = "dataGridView2";
+			dataGridView2.RowHeadersWidth = 51;
+			dataGridView2.Size = new Size(605, 494);
+			dataGridView2.TabIndex = 26;
+			// 
 			// button12
 			// 
 			button12.BackColor = Color.ForestGreen;
 			button12.ForeColor = SystemColors.ButtonHighlight;
-			button12.Location = new Point(400, 437);
+			button12.Location = new Point(33, 412);
 			button12.Name = "button12";
 			button12.Size = new Size(293, 82);
 			button12.TabIndex = 25;
@@ -1475,7 +1454,7 @@
 			// button11
 			// 
 			button11.BackColor = Color.Linen;
-			button11.Location = new Point(724, 455);
+			button11.Location = new Point(357, 430);
 			button11.Name = "button11";
 			button11.Size = new Size(164, 64);
 			button11.TabIndex = 24;
@@ -1487,7 +1466,7 @@
 			// 
 			label44.AutoSize = true;
 			label44.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-			label44.Location = new Point(872, 146);
+			label44.Location = new Point(505, 121);
 			label44.Name = "label44";
 			label44.Size = new Size(43, 20);
 			label44.TabIndex = 23;
@@ -1497,7 +1476,7 @@
 			// 
 			label42.AutoSize = true;
 			label42.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-			label42.Location = new Point(874, 219);
+			label42.Location = new Point(507, 194);
 			label42.Name = "label42";
 			label42.Size = new Size(43, 20);
 			label42.TabIndex = 22;
@@ -1507,7 +1486,7 @@
 			// 
 			label41.AutoSize = true;
 			label41.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-			label41.Location = new Point(879, 305);
+			label41.Location = new Point(512, 280);
 			label41.Name = "label41";
 			label41.Size = new Size(43, 20);
 			label41.TabIndex = 21;
@@ -1517,7 +1496,7 @@
 			// 
 			label46.AutoSize = true;
 			label46.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-			label46.Location = new Point(650, 390);
+			label46.Location = new Point(283, 365);
 			label46.Name = "label46";
 			label46.Size = new Size(43, 20);
 			label46.TabIndex = 20;
@@ -1526,7 +1505,7 @@
 			// button10
 			// 
 			button10.BackColor = Color.Cyan;
-			button10.Location = new Point(724, 372);
+			button10.Location = new Point(357, 347);
 			button10.Name = "button10";
 			button10.Size = new Size(164, 64);
 			button10.TabIndex = 19;
@@ -1537,7 +1516,7 @@
 			// label45
 			// 
 			label45.AutoSize = true;
-			label45.Location = new Point(406, 306);
+			label45.Location = new Point(39, 281);
 			label45.Name = "label45";
 			label45.Size = new Size(53, 20);
 			label45.TabIndex = 17;
@@ -1545,7 +1524,7 @@
 			// 
 			// textBox15
 			// 
-			textBox15.Location = new Point(784, 302);
+			textBox15.Location = new Point(417, 277);
 			textBox15.Name = "textBox15";
 			textBox15.Size = new Size(84, 27);
 			textBox15.TabIndex = 16;
@@ -1553,7 +1532,7 @@
 			// button9
 			// 
 			button9.BackColor = Color.MediumSpringGreen;
-			button9.Location = new Point(704, 302);
+			button9.Location = new Point(337, 277);
 			button9.Name = "button9";
 			button9.Size = new Size(45, 29);
 			button9.TabIndex = 15;
@@ -1566,7 +1545,7 @@
 			comboBox5.BackColor = SystemColors.Menu;
 			comboBox5.FormattingEnabled = true;
 			comboBox5.Items.AddRange(new object[] { "WINDOWS 20 MIL KZ  " });
-			comboBox5.Location = new Point(475, 302);
+			comboBox5.Location = new Point(108, 277);
 			comboBox5.Name = "comboBox5";
 			comboBox5.Size = new Size(181, 28);
 			comboBox5.TabIndex = 14;
@@ -1574,7 +1553,7 @@
 			// label43
 			// 
 			label43.AutoSize = true;
-			label43.Location = new Point(406, 219);
+			label43.Location = new Point(39, 194);
 			label43.Name = "label43";
 			label43.Size = new Size(53, 20);
 			label43.TabIndex = 12;
@@ -1582,7 +1561,7 @@
 			// 
 			// textBox14
 			// 
-			textBox14.Location = new Point(784, 219);
+			textBox14.Location = new Point(417, 194);
 			textBox14.Name = "textBox14";
 			textBox14.Size = new Size(84, 27);
 			textBox14.TabIndex = 11;
@@ -1590,7 +1569,7 @@
 			// button8
 			// 
 			button8.BackColor = Color.MediumSpringGreen;
-			button8.Location = new Point(704, 219);
+			button8.Location = new Point(337, 194);
 			button8.Name = "button8";
 			button8.Size = new Size(45, 29);
 			button8.TabIndex = 10;
@@ -1603,7 +1582,7 @@
 			comboBox4.BackColor = SystemColors.Menu;
 			comboBox4.FormattingEnabled = true;
 			comboBox4.Items.AddRange(new object[] { "OFFICE 40 MIL KZ  " });
-			comboBox4.Location = new Point(475, 219);
+			comboBox4.Location = new Point(108, 194);
 			comboBox4.Name = "comboBox4";
 			comboBox4.Size = new Size(181, 28);
 			comboBox4.TabIndex = 9;
@@ -1611,7 +1590,7 @@
 			// label10
 			// 
 			label10.AutoSize = true;
-			label10.Location = new Point(448, 390);
+			label10.Location = new Point(81, 365);
 			label10.Name = "label10";
 			label10.Size = new Size(80, 20);
 			label10.TabIndex = 8;
@@ -1619,7 +1598,7 @@
 			// 
 			// richTextBox10
 			// 
-			richTextBox10.Location = new Point(544, 387);
+			richTextBox10.Location = new Point(177, 362);
 			richTextBox10.Name = "richTextBox10";
 			richTextBox10.Size = new Size(78, 26);
 			richTextBox10.TabIndex = 7;
@@ -1628,7 +1607,7 @@
 			// label40
 			// 
 			label40.AutoSize = true;
-			label40.Location = new Point(405, 153);
+			label40.Location = new Point(38, 128);
 			label40.Name = "label40";
 			label40.Size = new Size(53, 20);
 			label40.TabIndex = 5;
@@ -1638,15 +1617,15 @@
 			// 
 			label39.AutoSize = true;
 			label39.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
-			label39.Location = new Point(1016, 594);
+			label39.Location = new Point(24, 38);
 			label39.Name = "label39";
-			label39.Size = new Size(369, 46);
+			label39.Size = new Size(86, 46);
 			label39.TabIndex = 4;
-			label39.Text = "Sistema Point of Sales";
+			label39.Text = "POS";
 			// 
 			// textBox13
 			// 
-			textBox13.Location = new Point(784, 146);
+			textBox13.Location = new Point(417, 121);
 			textBox13.Name = "textBox13";
 			textBox13.Size = new Size(82, 27);
 			textBox13.TabIndex = 2;
@@ -1654,7 +1633,7 @@
 			// button7
 			// 
 			button7.BackColor = Color.MediumSpringGreen;
-			button7.Location = new Point(704, 146);
+			button7.Location = new Point(337, 121);
 			button7.Name = "button7";
 			button7.Size = new Size(45, 29);
 			button7.TabIndex = 1;
@@ -1667,7 +1646,7 @@
 			comboxpos.BackColor = SystemColors.Menu;
 			comboxpos.FormattingEnabled = true;
 			comboxpos.Items.AddRange(new object[] { "Primavera ERP 50 MIL KZ  " });
-			comboxpos.Location = new Point(475, 146);
+			comboxpos.Location = new Point(108, 121);
 			comboxpos.Name = "comboxpos";
 			comboxpos.Size = new Size(181, 28);
 			comboxpos.TabIndex = 0;
@@ -1694,18 +1673,17 @@
 			Load += Main_Load;
 			contabilidade.ResumeLayout(false);
 			contabilidade.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+			((System.ComponentModel.ISupportInitialize)dataGridView3).EndInit();
 			recursoshumanos.ResumeLayout(false);
 			recursoshumanos.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
 			armazem.ResumeLayout(false);
 			armazem.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+			((System.ComponentModel.ISupportInitialize)warehouse_grid).EndInit();
 			menuStrip1.ResumeLayout(false);
 			menuStrip1.PerformLayout();
 			crmpanel.ResumeLayout(false);
 			crmpanel.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+			((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
 			panel3.ResumeLayout(false);
 			panel4.ResumeLayout(false);
 			panel1.ResumeLayout(false);
@@ -1717,6 +1695,7 @@
 			((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
 			panelPOS.ResumeLayout(false);
 			panelPOS.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
 			ResumeLayout(false);
 			PerformLayout();
 		}
@@ -1739,7 +1718,6 @@
         private Label produto_contabilidade;
         private Label data_contabilidade;
         private Button visualizar_movimentos_contabilidade;
-        private RichTextBox richTextBox3;
         private Label marca_do_produto;
         private Label label11;
         private Label data;
@@ -1757,7 +1735,6 @@
         public RichTextBox richTextBox7;
         public DateTimePicker data_de_criaçao;
         public TextBox textBox2;
-        private RichTextBox richTextBox8;
         private Button button3;
         private Label label14;
         public TextBox textBox3;
@@ -1825,16 +1802,11 @@
         private Panel footerpanel;
         private LinkLabel linkLabel1;
         public ComboBox comboBox2;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox4;
         public Panel recursoshumanos;
         public ComboBox comboBox8;
         public ComboBox comboBox7;
         public ComboBox comboBox3;
         private Label label3;
-        private RichTextBox richTextBox9;
-        private PictureBox pictureBox5;
         private Button button5;
         private Panel paneldelogin;
         private Label label37;
@@ -1869,5 +1841,10 @@
         private Button button11;
         private Button button12;
 		public RichTextBox richTextBox10;
+		public DataGridView warehouse_grid;
+		private DataGridView dataGridView1;
+		private Button button13;
+		private DataGridView dataGridView2;
+		private DataGridView dataGridView3;
 	}
 }
