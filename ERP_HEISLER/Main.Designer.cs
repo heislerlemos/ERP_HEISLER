@@ -29,12 +29,14 @@
 		private void InitializeComponent()
 		{
 			contabilidade = new Panel();
-			dataGridView3 = new DataGridView();
+			label49 = new Label();
+			richTextBox3 = new RichTextBox();
+			label48 = new Label();
+			richTextBox2 = new RichTextBox();
+			label47 = new Label();
+			contabilidade_grid = new DataGridView();
 			visualizar_movimentos_contabilidade = new Button();
 			dateTimePicker3 = new DateTimePicker();
-			data_contabilidade = new Label();
-			richTextBox2 = new RichTextBox();
-			produto_contabilidade = new Label();
 			richTextBox1 = new RichTextBox();
 			label9 = new Label();
 			Submeter_contabilidade = new Button();
@@ -174,7 +176,7 @@
 			comboxpos = new ComboBox();
 			printDocument1 = new System.Drawing.Printing.PrintDocument();
 			contabilidade.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)dataGridView3).BeginInit();
+			((System.ComponentModel.ISupportInitialize)contabilidade_grid).BeginInit();
 			recursoshumanos.SuspendLayout();
 			armazem.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)warehouse_grid).BeginInit();
@@ -195,12 +197,14 @@
 			// contabilidade
 			// 
 			contabilidade.BackColor = SystemColors.Menu;
-			contabilidade.Controls.Add(dataGridView3);
+			contabilidade.Controls.Add(label49);
+			contabilidade.Controls.Add(richTextBox3);
+			contabilidade.Controls.Add(label48);
+			contabilidade.Controls.Add(richTextBox2);
+			contabilidade.Controls.Add(label47);
+			contabilidade.Controls.Add(contabilidade_grid);
 			contabilidade.Controls.Add(visualizar_movimentos_contabilidade);
 			contabilidade.Controls.Add(dateTimePicker3);
-			contabilidade.Controls.Add(data_contabilidade);
-			contabilidade.Controls.Add(richTextBox2);
-			contabilidade.Controls.Add(produto_contabilidade);
 			contabilidade.Controls.Add(richTextBox1);
 			contabilidade.Controls.Add(label9);
 			contabilidade.Controls.Add(Submeter_contabilidade);
@@ -211,14 +215,57 @@
 			contabilidade.Size = new Size(1397, 747);
 			contabilidade.TabIndex = 1;
 			// 
-			// dataGridView3
+			// label49
 			// 
-			dataGridView3.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			dataGridView3.Location = new Point(690, 167);
-			dataGridView3.Name = "dataGridView3";
-			dataGridView3.RowHeadersWidth = 51;
-			dataGridView3.Size = new Size(637, 340);
-			dataGridView3.TabIndex = 11;
+			label49.AutoSize = true;
+			label49.Location = new Point(18, 299);
+			label49.Name = "label49";
+			label49.Size = new Size(58, 20);
+			label49.TabIndex = 17;
+			label49.Text = "Credito";
+			// 
+			// richTextBox3
+			// 
+			richTextBox3.Location = new Point(151, 297);
+			richTextBox3.Name = "richTextBox3";
+			richTextBox3.Size = new Size(141, 26);
+			richTextBox3.TabIndex = 16;
+			richTextBox3.Text = "";
+			// 
+			// label48
+			// 
+			label48.AutoSize = true;
+			label48.Location = new Point(17, 253);
+			label48.Name = "label48";
+			label48.Size = new Size(53, 20);
+			label48.TabIndex = 15;
+			label48.Text = "Gastos";
+			// 
+			// richTextBox2
+			// 
+			richTextBox2.Location = new Point(150, 251);
+			richTextBox2.Name = "richTextBox2";
+			richTextBox2.Size = new Size(141, 26);
+			richTextBox2.TabIndex = 14;
+			richTextBox2.Text = "";
+			// 
+			// label47
+			// 
+			label47.AutoSize = true;
+			label47.Location = new Point(18, 198);
+			label47.Name = "label47";
+			label47.Size = new Size(41, 20);
+			label47.TabIndex = 13;
+			label47.Text = "Data";
+			// 
+			// contabilidade_grid
+			// 
+			contabilidade_grid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			contabilidade_grid.Location = new Point(715, 154);
+			contabilidade_grid.Name = "contabilidade_grid";
+			contabilidade_grid.RowHeadersWidth = 51;
+			contabilidade_grid.Size = new Size(541, 340);
+			contabilidade_grid.TabIndex = 11;
 			// 
 			// visualizar_movimentos_contabilidade
 			// 
@@ -228,47 +275,21 @@
 			visualizar_movimentos_contabilidade.TabIndex = 10;
 			visualizar_movimentos_contabilidade.Text = "Visualizar Contas";
 			visualizar_movimentos_contabilidade.UseVisualStyleBackColor = true;
+			visualizar_movimentos_contabilidade.Click += visualizar_movimentos_contabilidade_Click;
 			// 
 			// dateTimePicker3
 			// 
-			dateTimePicker3.Location = new Point(24, 430);
+			dateTimePicker3.Location = new Point(150, 192);
 			dateTimePicker3.Name = "dateTimePicker3";
 			dateTimePicker3.Size = new Size(250, 27);
 			dateTimePicker3.TabIndex = 7;
-			// 
-			// data_contabilidade
-			// 
-			data_contabilidade.AutoSize = true;
-			data_contabilidade.ForeColor = SystemColors.ActiveCaptionText;
-			data_contabilidade.Location = new Point(24, 400);
-			data_contabilidade.Name = "data_contabilidade";
-			data_contabilidade.Size = new Size(41, 20);
-			data_contabilidade.TabIndex = 6;
-			data_contabilidade.Text = "Data";
-			// 
-			// richTextBox2
-			// 
-			richTextBox2.Location = new Point(21, 347);
-			richTextBox2.Name = "richTextBox2";
-			richTextBox2.Size = new Size(148, 28);
-			richTextBox2.TabIndex = 5;
-			richTextBox2.Text = "";
-			// 
-			// produto_contabilidade
-			// 
-			produto_contabilidade.AutoSize = true;
-			produto_contabilidade.ForeColor = SystemColors.ActiveCaptionText;
-			produto_contabilidade.Location = new Point(22, 310);
-			produto_contabilidade.Name = "produto_contabilidade";
-			produto_contabilidade.Size = new Size(62, 20);
-			produto_contabilidade.TabIndex = 4;
-			produto_contabilidade.Text = "Produto";
+			dateTimePicker3.Value = new DateTime(2024, 9, 24, 14, 33, 0, 0);
 			// 
 			// richTextBox1
 			// 
-			richTextBox1.Location = new Point(23, 251);
+			richTextBox1.Location = new Point(150, 125);
 			richTextBox1.Name = "richTextBox1";
-			richTextBox1.Size = new Size(82, 30);
+			richTextBox1.Size = new Size(490, 30);
 			richTextBox1.TabIndex = 3;
 			richTextBox1.Text = "";
 			// 
@@ -276,15 +297,15 @@
 			// 
 			label9.AutoSize = true;
 			label9.ForeColor = SystemColors.ActiveCaptionText;
-			label9.Location = new Point(20, 222);
+			label9.Location = new Point(20, 134);
 			label9.Name = "label9";
-			label9.Size = new Size(43, 20);
+			label9.Size = new Size(74, 20);
 			label9.TabIndex = 2;
-			label9.Text = "Valor";
+			label9.Text = "Descrição";
 			// 
 			// Submeter_contabilidade
 			// 
-			Submeter_contabilidade.Location = new Point(24, 474);
+			Submeter_contabilidade.Location = new Point(23, 493);
 			Submeter_contabilidade.Name = "Submeter_contabilidade";
 			Submeter_contabilidade.Size = new Size(94, 29);
 			Submeter_contabilidade.TabIndex = 1;
@@ -1673,7 +1694,7 @@
 			Load += Main_Load;
 			contabilidade.ResumeLayout(false);
 			contabilidade.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)dataGridView3).EndInit();
+			((System.ComponentModel.ISupportInitialize)contabilidade_grid).EndInit();
 			recursoshumanos.ResumeLayout(false);
 			recursoshumanos.PerformLayout();
 			armazem.ResumeLayout(false);
@@ -1715,8 +1736,6 @@
         private Button Submeter_contabilidade;
         public TextBox textBox1;
         private Label label9;
-        private Label produto_contabilidade;
-        private Label data_contabilidade;
         private Button visualizar_movimentos_contabilidade;
         private Label marca_do_produto;
         private Label label11;
@@ -1726,7 +1745,6 @@
         private Button submeter_dados;
         public DateTimePicker dateTimePicker1;
         public DateTimePicker dateTimePicker2;
-        public RichTextBox richTextBox2;
         public RichTextBox richTextBox1;
         public DateTimePicker dateTimePicker3;
         public RichTextBox richTextBox4;
@@ -1845,6 +1863,11 @@
 		private DataGridView dataGridView1;
 		private Button button13;
 		private DataGridView dataGridView2;
-		private DataGridView dataGridView3;
+		public DataGridView contabilidade_grid;
+		private Label label47;
+		private Label label48;
+		private Label label49;
+		public RichTextBox richTextBox2;
+		public RichTextBox richTextBox3;
 	}
 }

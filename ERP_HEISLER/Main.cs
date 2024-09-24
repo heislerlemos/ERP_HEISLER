@@ -203,5 +203,10 @@ namespace ERP_HEISLER
 		{
 
 		}
+
+		private void visualizar_movimentos_contabilidade_Click(object sender, EventArgs e)
+		{
+			Contabilidade_Controller.visualizarbalanço();
+		}
 	}
 }
