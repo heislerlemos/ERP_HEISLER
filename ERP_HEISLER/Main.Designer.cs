@@ -40,7 +40,6 @@
 			richTextBox1 = new RichTextBox();
 			label9 = new Label();
 			Submeter_contabilidade = new Button();
-			label1 = new Label();
 			recursoshumanos = new Panel();
 			label23 = new Label();
 			checkedListBox2 = new CheckedListBox();
@@ -71,7 +70,6 @@
 			label5 = new Label();
 			label4 = new Label();
 			Nome = new Label();
-			label2 = new Label();
 			label8 = new Label();
 			armazem = new Panel();
 			warehouse_grid = new DataGridView();
@@ -138,7 +136,6 @@
 			comboBox6 = new ComboBox();
 			comboBox3 = new ComboBox();
 			comboBox2 = new ComboBox();
-			label24 = new Label();
 			footerpanel = new Panel();
 			linkLabel1 = new LinkLabel();
 			paneldelogin = new Panel();
@@ -170,7 +167,6 @@
 			label10 = new Label();
 			richTextBox10 = new RichTextBox();
 			label40 = new Label();
-			label39 = new Label();
 			textBox13 = new TextBox();
 			button7 = new Button();
 			comboxpos = new ComboBox();
@@ -196,7 +192,7 @@
 			// 
 			// contabilidade
 			// 
-			contabilidade.BackColor = SystemColors.Menu;
+			contabilidade.BackColor = SystemColors.Window;
 			contabilidade.Controls.Add(label49);
 			contabilidade.Controls.Add(richTextBox3);
 			contabilidade.Controls.Add(label48);
@@ -208,7 +204,6 @@
 			contabilidade.Controls.Add(richTextBox1);
 			contabilidade.Controls.Add(label9);
 			contabilidade.Controls.Add(Submeter_contabilidade);
-			contabilidade.Controls.Add(label1);
 			contabilidade.Dock = DockStyle.Fill;
 			contabilidade.Location = new Point(0, 0);
 			contabilidade.Name = "contabilidade";
@@ -264,17 +259,18 @@
 			contabilidade_grid.Location = new Point(425, 121);
 			contabilidade_grid.Name = "contabilidade_grid";
 			contabilidade_grid.RowHeadersWidth = 51;
-			contabilidade_grid.Size = new Size(960, 540);
+			contabilidade_grid.Size = new Size(826, 482);
 			contabilidade_grid.TabIndex = 11;
 			// 
 			// visualizar_movimentos_contabilidade
 			// 
-			visualizar_movimentos_contabilidade.Location = new Point(1146, 38);
+			visualizar_movimentos_contabilidade.BackColor = SystemColors.ButtonFace;
+			visualizar_movimentos_contabilidade.Location = new Point(1027, 45);
 			visualizar_movimentos_contabilidade.Name = "visualizar_movimentos_contabilidade";
 			visualizar_movimentos_contabilidade.Size = new Size(224, 72);
 			visualizar_movimentos_contabilidade.TabIndex = 10;
 			visualizar_movimentos_contabilidade.Text = "Visualizar Balanço";
-			visualizar_movimentos_contabilidade.UseVisualStyleBackColor = true;
+			visualizar_movimentos_contabilidade.UseVisualStyleBackColor = false;
 			visualizar_movimentos_contabilidade.Click += visualizar_movimentos_contabilidade_Click;
 			// 
 			// dateTimePicker3
@@ -313,20 +309,9 @@
 			Submeter_contabilidade.UseVisualStyleBackColor = true;
 			Submeter_contabilidade.Click += button3_Click;
 			// 
-			// label1
-			// 
-			label1.AutoSize = true;
-			label1.Font = new Font("Segoe UI", 18F);
-			label1.ForeColor = SystemColors.ActiveCaptionText;
-			label1.Location = new Point(39, 60);
-			label1.Name = "label1";
-			label1.Size = new Size(203, 41);
-			label1.TabIndex = 0;
-			label1.Text = "Contabilidade";
-			// 
 			// recursoshumanos
 			// 
-			recursoshumanos.BackColor = SystemColors.MenuBar;
+			recursoshumanos.BackColor = SystemColors.Window;
 			recursoshumanos.Controls.Add(label23);
 			recursoshumanos.Controls.Add(checkedListBox2);
 			recursoshumanos.Controls.Add(label22);
@@ -356,7 +341,6 @@
 			recursoshumanos.Controls.Add(label5);
 			recursoshumanos.Controls.Add(label4);
 			recursoshumanos.Controls.Add(Nome);
-			recursoshumanos.Controls.Add(label2);
 			recursoshumanos.Controls.Add(label8);
 			recursoshumanos.Dock = DockStyle.Fill;
 			recursoshumanos.Location = new Point(0, 0);
@@ -637,16 +621,6 @@
 			Nome.TabIndex = 1;
 			Nome.Text = "Nome Completo";
 			// 
-			// label2
-			// 
-			label2.AutoSize = true;
-			label2.ForeColor = SystemColors.ActiveCaptionText;
-			label2.Location = new Point(26, 28);
-			label2.Name = "label2";
-			label2.Size = new Size(134, 20);
-			label2.TabIndex = 0;
-			label2.Text = "Recursos Humanos";
-			// 
 			// label8
 			// 
 			label8.AutoSize = true;
@@ -659,7 +633,7 @@
 			// 
 			// armazem
 			// 
-			armazem.BackColor = SystemColors.Menu;
+			armazem.BackColor = SystemColors.Window;
 			armazem.Controls.Add(warehouse_grid);
 			armazem.Controls.Add(button3);
 			armazem.Controls.Add(submeter_dados);
@@ -854,7 +828,7 @@
 			// 
 			// crmpanel
 			// 
-			crmpanel.BackColor = SystemColors.Menu;
+			crmpanel.BackColor = SystemColors.Window;
 			crmpanel.Controls.Add(dataGridView1);
 			crmpanel.Controls.Add(button5);
 			crmpanel.Controls.Add(label3);
@@ -879,7 +853,6 @@
 			crmpanel.Controls.Add(label26);
 			crmpanel.Controls.Add(label25);
 			crmpanel.Controls.Add(panel2);
-			crmpanel.Controls.Add(label24);
 			crmpanel.Dock = DockStyle.Fill;
 			crmpanel.Location = new Point(0, 0);
 			crmpanel.Name = "crmpanel";
@@ -1289,17 +1262,6 @@
 			comboBox2.Size = new Size(151, 28);
 			comboBox2.TabIndex = 0;
 			// 
-			// label24
-			// 
-			label24.AutoSize = true;
-			label24.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-			label24.ForeColor = SystemColors.ActiveCaptionText;
-			label24.Location = new Point(39, 57);
-			label24.Name = "label24";
-			label24.Size = new Size(405, 31);
-			label24.TabIndex = 0;
-			label24.Text = "Customer Relationship Management";
-			// 
 			// footerpanel
 			// 
 			footerpanel.BackColor = Color.DimGray;
@@ -1325,7 +1287,7 @@
 			// 
 			// paneldelogin
 			// 
-			paneldelogin.BackColor = Color.Teal;
+			paneldelogin.BackColor = SystemColors.Window;
 			paneldelogin.Controls.Add(textusername);
 			paneldelogin.Controls.Add(button6);
 			paneldelogin.Controls.Add(label38);
@@ -1410,7 +1372,7 @@
 			// 
 			// panelPOS
 			// 
-			panelPOS.BackColor = SystemColors.Menu;
+			panelPOS.BackColor = SystemColors.Window;
 			panelPOS.Controls.Add(button13);
 			panelPOS.Controls.Add(dataGridView2);
 			panelPOS.Controls.Add(button12);
@@ -1431,7 +1393,6 @@
 			panelPOS.Controls.Add(label10);
 			panelPOS.Controls.Add(richTextBox10);
 			panelPOS.Controls.Add(label40);
-			panelPOS.Controls.Add(label39);
 			panelPOS.Controls.Add(textBox13);
 			panelPOS.Controls.Add(button7);
 			panelPOS.Controls.Add(comboxpos);
@@ -1633,16 +1594,6 @@
 			label40.TabIndex = 5;
 			label40.Text = "Item-1";
 			// 
-			// label39
-			// 
-			label39.AutoSize = true;
-			label39.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
-			label39.Location = new Point(24, 38);
-			label39.Name = "label39";
-			label39.Size = new Size(86, 46);
-			label39.TabIndex = 4;
-			label39.Text = "POS";
-			// 
 			// textBox13
 			// 
 			textBox13.Location = new Point(417, 121);
@@ -1722,8 +1673,6 @@
 
 		#endregion
 		private Panel contabilidade;
-        private Label label1;
-        private Label label2;
         private Panel armazem;
         private Label label4;
         private Label Nome;
@@ -1779,7 +1728,6 @@
         private MenuStrip menuStrip1;
         private Panel crmpanel;
         private Panel panel2;
-        private Label label24;
         private Label label25;
         private Label label26;
         private Label label30;
@@ -1836,7 +1784,6 @@
         private Panel panelPOS;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private PictureBox pictureBox6;
-        private Label label39;
         private Button button7;
         private Label label40;
         public ComboBox comboxpos;
