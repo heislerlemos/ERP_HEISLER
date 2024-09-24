@@ -2,6 +2,7 @@
 using System.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
+using System.Globalization;
 
 namespace ERP_HEISLER.Controller
 {
@@ -91,6 +92,8 @@ namespace ERP_HEISLER.Controller
 			cmd.ExecuteNonQuery();
 			con.Close();
 
+
+			System.Windows.Forms.MessageBox.Show("Registo de contabilidade adicionado" + " " + DateTime.Now.ToString("dddd , MMM dd yyyy,hh:mm:ss", new CultureInfo("PT-pt")));
 
 
 		}

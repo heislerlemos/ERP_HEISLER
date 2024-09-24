@@ -261,19 +261,19 @@
 			// contabilidade_grid
 			// 
 			contabilidade_grid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			contabilidade_grid.Location = new Point(715, 154);
+			contabilidade_grid.Location = new Point(425, 121);
 			contabilidade_grid.Name = "contabilidade_grid";
 			contabilidade_grid.RowHeadersWidth = 51;
-			contabilidade_grid.Size = new Size(541, 340);
+			contabilidade_grid.Size = new Size(960, 540);
 			contabilidade_grid.TabIndex = 11;
 			// 
 			// visualizar_movimentos_contabilidade
 			// 
-			visualizar_movimentos_contabilidade.Location = new Point(834, 47);
+			visualizar_movimentos_contabilidade.Location = new Point(1146, 38);
 			visualizar_movimentos_contabilidade.Name = "visualizar_movimentos_contabilidade";
 			visualizar_movimentos_contabilidade.Size = new Size(224, 72);
 			visualizar_movimentos_contabilidade.TabIndex = 10;
-			visualizar_movimentos_contabilidade.Text = "Visualizar Contas";
+			visualizar_movimentos_contabilidade.Text = "Visualizar Balanço";
 			visualizar_movimentos_contabilidade.UseVisualStyleBackColor = true;
 			visualizar_movimentos_contabilidade.Click += visualizar_movimentos_contabilidade_Click;
 			// 
@@ -289,7 +289,7 @@
 			// 
 			richTextBox1.Location = new Point(150, 125);
 			richTextBox1.Name = "richTextBox1";
-			richTextBox1.Size = new Size(490, 30);
+			richTextBox1.Size = new Size(269, 30);
 			richTextBox1.TabIndex = 3;
 			richTextBox1.Text = "";
 			// 
