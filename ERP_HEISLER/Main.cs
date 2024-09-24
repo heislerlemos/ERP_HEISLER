@@ -199,10 +199,7 @@ namespace ERP_HEISLER
 			Armazem_Controller.VisualizarStockdb();
 		}
 
-		private void pictureBox6_Click(object sender, EventArgs e)
-		{
 
-		}
 
 		private void visualizar_movimentos_contabilidade_Click(object sender, EventArgs e)
 		{
