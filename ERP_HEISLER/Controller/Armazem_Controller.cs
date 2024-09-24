@@ -61,7 +61,7 @@ namespace ERP_HEISLER.Controller
         {
             if (f1 == null)
             {
-                throw new ArgumentNullException("não pode ser null");
+                throw new ArgumentNullException("não pode ser null .");
 
             }
             string nome_do_producto = f1.richTextBox4.Text;
