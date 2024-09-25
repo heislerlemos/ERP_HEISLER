@@ -184,6 +184,10 @@ namespace ERP_HEISLER
 		private void button11_Click(object sender, EventArgs e)
 		{
 			richTextBox10.Clear();
+			textBox13.Clear();
+			textBox14.Clear();
+			textBox15.Clear();
+
 		}
 
 		private void button12_Click(object sender, EventArgs e)
@@ -204,6 +208,45 @@ namespace ERP_HEISLER
 		private void visualizar_movimentos_contabilidade_Click(object sender, EventArgs e)
 		{
 			Contabilidade_Controller.visualizarbalanço();
+		}
+
+
+
+		// Terá que se adicionar em uma pasta separada
+		private void comboxpos_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			if (comboxpos.SelectedIndex == -1)
+			{
+				textBox13.Text = string.Empty;
+			}
+			else
+			{
+				textBox13.Text = Total1.ToString();
+			}
+		}
+
+		private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			if (comboBox4.SelectedIndex == -1)
+			{
+				textBox14.Text = string.Empty;
+			}
+			else
+			{
+				textBox14.Text = Total2.ToString();
+			}
+		}
+
+		private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			if (comboBox5.SelectedIndex == -1)
+			{
+				textBox15.Text = string.Empty;
+			}
+			else
+			{
+				textBox15.Text = Total3.ToString();
+			}
 		}
 	}
 }

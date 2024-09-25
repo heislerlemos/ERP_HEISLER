@@ -95,7 +95,6 @@
 			dataGridView1 = new DataGridView();
 			button5 = new Button();
 			label3 = new Label();
-			label35 = new Label();
 			label34 = new Label();
 			panel3 = new Panel();
 			comboBox27 = new ComboBox();
@@ -519,11 +518,11 @@
 			// 
 			// button2
 			// 
-			button2.BackColor = Color.Crimson;
-			button2.ForeColor = SystemColors.ButtonFace;
+			button2.BackColor = SystemColors.ButtonFace;
+			button2.ForeColor = SystemColors.ActiveCaptionText;
 			button2.Location = new Point(956, 409);
 			button2.Name = "button2";
-			button2.Size = new Size(193, 37);
+			button2.Size = new Size(239, 37);
 			button2.TabIndex = 12;
 			button2.Text = "Submeter";
 			button2.UseVisualStyleBackColor = false;
@@ -531,11 +530,11 @@
 			// 
 			// button1
 			// 
-			button1.BackColor = SystemColors.ActiveCaption;
-			button1.ForeColor = SystemColors.ButtonFace;
+			button1.BackColor = SystemColors.ButtonFace;
+			button1.ForeColor = SystemColors.ActiveCaptionText;
 			button1.Location = new Point(21, 594);
 			button1.Name = "button1";
-			button1.Size = new Size(300, 55);
+			button1.Size = new Size(234, 37);
 			button1.TabIndex = 11;
 			button1.Text = "Submeter";
 			button1.UseVisualStyleBackColor = false;
@@ -832,7 +831,6 @@
 			crmpanel.Controls.Add(dataGridView1);
 			crmpanel.Controls.Add(button5);
 			crmpanel.Controls.Add(label3);
-			crmpanel.Controls.Add(label35);
 			crmpanel.Controls.Add(label34);
 			crmpanel.Controls.Add(panel3);
 			crmpanel.Controls.Add(label33);
@@ -862,10 +860,10 @@
 			// dataGridView1
 			// 
 			dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			dataGridView1.Location = new Point(410, 482);
+			dataGridView1.Location = new Point(397, 482);
 			dataGridView1.Name = "dataGridView1";
 			dataGridView1.RowHeadersWidth = 51;
-			dataGridView1.Size = new Size(931, 103);
+			dataGridView1.Size = new Size(944, 121);
 			dataGridView1.TabIndex = 27;
 			// 
 			// button5
@@ -888,18 +886,6 @@
 			label3.TabIndex = 25;
 			label3.Text = "Datas  Ano 2024";
 			// 
-			// label35
-			// 
-			label35.AutoSize = true;
-			label35.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
-			label35.ForeColor = SystemColors.ActiveCaptionText;
-			label35.Location = new Point(26, 568);
-			label35.Name = "label35";
-			label35.Size = new Size(328, 35);
-			label35.TabIndex = 22;
-			label35.Text = "Os dados foram guardados";
-			label35.Visible = false;
-			// 
 			// label34
 			// 
 			label34.AutoSize = true;
@@ -913,7 +899,7 @@
 			// 
 			// panel3
 			// 
-			panel3.BackColor = Color.Azure;
+			panel3.BackColor = SystemColors.ButtonFace;
 			panel3.Controls.Add(comboBox27);
 			panel3.Controls.Add(comboBox28);
 			panel3.Controls.Add(comboBox29);
@@ -977,7 +963,7 @@
 			// 
 			// panel4
 			// 
-			panel4.BackColor = Color.DarkTurquoise;
+			panel4.BackColor = SystemColors.ButtonFace;
 			panel4.Controls.Add(comboBox19);
 			panel4.Controls.Add(comboBox20);
 			panel4.Controls.Add(comboBox21);
@@ -1041,7 +1027,7 @@
 			// 
 			// panel1
 			// 
-			panel1.BackColor = Color.Honeydew;
+			panel1.BackColor = SystemColors.ButtonFace;
 			panel1.Controls.Add(comboBox10);
 			panel1.Controls.Add(comboBox11);
 			panel1.Controls.Add(comboBox12);
@@ -1211,7 +1197,7 @@
 			// 
 			// panel2
 			// 
-			panel2.BackColor = Color.DarkSeaGreen;
+			panel2.BackColor = SystemColors.ButtonFace;
 			panel2.Controls.Add(comboBox8);
 			panel2.Controls.Add(comboBox7);
 			panel2.Controls.Add(comboBox6);
@@ -1288,13 +1274,13 @@
 			// paneldelogin
 			// 
 			paneldelogin.BackColor = SystemColors.Window;
-			paneldelogin.Controls.Add(textusername);
-			paneldelogin.Controls.Add(button6);
-			paneldelogin.Controls.Add(label38);
 			paneldelogin.Controls.Add(textpassword);
+			paneldelogin.Controls.Add(textusername);
+			paneldelogin.Controls.Add(label38);
 			paneldelogin.Controls.Add(label37);
-			paneldelogin.Controls.Add(label36);
+			paneldelogin.Controls.Add(button6);
 			paneldelogin.Controls.Add(pictureBox6);
+			paneldelogin.Controls.Add(label36);
 			paneldelogin.Dock = DockStyle.Fill;
 			paneldelogin.Location = new Point(0, 0);
 			paneldelogin.Name = "paneldelogin";
@@ -1310,12 +1296,12 @@
 			// 
 			// button6
 			// 
-			button6.BackColor = Color.MediumAquamarine;
+			button6.BackColor = SystemColors.ActiveCaption;
 			button6.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
 			button6.ForeColor = SystemColors.ButtonHighlight;
-			button6.Location = new Point(39, 591);
+			button6.Location = new Point(55, 591);
 			button6.Name = "button6";
-			button6.Size = new Size(407, 87);
+			button6.Size = new Size(391, 87);
 			button6.TabIndex = 8;
 			button6.Text = "Login";
 			button6.UseVisualStyleBackColor = false;
@@ -1324,7 +1310,7 @@
 			// label38
 			// 
 			label38.AutoSize = true;
-			label38.BackColor = SystemColors.ActiveCaption;
+			label38.BackColor = SystemColors.MenuHighlight;
 			label38.ForeColor = SystemColors.ButtonHighlight;
 			label38.Location = new Point(55, 558);
 			label38.Name = "label38";
@@ -1343,7 +1329,7 @@
 			// label37
 			// 
 			label37.AutoSize = true;
-			label37.BackColor = SystemColors.ActiveCaption;
+			label37.BackColor = SystemColors.MenuHighlight;
 			label37.ForeColor = SystemColors.ButtonHighlight;
 			label37.Location = new Point(56, 522);
 			label37.Name = "label37";
@@ -1404,9 +1390,9 @@
 			// 
 			// button13
 			// 
-			button13.Location = new Point(742, 71);
+			button13.Location = new Point(742, 60);
 			button13.Name = "button13";
-			button13.Size = new Size(214, 29);
+			button13.Size = new Size(214, 60);
 			button13.TabIndex = 27;
 			button13.Text = "Verificar Facturas";
 			button13.UseVisualStyleBackColor = true;
@@ -1422,7 +1408,7 @@
 			// 
 			// button12
 			// 
-			button12.BackColor = Color.ForestGreen;
+			button12.BackColor = SystemColors.MenuHighlight;
 			button12.ForeColor = SystemColors.ButtonHighlight;
 			button12.Location = new Point(33, 412);
 			button12.Name = "button12";
@@ -1434,7 +1420,7 @@
 			// 
 			// button11
 			// 
-			button11.BackColor = Color.Linen;
+			button11.BackColor = SystemColors.ButtonFace;
 			button11.Location = new Point(357, 430);
 			button11.Name = "button11";
 			button11.Size = new Size(164, 64);
@@ -1467,7 +1453,7 @@
 			// 
 			label41.AutoSize = true;
 			label41.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-			label41.Location = new Point(512, 280);
+			label41.Location = new Point(507, 280);
 			label41.Name = "label41";
 			label41.Size = new Size(43, 20);
 			label41.TabIndex = 21;
@@ -1485,7 +1471,7 @@
 			// 
 			// button10
 			// 
-			button10.BackColor = Color.Cyan;
+			button10.BackColor = SystemColors.ActiveCaption;
 			button10.Location = new Point(357, 347);
 			button10.Name = "button10";
 			button10.Size = new Size(164, 64);
@@ -1512,7 +1498,7 @@
 			// 
 			// button9
 			// 
-			button9.BackColor = Color.MediumSpringGreen;
+			button9.BackColor = SystemColors.ButtonFace;
 			button9.Location = new Point(337, 277);
 			button9.Name = "button9";
 			button9.Size = new Size(45, 29);
@@ -1530,6 +1516,7 @@
 			comboBox5.Name = "comboBox5";
 			comboBox5.Size = new Size(181, 28);
 			comboBox5.TabIndex = 14;
+			comboBox5.SelectedIndexChanged += comboBox5_SelectedIndexChanged;
 			// 
 			// label43
 			// 
@@ -1549,7 +1536,7 @@
 			// 
 			// button8
 			// 
-			button8.BackColor = Color.MediumSpringGreen;
+			button8.BackColor = SystemColors.Control;
 			button8.Location = new Point(337, 194);
 			button8.Name = "button8";
 			button8.Size = new Size(45, 29);
@@ -1567,6 +1554,7 @@
 			comboBox4.Name = "comboBox4";
 			comboBox4.Size = new Size(181, 28);
 			comboBox4.TabIndex = 9;
+			comboBox4.SelectedIndexChanged += comboBox4_SelectedIndexChanged;
 			// 
 			// label10
 			// 
@@ -1581,7 +1569,7 @@
 			// 
 			richTextBox10.Location = new Point(177, 362);
 			richTextBox10.Name = "richTextBox10";
-			richTextBox10.Size = new Size(78, 26);
+			richTextBox10.Size = new Size(100, 26);
 			richTextBox10.TabIndex = 7;
 			richTextBox10.Text = "";
 			// 
@@ -1603,7 +1591,7 @@
 			// 
 			// button7
 			// 
-			button7.BackColor = Color.MediumSpringGreen;
+			button7.BackColor = SystemColors.Control;
 			button7.Location = new Point(337, 121);
 			button7.Name = "button7";
 			button7.Size = new Size(45, 29);
@@ -1621,6 +1609,7 @@
 			comboxpos.Name = "comboxpos";
 			comboxpos.Size = new Size(181, 28);
 			comboxpos.TabIndex = 0;
+			comboxpos.SelectedIndexChanged += comboxpos_SelectedIndexChanged;
 			// 
 			// Main
 			// 
@@ -1763,7 +1752,6 @@
         public TextBox textBox11;
         public TextBox textBox12;
         public TextBox textBox10;
-        public Label label35;
         private Panel footerpanel;
         private LinkLabel linkLabel1;
         public ComboBox comboBox2;

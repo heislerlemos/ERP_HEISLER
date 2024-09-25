@@ -1,5 +1,6 @@
 ﻿using System.Configuration;
 using System.Data.SqlClient;
+using System.Globalization;
 
 namespace ERP_HEISLER.Controller
 {
@@ -56,8 +57,11 @@ namespace ERP_HEISLER.Controller
 
             SqlCommand cmd = new SqlCommand(Query, con);
             cmd.ExecuteNonQuery();
-            f1.label35.Visible = true;
-            con.Close();
+			//f1.label35.Visible = true; metendo notificação
+			System.Windows.Forms.MessageBox.Show("Dados crm adicionados com sucesso" + " " + DateTime.Now.ToString("dddd , MMM dd yyyy,hh:mm:ss", new CultureInfo("PT-pt")));
+
+
+			con.Close();
 
 
 
