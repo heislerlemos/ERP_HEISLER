@@ -248,5 +248,11 @@ namespace ERP_HEISLER
 				textBox15.Text = Total3.ToString();
 			}
 		}
+
+		private void button14_Click(object sender, EventArgs e)
+		{
+			Rh_Controller.VisualizarFuncionarioAdicionado();
+
+		}
 	}
 }

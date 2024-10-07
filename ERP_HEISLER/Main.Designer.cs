@@ -41,6 +41,10 @@
 			label9 = new Label();
 			Submeter_contabilidade = new Button();
 			recursoshumanos = new Panel();
+			funcremovido = new Button();
+			funcionariosadd = new Button();
+			dataGridView4 = new DataGridView();
+			funcadicionados = new DataGridView();
 			label23 = new Label();
 			checkedListBox2 = new CheckedListBox();
 			label22 = new Label();
@@ -138,13 +142,13 @@
 			footerpanel = new Panel();
 			linkLabel1 = new LinkLabel();
 			paneldelogin = new Panel();
-			textusername = new TextBox();
-			button6 = new Button();
-			label38 = new Label();
 			textpassword = new TextBox();
+			textusername = new TextBox();
+			label38 = new Label();
 			label37 = new Label();
-			label36 = new Label();
+			button6 = new Button();
 			pictureBox6 = new PictureBox();
+			label36 = new Label();
 			panelPOS = new Panel();
 			button13 = new Button();
 			dataGridView2 = new DataGridView();
@@ -173,6 +177,8 @@
 			contabilidade.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)contabilidade_grid).BeginInit();
 			recursoshumanos.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)dataGridView4).BeginInit();
+			((System.ComponentModel.ISupportInitialize)funcadicionados).BeginInit();
 			armazem.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)warehouse_grid).BeginInit();
 			menuStrip1.SuspendLayout();
@@ -311,6 +317,10 @@
 			// recursoshumanos
 			// 
 			recursoshumanos.BackColor = SystemColors.Window;
+			recursoshumanos.Controls.Add(funcremovido);
+			recursoshumanos.Controls.Add(funcionariosadd);
+			recursoshumanos.Controls.Add(dataGridView4);
+			recursoshumanos.Controls.Add(funcadicionados);
 			recursoshumanos.Controls.Add(label23);
 			recursoshumanos.Controls.Add(checkedListBox2);
 			recursoshumanos.Controls.Add(label22);
@@ -346,6 +356,43 @@
 			recursoshumanos.Name = "recursoshumanos";
 			recursoshumanos.Size = new Size(1397, 747);
 			recursoshumanos.TabIndex = 2;
+			// 
+			// funcremovido
+			// 
+			funcremovido.Location = new Point(1048, 465);
+			funcremovido.Name = "funcremovido";
+			funcremovido.Size = new Size(203, 29);
+			funcremovido.TabIndex = 34;
+			funcremovido.Text = "Funcionarios Removidos";
+			funcremovido.UseVisualStyleBackColor = true;
+			// 
+			// funcionariosadd
+			// 
+			funcionariosadd.Location = new Point(451, 382);
+			funcionariosadd.Name = "funcionariosadd";
+			funcionariosadd.Size = new Size(255, 29);
+			funcionariosadd.TabIndex = 33;
+			funcionariosadd.Text = "Funcionarios Adicionados";
+			funcionariosadd.UseVisualStyleBackColor = true;
+			funcionariosadd.Click += button14_Click;
+			// 
+			// dataGridView4
+			// 
+			dataGridView4.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			dataGridView4.Location = new Point(911, 500);
+			dataGridView4.Name = "dataGridView4";
+			dataGridView4.RowHeadersWidth = 51;
+			dataGridView4.Size = new Size(458, 167);
+			dataGridView4.TabIndex = 32;
+			// 
+			// funcadicionados
+			// 
+			funcadicionados.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			funcadicionados.Location = new Point(337, 426);
+			funcadicionados.Name = "funcadicionados";
+			funcadicionados.RowHeadersWidth = 51;
+			funcadicionados.Size = new Size(491, 244);
+			funcadicionados.TabIndex = 31;
 			// 
 			// label23
 			// 
@@ -1287,12 +1334,42 @@
 			paneldelogin.Size = new Size(1397, 747);
 			paneldelogin.TabIndex = 27;
 			// 
+			// textpassword
+			// 
+			textpassword.Location = new Point(166, 558);
+			textpassword.Name = "textpassword";
+			textpassword.PasswordChar = '*';
+			textpassword.Size = new Size(280, 27);
+			textpassword.TabIndex = 5;
+			// 
 			// textusername
 			// 
 			textusername.Location = new Point(166, 519);
 			textusername.Name = "textusername";
 			textusername.Size = new Size(279, 27);
 			textusername.TabIndex = 4;
+			// 
+			// label38
+			// 
+			label38.AutoSize = true;
+			label38.BackColor = SystemColors.MenuHighlight;
+			label38.ForeColor = SystemColors.ButtonHighlight;
+			label38.Location = new Point(55, 558);
+			label38.Name = "label38";
+			label38.Size = new Size(87, 20);
+			label38.TabIndex = 6;
+			label38.Text = "PASSWORD";
+			// 
+			// label37
+			// 
+			label37.AutoSize = true;
+			label37.BackColor = SystemColors.MenuHighlight;
+			label37.ForeColor = SystemColors.ButtonHighlight;
+			label37.Location = new Point(56, 522);
+			label37.Name = "label37";
+			label37.Size = new Size(86, 20);
+			label37.TabIndex = 3;
+			label37.Text = "USERNAME";
 			// 
 			// button6
 			// 
@@ -1307,44 +1384,6 @@
 			button6.UseVisualStyleBackColor = false;
 			button6.Click += button6_Click;
 			// 
-			// label38
-			// 
-			label38.AutoSize = true;
-			label38.BackColor = SystemColors.MenuHighlight;
-			label38.ForeColor = SystemColors.ButtonHighlight;
-			label38.Location = new Point(55, 558);
-			label38.Name = "label38";
-			label38.Size = new Size(87, 20);
-			label38.TabIndex = 6;
-			label38.Text = "PASSWORD";
-			// 
-			// textpassword
-			// 
-			textpassword.Location = new Point(166, 558);
-			textpassword.Name = "textpassword";
-			textpassword.PasswordChar = '*';
-			textpassword.Size = new Size(280, 27);
-			textpassword.TabIndex = 5;
-			// 
-			// label37
-			// 
-			label37.AutoSize = true;
-			label37.BackColor = SystemColors.MenuHighlight;
-			label37.ForeColor = SystemColors.ButtonHighlight;
-			label37.Location = new Point(56, 522);
-			label37.Name = "label37";
-			label37.Size = new Size(86, 20);
-			label37.TabIndex = 3;
-			label37.Text = "USERNAME";
-			// 
-			// label36
-			// 
-			label36.AutoSize = true;
-			label36.Location = new Point(475, 487);
-			label36.Name = "label36";
-			label36.Size = new Size(0, 20);
-			label36.TabIndex = 2;
-			// 
 			// pictureBox6
 			// 
 			pictureBox6.Dock = DockStyle.Fill;
@@ -1355,6 +1394,14 @@
 			pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
 			pictureBox6.TabIndex = 9;
 			pictureBox6.TabStop = false;
+			// 
+			// label36
+			// 
+			label36.AutoSize = true;
+			label36.Location = new Point(475, 487);
+			label36.Name = "label36";
+			label36.Size = new Size(0, 20);
+			label36.TabIndex = 2;
 			// 
 			// panelPOS
 			// 
@@ -1636,6 +1683,8 @@
 			((System.ComponentModel.ISupportInitialize)contabilidade_grid).EndInit();
 			recursoshumanos.ResumeLayout(false);
 			recursoshumanos.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)dataGridView4).EndInit();
+			((System.ComponentModel.ISupportInitialize)funcadicionados).EndInit();
 			armazem.ResumeLayout(false);
 			armazem.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)warehouse_grid).EndInit();
@@ -1803,5 +1852,9 @@
 		private Label label49;
 		public RichTextBox richTextBox2;
 		public RichTextBox richTextBox3;
+		private Button funcionariosadd;
+		private DataGridView dataGridView4;
+		private Button funcremovido;
+		public DataGridView funcadicionados;
 	}
 }

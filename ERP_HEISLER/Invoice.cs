@@ -61,6 +61,8 @@ namespace ERP_HEISLER
 					new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(250, 185));
 				e.Graphics.DrawString(faturalabel.Text + "MIL KZ", new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(300, 210));
 				e.Graphics.DrawString( "Obrigado pela sua preferencia", new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(300, 250));
+				e.Graphics.DrawString("Obrigado pela sua preferencia", new Font("Arial", 14, FontStyle.Regular), Brushes.Black, new Point(300, 250));
+
 
 			}
 		}
