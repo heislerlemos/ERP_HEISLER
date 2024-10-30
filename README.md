@@ -1,4 +1,3 @@
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7237385708758306816" height="668" width="504" frameborder="0" allowfullscreen="" title="Publicação incorporada"></iframe>
 # Aplicativo de Enterprise Resource Planning (ERP)
 
 Este é um aplicativo de ERP desenvolvido para gerenciamento de recursos, automação de processos, etc.
