@@ -123,7 +123,7 @@ namespace ERP_HEISLER.Controller
 		{
 
 			if (f1 == null)
-			{	
+			{
 				throw new ArgumentNullException("não pode ser null");
 
 			}
@@ -141,6 +141,28 @@ namespace ERP_HEISLER.Controller
 
 		}
 
+
+
+		// http Class construction 
+
+
+	
+
+		public static void HttpCall()
+		{
+
+			static async Task GetAsync(HttpClient httpClient)
+			{
+				using HttpResponseMessage response = await httpClient.GetAsync("/api/rh");
+				response.EnsureSuccessStatusCode();
+
+
+				
+				var jsonResponse = await response.Content.ReadAsStringAsync();
+				System.Diagnostics.Debug.WriteLine(($"{jsonResponse}\n"));
+
+			}
+		}
 
 	}
 }

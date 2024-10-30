@@ -98,7 +98,7 @@ namespace ERP_HEISLER.Controller
 
 		}
 
-		public static void visualizarbalanço()
+		public static void visualizarbalanco()
 		{
 			if (f1 == null)
 			{

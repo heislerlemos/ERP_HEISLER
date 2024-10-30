@@ -41,6 +41,7 @@
 			label9 = new Label();
 			Submeter_contabilidade = new Button();
 			recursoshumanos = new Panel();
+			button14 = new Button();
 			funcremovido = new Button();
 			funcionariosadd = new Button();
 			dataGridView4 = new DataGridView();
@@ -317,6 +318,7 @@
 			// recursoshumanos
 			// 
 			recursoshumanos.BackColor = SystemColors.Window;
+			recursoshumanos.Controls.Add(button14);
 			recursoshumanos.Controls.Add(funcremovido);
 			recursoshumanos.Controls.Add(funcionariosadd);
 			recursoshumanos.Controls.Add(dataGridView4);
@@ -357,6 +359,18 @@
 			recursoshumanos.Size = new Size(1397, 747);
 			recursoshumanos.TabIndex = 2;
 			// 
+			// button14
+			// 
+			button14.BackColor = SystemColors.HotTrack;
+			button14.ForeColor = SystemColors.ButtonHighlight;
+			button14.Location = new Point(663, 384);
+			button14.Name = "button14";
+			button14.Size = new Size(94, 29);
+			button14.TabIndex = 35;
+			button14.Text = "API";
+			button14.UseVisualStyleBackColor = false;
+			button14.Click += button14_Click;
+			// 
 			// funcremovido
 			// 
 			funcremovido.Location = new Point(1048, 465);
@@ -368,13 +382,13 @@
 			// 
 			// funcionariosadd
 			// 
-			funcionariosadd.Location = new Point(451, 382);
+			funcionariosadd.Location = new Point(357, 382);
 			funcionariosadd.Name = "funcionariosadd";
 			funcionariosadd.Size = new Size(255, 29);
 			funcionariosadd.TabIndex = 33;
 			funcionariosadd.Text = "Funcionarios Adicionados";
 			funcionariosadd.UseVisualStyleBackColor = true;
-			funcionariosadd.Click += button14_Click;
+			funcionariosadd.Click += funcionarioAdd_Click;
 			// 
 			// dataGridView4
 			// 
@@ -382,7 +396,7 @@
 			dataGridView4.Location = new Point(911, 500);
 			dataGridView4.Name = "dataGridView4";
 			dataGridView4.RowHeadersWidth = 51;
-			dataGridView4.Size = new Size(458, 167);
+			dataGridView4.Size = new Size(458, 131);
 			dataGridView4.TabIndex = 32;
 			// 
 			// funcadicionados
@@ -391,7 +405,7 @@
 			funcadicionados.Location = new Point(337, 426);
 			funcadicionados.Name = "funcadicionados";
 			funcadicionados.RowHeadersWidth = 51;
-			funcadicionados.Size = new Size(491, 244);
+			funcadicionados.Size = new Size(491, 177);
 			funcadicionados.TabIndex = 31;
 			// 
 			// label23
@@ -1856,5 +1870,6 @@
 		private DataGridView dataGridView4;
 		private Button funcremovido;
 		public DataGridView funcadicionados;
+		public Button button14;
 	}
 }

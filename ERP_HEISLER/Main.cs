@@ -4,6 +4,9 @@ using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Diagnostics;
+using System.Globalization;
+using System.Net.Http;
+using System.Net.Http.Headers;
 
 namespace ERP_HEISLER
 {
@@ -207,7 +210,7 @@ namespace ERP_HEISLER
 
 		private void visualizar_movimentos_contabilidade_Click(object sender, EventArgs e)
 		{
-			Contabilidade_Controller.visualizarbalanço();
+			Contabilidade_Controller.visualizarbalanco();
 		}
 
 
@@ -249,9 +252,18 @@ namespace ERP_HEISLER
 			}
 		}
 
-		private void button14_Click(object sender, EventArgs e)
+		private void funcionarioAdd_Click(object sender, EventArgs e)
 		{
 			Rh_Controller.VisualizarFuncionarioAdicionado();
+
+		}
+
+
+
+
+		private void button14_Click(object sender, EventArgs e)
+		{
+			Task task = Http_erp.http_getAsync();
 
 		}
 	}
