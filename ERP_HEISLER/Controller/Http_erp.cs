@@ -31,7 +31,37 @@ namespace ERP_HEISLER.Controller
 				System.Diagnostics.Debug.WriteLine(stream);
 				var recursos = await JsonSerializer.DeserializeAsync<List<Rh_get.Rh>>(stream);
 				System.Diagnostics.Debug.WriteLine(recursos);
-				foreach (var r in recursos) System.Diagnostics.Debug.WriteLine(r.Email); ;
+				if (recursos != null)
+				{
+					foreach (var r in recursos)
+					{
+						/**
+						int Identificador = r.Id;
+						string Nome = r.Nome;
+						string Email = r.Email;	
+						**/
+	
+						System.Diagnostics.Debug.WriteLine($"Id: {r.Id}");
+						System.Diagnostics.Debug.WriteLine($"Nome: {r.Nome}");
+						System.Diagnostics.Debug.WriteLine($"Email: {r.Email}");
+						System.Diagnostics.Debug.WriteLine($"Data: {r.Data}");
+						System.Diagnostics.Debug.WriteLine($"Genero: {r.Genero}");
+						System.Diagnostics.Debug.WriteLine($"Telefone: {r.Telefone}");
+						System.Diagnostics.Debug.WriteLine($"Nif: {r.Nif}");
+
+
+						//string resultado = "\n" + "Nome" + Nome + "\n" + "Email" + Email;
+
+
+
+						string e = "teste";
+						MessageBox.Show(e);
+
+
+					}
+
+
+				}
 
 
 			}
