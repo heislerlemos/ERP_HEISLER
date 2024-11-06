@@ -4,9 +4,6 @@ using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Diagnostics;
-using System.Globalization;
-using System.Net.Http;
-using System.Net.Http.Headers;
 
 namespace ERP_HEISLER
 {
@@ -263,13 +260,7 @@ namespace ERP_HEISLER
 
 		private void button14_Click(object sender, EventArgs e)
 		{
-
-		
-
 			Task task = Http_erp.http_getAsync();
-			//System.Diagnostics.Debug.WriteLine(task + "Httpp call");
-
-
 		}
 	}
 }

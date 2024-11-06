@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Net.Http.Headers;
+﻿using System.Net.Http.Headers;
 using System.Text.Json;
-using System.Windows.Forms;
 
 
 
@@ -30,17 +24,12 @@ namespace ERP_HEISLER.Controller
 				await client.GetStreamAsync("http://127.0.0.1:8000/api/rh/");
 				System.Diagnostics.Debug.WriteLine(stream);
 				var recursos = await JsonSerializer.DeserializeAsync<List<Rh_get.Rh>>(stream);
-				System.Diagnostics.Debug.WriteLine(recursos);
+				System.Diagnostics.Debug.WriteLine(recursos) ;
 				if (recursos != null)
 				{
 					foreach (var r in recursos)
 					{
-						/**
-						int Identificador = r.Id;
-						string Nome = r.Nome;
-						string Email = r.Email;	
-						**/
-	
+					
 						System.Diagnostics.Debug.WriteLine($"Id: {r.Id}");
 						System.Diagnostics.Debug.WriteLine($"Nome: {r.Nome}");
 						System.Diagnostics.Debug.WriteLine($"Email: {r.Email}");
@@ -49,25 +38,22 @@ namespace ERP_HEISLER.Controller
 						System.Diagnostics.Debug.WriteLine($"Telefone: {r.Telefone}");
 						System.Diagnostics.Debug.WriteLine($"Nif: {r.Nif}");
 
+						Api form = new Api();
+						form.Show();
 
-						//string resultado = "\n" + "Nome" + Nome + "\n" + "Email" + Email;
-
-
-
-						string e = "teste";
-						MessageBox.Show(e);
-
-
+						form.dados.Text = "Id : " + r.Id + "\n" +
+										  "Nome :" + r.Nome + "\n" +
+										  "Email :" + r.Email + "\n" +
+										  "Data :" + r.Data + "\n" +
+										  "Genero :" + r.Genero + "\n" +
+										  "Telefone :" + r.Telefone + "\n" +
+										  "Nif :" + r.Nif + "\n";	
 					}
 
-
 				}
-
-
 			}
 
 		}
-
 
 	}
 }
