@@ -47,9 +47,9 @@
 			// 
 			// dados
 			// 
-			dados.Location = new Point(28, 151);
+			dados.Location = new Point(21, 165);
 			dados.Name = "dados";
-			dados.Size = new Size(907, 499);
+			dados.Size = new Size(416, 489);
 			dados.TabIndex = 1;
 			dados.Text = "";
 			// 
@@ -58,7 +58,7 @@
 			panel1.BackColor = SystemColors.ActiveCaption;
 			panel1.BorderStyle = BorderStyle.Fixed3D;
 			panel1.Controls.Add(label1);
-			panel1.Location = new Point(282, 20);
+			panel1.Location = new Point(21, 12);
 			panel1.Name = "panel1";
 			panel1.Size = new Size(409, 125);
 			panel1.TabIndex = 2;
@@ -67,11 +67,12 @@
 			// 
 			AutoScaleDimensions = new SizeF(8F, 20F);
 			AutoScaleMode = AutoScaleMode.Font;
-			ClientSize = new Size(969, 691);
+			ClientSize = new Size(462, 691);
 			Controls.Add(dados);
 			Controls.Add(panel1);
 			Name = "Api";
 			Text = "Api";
+			Load += Api_Load;
 			panel1.ResumeLayout(false);
 			panel1.PerformLayout();
 			ResumeLayout(false);

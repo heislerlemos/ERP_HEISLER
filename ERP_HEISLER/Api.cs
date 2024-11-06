@@ -17,6 +17,9 @@ namespace ERP_HEISLER
 			InitializeComponent();
 		}
 
+		private void Api_Load(object sender, EventArgs e)
+		{
 
+		}
 	}
 }

@@ -1,5 +1,8 @@
-﻿using System.Net.Http.Headers;
+﻿using System.Configuration;
+using System.Net.Http.Headers;
+using System.Security.Cryptography;
 using System.Text.Json;
+using static ERP_HEISLER.Controller.Rh_get;
 
 
 
@@ -12,10 +15,7 @@ namespace ERP_HEISLER.Controller
 		public static async Task http_getAsync()
 		{
 			using HttpClient client = new();
-			client.DefaultRequestHeaders.Accept.Clear();
-			client.DefaultRequestHeaders.Accept.Add(
-				new MediaTypeWithQualityHeaderValue("application/vnd.github.v3+json"));
-			client.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
+			
 			await ProcessRepositoriesAsync(client);
 
 			static async Task ProcessRepositoriesAsync(HttpClient client)
@@ -42,23 +42,22 @@ namespace ERP_HEISLER.Controller
 						System.Diagnostics.Debug.WriteLine($"Nif: {r.Nif}");
 
 
-
-						form.dados.Text = "Id : " + r.Id+ "\n" +
+						
+						string colecta = "Id : " + r.Id + "\n" +
 										  "Nome :" + r.Nome + "\n" +
 										  "Email :" + r.Email + "\n" +
 										  "Data :" + r.Data + "\n" +
 										  "Genero :" + r.Genero + "\n" +
 										  "Telefone :" + r.Telefone + "\n" +
-										  "Nif :" + r.Nif + "\n";
+										  "Nif :" + r.Nif + "\n"+
+										  "#####################" + "\n";
+
+						form.dados.AppendText(colecta);
 
 					}
 
 					
-					 
-
-
-
-
+	
 
 				}
 			}
