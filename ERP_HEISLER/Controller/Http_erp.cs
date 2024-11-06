@@ -24,9 +24,12 @@ namespace ERP_HEISLER.Controller
 				await client.GetStreamAsync("http://127.0.0.1:8000/api/rh/");
 				System.Diagnostics.Debug.WriteLine(stream);
 				var recursos = await JsonSerializer.DeserializeAsync<List<Rh_get.Rh>>(stream);
-				System.Diagnostics.Debug.WriteLine(recursos) ;
+				System.Diagnostics.Debug.WriteLine(recursos);
 				if (recursos != null)
 				{
+					Api form = new Api();
+					form.Show();
+
 					foreach (var r in recursos)
 					{
 					
@@ -38,17 +41,24 @@ namespace ERP_HEISLER.Controller
 						System.Diagnostics.Debug.WriteLine($"Telefone: {r.Telefone}");
 						System.Diagnostics.Debug.WriteLine($"Nif: {r.Nif}");
 
-						Api form = new Api();
-						form.Show();
 
-						form.dados.Text = "Id : " + r.Id + "\n" +
+
+						form.dados.Text = "Id : " + r.Id+ "\n" +
 										  "Nome :" + r.Nome + "\n" +
 										  "Email :" + r.Email + "\n" +
 										  "Data :" + r.Data + "\n" +
 										  "Genero :" + r.Genero + "\n" +
 										  "Telefone :" + r.Telefone + "\n" +
-										  "Nif :" + r.Nif + "\n";	
+										  "Nif :" + r.Nif + "\n";
+
 					}
+
+					
+					 
+
+
+
+
 
 				}
 			}
