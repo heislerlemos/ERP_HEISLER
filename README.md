@@ -8,7 +8,7 @@ Feature
 
 Rh : Add and Monitor employeer information\
 Warehouse : Add and Monitor stock assets\
-Contability : Deposit and withdraw credit nad check the company blance
+Contability : Deposit and withdraw credit nad check the company blance\
 Pos : Select item for checkout and emits a invoice\
 Crm : See client  information and interation with the company
 
